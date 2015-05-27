@@ -1,4 +1,4 @@
-# Aspose.Pdf for Cloud Repository
+# Aspose.Pdf for Cloud
 This repository contains examples and SDKs for [Aspose.Pdf for Cloud](http://www.aspose.com/cloud/pdf-api.aspx).
 
 ## Why SDKs?
