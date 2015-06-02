@@ -1,4 +1,4 @@
-# Aspose.Pdf for Cloud
+## Aspose.Pdf for Cloud
 This repository contains examples and SDKs for [Aspose.Pdf for Cloud](http://www.aspose.com/cloud/pdf-api.aspx).
 
 ## Why SDKs?
@@ -15,3 +15,11 @@ Directory | Description
 --------- | -----------
 [Java SDK](https://github.com/asposepdf/Aspose_Pdf_Cloud/tree/master/SDKs/Aspose.Pdf_Cloud_SDK_for_Java)  |  Aspose.Pdf for Cloud Java SDK.
 [PHP SDK](https://github.com/asposepdf/Aspose_Pdf_Cloud/tree/master/SDKs/Aspose.Pdf_Cloud_SDK_for_PHP)  | Aspose.Pdf for Cloud PHP SDK.
+
+## Resources
+
++ **Website:** [www.aspose.com](http://www.aspose.com)
++ **Product Home:** [Aspose.Pdf for Cloud](http://www.aspose.com/cloud/pdf-api.aspx)
++ **Documentation:** [Aspose.Pdf for Cloud Documentation](http://www.aspose.com/docs/display/pdfcloud/Home)
++ **Forum:** [Aspose.Pdf for Cloud Forum](http://www.aspose.com/community/forums/aspose.pdf-product-family/75/showforum.aspx)
++ **Blog:** [Aspose.Pdf for Cloud Blog](http://www.aspose.com/blogs/aspose-products/aspose-pdf-product-family.html)
