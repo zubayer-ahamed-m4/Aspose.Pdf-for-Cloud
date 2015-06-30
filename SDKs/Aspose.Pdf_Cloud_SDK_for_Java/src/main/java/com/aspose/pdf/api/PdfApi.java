@@ -3,6 +3,7 @@ package com.aspose.pdf.api;
 import com.aspose.pdf.client.ApiException;
 import com.aspose.pdf.client.ApiInvoker;
 import com.aspose.pdf.client.ApiInvokerResponse;
+import com.aspose.pdf.model.BookmarkResponse;
 import com.aspose.pdf.model.BookmarksResponse;
 import com.aspose.pdf.model.DocumentResponse;
 import com.aspose.pdf.model.PageTextReplaceResponse;
@@ -494,10 +495,10 @@ try {
 	* @param bookmarkPath	String	The bookmark path.
 	* @param storage	String	The document storage.
 	* @param folder	String	The document folder.
-	* @return ResponseMessage
+	* @return BookmarkResponse
 	*/
 
-  public ResponseMessage GetDocumentBookmarksChildren (String name, String bookmarkPath, String storage, String folder) {
+  public BookmarkResponse GetDocumentBookmarksChildren (String name, String bookmarkPath, String storage, String folder) {
     Object postBody = null;
     // verify required params are set
     if(name == null ) {
@@ -534,7 +535,7 @@ try {
 
 try {
 		response = apiInvoker.invokeAPI(basePath, resourcePath, "GET", queryParams, postBody, headerParams, formParams, contentType);
-		return (ResponseMessage) ApiInvoker.deserialize(response, "", ResponseMessage.class);
+		return (BookmarkResponse) ApiInvoker.deserialize(response, "", BookmarkResponse.class);
     } catch (ApiException ex) {
       if(ex.getCode() == 404) {
       	throw new ApiException(404, "");
@@ -790,10 +791,7 @@ try {
 
   public ResponseMessage PutConvertDocument (String format, String url, String outPath, File file) {
     Object postBody = null;
-    // verify required params are set
-    if(file == null ) {
-       throw new ApiException(400, "missing required params");
-    }
+    
     // create path and map variables
     String resourcePath = "/pdf/convert/?appSid={appSid}&amp;toFormat={toFormat}&amp;url={url}&amp;outPath={outPath}";
 	resourcePath = resourcePath.replaceAll("\\*", "").replace("&amp;", "&").replace("/?", "?").replace("toFormat={toFormat}", "format={format}");
@@ -819,11 +817,17 @@ try {
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
 
-if(contentType.startsWith("multipart/form-data")) {      
-      FormDataMultiPart mp = new FormDataMultiPart();
-      mp.field("file", file, MediaType.MULTIPART_FORM_DATA_TYPE);
-        postBody = mp;
+    if(file!=null){
+   
+         contentType = "multipart/form-data";
+         FormDataMultiPart mp = new FormDataMultiPart();
+         mp.field("file", file, MediaType.MULTIPART_FORM_DATA_TYPE);
+           postBody = mp;
+    }else{
+       
+       contentType = "application/json";
     }
+    
 try {
 		response = apiInvoker.invokeAPI(basePath, resourcePath, "PUT", queryParams, postBody, headerParams, formParams, contentType);
 		return (ResponseMessage) ApiInvoker.deserialize(response, "", ResponseMessage.class);
@@ -1779,7 +1783,7 @@ try {
        throw new ApiException(400, "missing required params");
     }
     // create path and map variables
-    String resourcePath = "/pdf/{name}/pages/{pageNumber}/fragments/{fragmentNumber}/segments/{segmentNumber}/texttoFormat/?appSid={appSid}&amp;storage={storage}&amp;folder={folder}";
+    String resourcePath = "/pdf/{name}/pages/{pageNumber}/fragments/{fragmentNumber}/segments/{segmentNumber}/textformat/?appSid={appSid}&amp;storage={storage}&amp;folder={folder}";
 	resourcePath = resourcePath.replaceAll("\\*", "").replace("&amp;", "&").replace("/?", "?").replace("toFormat={toFormat}", "format={format}");
     // query params
     Map<String, String> queryParams = new HashMap<String, String>();
@@ -2039,9 +2043,11 @@ try {
   public ImageResponse PostReplaceImage (String name, Integer pageNumber, Integer imageNumber, String imageFile, String storage, String folder, File file) {
     Object postBody = null;
     // verify required params are set
-    if(name == null || pageNumber == null || imageNumber == null || file == null ) {
+    
+    if(name == null || pageNumber == null || imageNumber == null ) {
        throw new ApiException(400, "missing required params");
     }
+    
     // create path and map variables
     String resourcePath = "/pdf/{name}/pages/{pageNumber}/images/{imageNumber}/?appSid={appSid}&amp;imageFile={imageFile}&amp;storage={storage}&amp;folder={folder}";
 	resourcePath = resourcePath.replaceAll("\\*", "").replace("&amp;", "&").replace("/?", "?").replace("toFormat={toFormat}", "format={format}");
@@ -2079,11 +2085,15 @@ try {
 
     String contentType = contentTypes.length > 0 ? contentTypes[0] : "application/json";
 
-if(contentType.startsWith("multipart/form-data")) {      
+    if(file != null) {    
+      contentType = "multipart/form-data";
       FormDataMultiPart mp = new FormDataMultiPart();
       mp.field("file", file, MediaType.MULTIPART_FORM_DATA_TYPE);
         postBody = mp;
+    }else{
+       contentType = "application/json";
     }
+    
 try {
 		response = apiInvoker.invokeAPI(basePath, resourcePath, "POST", queryParams, postBody, headerParams, formParams, contentType);
 		return (ImageResponse) ApiInvoker.deserialize(response, "", ImageResponse.class);

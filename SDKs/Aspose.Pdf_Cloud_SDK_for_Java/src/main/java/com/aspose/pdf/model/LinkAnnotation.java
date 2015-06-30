@@ -2,12 +2,10 @@ package com.aspose.pdf.model;
 
 import java.util.*;
 import com.aspose.pdf.model.Color;
-import com.aspose.pdf.model.LinkActionType;
-import com.aspose.pdf.model.LinkHighlightingMode;
 public class LinkAnnotation {
-  private LinkActionType ActionType = null;
+  private Integer ActionType = null;
   private String Action = null;
-  private LinkHighlightingMode Highlighting = null;
+  private Integer Highlighting = null;
   private Color Color = null;
   private List<Link> Links = new ArrayList<Link>();
   /**
@@ -15,16 +13,16 @@ public class LinkAnnotation {
 	 * Gets LinkActionType
 	 * @return ActionType
 	 */
-  public LinkActionType getActionType() {
+  public Integer getActionType() {
     return ActionType;
   }
 
 	/**
 	 * setActionType
 	 * Sets LinkActionType
-	 * @param ActionType LinkActionType
+	 * @param Integer LinkActionType
 	 */
-  public void setActionType(LinkActionType ActionType) {
+  public void setActionType(Integer ActionType) {
     this.ActionType = ActionType;
   }
 
@@ -51,16 +49,16 @@ public class LinkAnnotation {
 	 * Gets LinkHighlightingMode
 	 * @return Highlighting
 	 */
-  public LinkHighlightingMode getHighlighting() {
+  public Integer getHighlighting() {
     return Highlighting;
   }
 
 	/**
 	 * setHighlighting
 	 * Sets LinkHighlightingMode
-	 * @param Highlighting LinkHighlightingMode
+	 * @param Integer LinkHighlightingMode
 	 */
-  public void setHighlighting(LinkHighlightingMode Highlighting) {
+  public void setHighlighting(Integer Highlighting) {
     this.Highlighting = Highlighting;
   }
 

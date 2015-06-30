@@ -1,26 +1,21 @@
 package com.aspose.pdf.model;
 
-import com.aspose.pdf.model.VerticalAlignment;
-import com.aspose.pdf.model.HorizontalAlignment;
-import com.aspose.pdf.model.Rotation;
-import com.aspose.pdf.model.TextState;
-import com.aspose.pdf.model.StampType;
 public class Stamp {
-  private StampType Type = null;
+  private String Type = null;
   private Boolean Background = null;
   private Double BottomMargin = null;
-  private HorizontalAlignment HorizontalAlignment = null;
+  private String HorizontalAlignment = null;
   private Double LeftMargin = null;
   private Double Opacity = null;
   private Double RightMargin = null;
   private Rotation Rotate = null;
   private Double RotateAngle = null;
   private Double TopMargin = null;
-  private VerticalAlignment VerticalAlignment = null;
+  private String VerticalAlignment = null;
   private Double XIndent = null;
   private Double YIndent = null;
   private Double Zoom = null;
-  private HorizontalAlignment TextAlignment = null;
+  private String TextAlignment = null;
   private String Value = null;
   private TextState TextState = null;
   private String FileName = null;
@@ -33,16 +28,16 @@ public class Stamp {
 	 * Gets StampType
 	 * @return Type
 	 */
-  public StampType getType() {
+  public String getType() {
     return Type;
   }
 
 	/**
 	 * setType
 	 * Sets StampType
-	 * @param Type StampType
+	 * @param Integer StampType
 	 */
-  public void setType(StampType Type) {
+  public void setType(String Type) {
     this.Type = Type;
   }
 
@@ -87,16 +82,16 @@ public class Stamp {
 	 * Gets HorizontalAlignment
 	 * @return HorizontalAlignment
 	 */
-  public HorizontalAlignment getHorizontalAlignment() {
+  public String getHorizontalAlignment() {
     return HorizontalAlignment;
   }
 
 	/**
 	 * setHorizontalAlignment
 	 * Sets HorizontalAlignment
-	 * @param HorizontalAlignment HorizontalAlignment
+	 * @param String HorizontalAlignment
 	 */
-  public void setHorizontalAlignment(HorizontalAlignment HorizontalAlignment) {
+  public void setHorizontalAlignment(String HorizontalAlignment) {
     this.HorizontalAlignment = HorizontalAlignment;
   }
 
@@ -213,16 +208,16 @@ public class Stamp {
 	 * Gets VerticalAlignment
 	 * @return VerticalAlignment
 	 */
-  public VerticalAlignment getVerticalAlignment() {
+  public String getVerticalAlignment() {
     return VerticalAlignment;
   }
 
 	/**
 	 * setVerticalAlignment
 	 * Sets VerticalAlignment
-	 * @param VerticalAlignment VerticalAlignment
+	 * @param String VerticalAlignment
 	 */
-  public void setVerticalAlignment(VerticalAlignment VerticalAlignment) {
+  public void setVerticalAlignment(String VerticalAlignment) {
     this.VerticalAlignment = VerticalAlignment;
   }
 
@@ -285,16 +280,16 @@ public class Stamp {
 	 * Gets HorizontalAlignment
 	 * @return TextAlignment
 	 */
-  public HorizontalAlignment getTextAlignment() {
+  public String getTextAlignment() {
     return TextAlignment;
   }
 
 	/**
 	 * setTextAlignment
 	 * Sets HorizontalAlignment
-	 * @param TextAlignment HorizontalAlignment
+	 * @param TextAlignment String
 	 */
-  public void setTextAlignment(HorizontalAlignment TextAlignment) {
+  public void setTextAlignment(String TextAlignment) {
     this.TextAlignment = TextAlignment;
   }
 

@@ -24,6 +24,7 @@ import com.aspose.pdf.model.AnnotationsResponse;
 import com.aspose.pdf.model.AppendDocument;
 import com.aspose.pdf.model.AttachmentResponse;
 import com.aspose.pdf.model.AttachmentsResponse;
+import com.aspose.pdf.model.BookmarkResponse;
 import com.aspose.pdf.model.BookmarksResponse;
 import com.aspose.pdf.model.DocumentPagesResponse;
 import com.aspose.pdf.model.DocumentPropertiesResponse;
@@ -38,6 +39,7 @@ import com.aspose.pdf.model.FieldsResponse;
 import com.aspose.pdf.model.ImageResponse;
 import com.aspose.pdf.model.ImagesResponse;
 import com.aspose.pdf.model.Link;
+import com.aspose.pdf.model.LinkAnnotationResponse;
 import com.aspose.pdf.model.LinkAnnotationsResponse;
 import com.aspose.pdf.model.MergeDocuments;
 import com.aspose.pdf.model.PageTextReplaceResponse;
@@ -264,15 +266,15 @@ public class PdfApiTest {
 	@Test
 	public void testGetDocumentBookmarksChildren() {
 		System.out.println("GetDocumentBookmarksChildren");
-		String name = "pst-barcode-doc.pdf";
-		String bookmarkPath = "2";
+		String name = "Sample-Bookmark.pdf";
+		String bookmarkPath = "1";
 		String storage = "";
 		String folder = "";
 
 		ResponseMessage expResult = new ResponseMessage();
 		expResult.setStatus("OK");
 		try {
-			ResponseMessage result = pdfApi.GetDocumentBookmarksChildren(name, bookmarkPath, storage, folder);
+			 BookmarkResponse result = pdfApi.GetDocumentBookmarksChildren(name, bookmarkPath, storage, folder);
 
 			assertEquals(expResult.getStatus(), result.getStatus());
 		} catch (ApiException apiException) {
@@ -1043,28 +1045,28 @@ public class PdfApiTest {
 	/**
 	 * Test of GetPageLinkAnnotationByIndex method, of class PdfApi.
 	 */
-//	@Test
-//	public void testGetPageLinkAnnotationByIndex() {
-//		System.out.println("GetPageLinkAnnotationByIndex");
-//		String name = "annotation.pdf";
-//		Integer pageNumber = 1;
-//		Integer linkIndex = 1;
-//		String storage = "";
-//		String folder = "";
-//
-//		LinkAnnotationResponse expResult = new LinkAnnotationResponse();
-//		expResult.setStatus("OK");
-//		try {
-//			LinkAnnotationResponse result = pdfApi.GetPageLinkAnnotationByIndex(name, pageNumber, linkIndex, storage, folder);
-//
-//			assertEquals(expResult.getStatus(), result.getStatus());
-//		} catch (ApiException apiException) {
-//			System.out.println("exp:" + apiException.getMessage());
-//			assertNull(apiException);
-//		}
-//		
-//	}
-//
+	@Test
+	public void testGetPageLinkAnnotationByIndex() {
+		System.out.println("GetPageLinkAnnotationByIndex");
+		String name = "Sample-Bookmark.pdf";
+		Integer pageNumber = 1;
+		Integer linkIndex = 1;
+		String storage = "";
+		String folder = "";
+
+		LinkAnnotationResponse expResult = new LinkAnnotationResponse();
+		expResult.setStatus("OK");
+		try {
+			LinkAnnotationResponse result = pdfApi.GetPageLinkAnnotationByIndex(name, pageNumber, linkIndex, storage, folder);
+
+			assertEquals(expResult.getStatus(), result.getStatus());
+		} catch (ApiException apiException) {
+			System.out.println("exp:" + apiException.getMessage());
+			assertNull(apiException);
+		}
+		
+	}
+
 	/**
 	 * Test of GetPageLinkAnnotations method, of class PdfApi.
 	 */
