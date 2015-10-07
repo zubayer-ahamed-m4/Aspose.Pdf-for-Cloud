@@ -13,9 +13,9 @@ Aspose.Pdf for Cloud is implemented as a REST API. If you use SDK, it hides the 
 
 Directory | Description
 --------- | -----------
-[Java SDK](https://github.com/asposepdf/Aspose_Pdf_Cloud/tree/master/SDKs/Aspose.Pdf_Cloud_SDK_for_Java)  |  Aspose.Pdf for Cloud Java SDK.
-[PHP SDK](https://github.com/asposepdf/Aspose_Pdf_Cloud/tree/master/SDKs/Aspose.Pdf_Cloud_SDK_for_PHP)  | Aspose.Pdf for Cloud PHP SDK.
-
+[Java SDK](https://github.com/asposepdf/Aspose_Pdf_Cloud/tree/master/SDKs/Aspose.Pdf_Cloud_SDK_for_Java)  |  Aspose.Pdf Cloud SDK for Java.
+[PHP SDK](https://github.com/asposepdf/Aspose_Pdf_Cloud/tree/master/SDKs/Aspose.Pdf_Cloud_SDK_for_PHP)  | Aspose.Pdf Cloud SDK for PHP.
+[Python SDK](https://github.com/asposepdf/Aspose_Pdf_Cloud/tree/master/SDKs/Aspose.Pdf_Cloud_SDK_for_Python)  | Aspose.Pdf Cloud SDK for Python.
 ## Resources
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
