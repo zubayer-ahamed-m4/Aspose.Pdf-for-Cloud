@@ -12,7 +12,7 @@ class LinkAnnotation(object):
           attributeMap (dict): The key is attribute name and the value is json key in definition.
         """
         self.swaggerTypes = {
-            'ActionType': 'LinkActionType',
+            'ActionType': 'int',
             'Action': 'str',
             'Highlighting': 'LinkHighlightingMode',
             'Color': 'Color',

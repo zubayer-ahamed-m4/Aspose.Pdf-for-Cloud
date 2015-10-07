@@ -617,7 +617,7 @@ class PdfApi(object):
 
             
 
-        Returns: ResponseMessage
+        Returns: BookmarkResponse
         """
 
         allParams = dict.fromkeys(['name', 'bookmarkPath', 'storage', 'folder'])
@@ -668,7 +668,7 @@ class PdfApi(object):
         files = { }
         bodyParam = None
 
-        headerParams['Accept'] = 'application/xml,application/octet-stream'
+        headerParams['Accept'] = 'application/json'
         headerParams['Content-Type'] = 'application/json'
 
         postData = (formParams if formParams else bodyParam)
@@ -677,7 +677,7 @@ class PdfApi(object):
 
         try:
             if response.status_code in [200,201,202]:
-                responseObject = self.apiClient.pre_deserialize(response.content, 'ResponseMessage', response.headers['content-type'])
+                responseObject = self.apiClient.pre_deserialize(response.content, 'BookmarkResponse', response.headers['content-type'])
                 return responseObject
             else:
                 raise ApiException(response.status_code,response.content)
@@ -941,7 +941,7 @@ class PdfApi(object):
 
             format (str): Resulting documents format. (optional)
 
-            from (int): Start page if defined. (optional)
+            ffrom (int): Start page if defined. (optional)
 
             to (int): End page if defined. (optional)
 
@@ -954,7 +954,7 @@ class PdfApi(object):
         Returns: SplitResultResponse
         """
 
-        allParams = dict.fromkeys(['name', 'format', 'from', 'to', 'storage', 'folder'])
+        allParams = dict.fromkeys(['name', 'format', 'ffrom', 'to', 'storage', 'folder'])
 
         params = locals()
         for (key, val) in params['kwargs'].iteritems():
@@ -983,8 +983,8 @@ class PdfApi(object):
             resourcePath = re.sub("[&?]format.*?(?=&|\\?|$)", "", resourcePath)
         
 
-        if 'from' in allParams and allParams['from'] is not None:
-            resourcePath = resourcePath.replace("{" + "from" + "}" , str(allParams['from']))
+        if 'ffrom' in allParams and allParams['ffrom'] is not None:
+            resourcePath = resourcePath.replace("{" + "from" + "}" , str(allParams['ffrom']))
         else:
             resourcePath = re.sub("[&?]from.*?(?=&|\\?|$)", "", resourcePath)
         
@@ -1089,7 +1089,11 @@ class PdfApi(object):
         queryParams = {}
         headerParams = {}
         formParams = {}
-        files = { 'file':open(file, 'rb')}
+        files = {}
+        
+        if file is not None:
+            files = { 'file':open(file, 'rb')}
+            
         bodyParam = None
 
         headerParams['Accept'] = 'application/xml,application/octet-stream'
@@ -2524,7 +2528,7 @@ class PdfApi(object):
             if key in allParams:
                 allParams[key] = val
         
-        resourcePath = '/pdf/{name}/pages/{pageNumber}/fragments/{fragmentNumber}/segments/{segmentNumber}/texttoFormat/?appSid={appSid}&amp;storage={storage}&amp;folder={folder}'
+        resourcePath = '/pdf/{name}/pages/{pageNumber}/fragments/{fragmentNumber}/segments/{segmentNumber}/textFormat/?appSid={appSid}&amp;storage={storage}&amp;folder={folder}'
         
     
         resourcePath = resourcePath.replace('&amp;','&').replace("/?","?").replace("toFormat={toFormat}","format={format}").replace("{path}","{Path}")
@@ -2963,7 +2967,11 @@ class PdfApi(object):
         queryParams = {}
         headerParams = {}
         formParams = {}
-        files = { 'file':open(file, 'rb')}
+        files = {}
+        
+        if file is not None:
+            files = { 'file':open(file, 'rb')}
+            
         bodyParam = None
 
         headerParams['Accept'] = 'application/xml,application/json'
