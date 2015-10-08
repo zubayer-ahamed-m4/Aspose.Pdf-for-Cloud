@@ -3,13 +3,13 @@ __author__ = 'farooq.sheikh'
 from setuptools import setup, find_packages
 
 setup(
-    name = 'asposecloudpdf',
+    name = 'asposepdfcloud',
     packages = find_packages(),
     version = '1.0.0',
     description = 'Aspose.Pdf Cloud SDK for Python allows you to use Aspose.Pdf APIs in your Python applications',
     author='Farooq Sheikh',
     author_email='farooq.sheikh@aspose.com',
-    url='https://github.com/asposepdf/Aspose_Pdf_Cloud/tree/master/SDKs/Aspose.Pdf_Cloud_SDK_For_Python',
+    url='http://www.aspose.com/cloud/pdf-api.aspx',
     install_requires=[
         'asposestoragecloud',
     ],    
