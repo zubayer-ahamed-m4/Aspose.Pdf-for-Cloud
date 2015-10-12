@@ -1973,7 +1973,7 @@ class PdfApi {
             throw new Exception("missing required params");
         }
         //parse inputs
-        $resourcePath = "/pdf/{name}/pages/{pageNumber}/fragments/{fragmentNumber}/segments/{segmentNumber}/texttoFormat/?appSid={appSid}&amp;storage={storage}&amp;folder={folder}";
+        $resourcePath = "/pdf/{name}/pages/{pageNumber}/fragments/{fragmentNumber}/segments/{segmentNumber}/textFormat/?appSid={appSid}&amp;storage={storage}&amp;folder={folder}";
         //$resourcePath = str_replace("{format}", "json", $resourcePath);
         $resourcePath = str_replace("toFormat={toFormat}", "format={format}", str_replace("/?", "?", str_replace("&amp;", "&", str_replace("\\*", "", $resourcePath))));
         $method = "GET";

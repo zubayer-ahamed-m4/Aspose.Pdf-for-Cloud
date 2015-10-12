@@ -13,12 +13,12 @@ class AsposeApp
     /**
      * Represents AppSID for the app.
      */
-    public static $appSID = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx';
+    public static $appSID = '';
 
     /**
      * Represents ApiKey for the app.
      */
-    public static $apiKey = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+    public static $apiKey = '';
 
     /**
      * Location where files get stored
