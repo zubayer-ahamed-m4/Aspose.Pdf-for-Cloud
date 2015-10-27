@@ -1,0 +1,12 @@
+platform :ios, '6.0'
+
+target 'Aspose.Pdf_Cloud_SDK_for_Objective_C' do
+	pod 'AFNetworking', '~> 2.5.0'
+	pod 'JSONModel', '~> 1.1'
+	pod 'ISO8601', '~> 0.3'
+end
+
+target 'Aspose.Pdf_Cloud_SDK_for_Objective_CTests' do
+	pod 'JSONModel', '~> 1.1'
+end
+
