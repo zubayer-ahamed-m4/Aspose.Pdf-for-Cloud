@@ -7,132 +7,132 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301C24111BF9F53800B29A32 /* ASPBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 301C240E1BF9F53800B29A32 /* ASPBaseResponse.m */; };
+		301C24121BF9F53800B29A32 /* ASPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 301C24101BF9F53800B29A32 /* ASPObject.m */; };
+		301C241E1BF9F54300B29A32 /* ASPApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 301C24151BF9F54300B29A32 /* ASPApiClient.m */; };
+		301C241F1BF9F54300B29A32 /* ASPConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 301C24171BF9F54300B29A32 /* ASPConfiguration.m */; };
+		301C24201BF9F54300B29A32 /* ASPJSONRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 301C24191BF9F54300B29A32 /* ASPJSONRequestSerializer.m */; };
+		301C24211BF9F54300B29A32 /* ASPJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 301C241B1BF9F54300B29A32 /* ASPJSONResponseSerializer.m */; };
+		301C24221BF9F54300B29A32 /* ASPQueryParamCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 301C241D1BF9F54300B29A32 /* ASPQueryParamCollection.m */; };
 		30D415CB1BDF977600861253 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D415CA1BDF977600861253 /* main.m */; };
 		30D415CE1BDF977600861253 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D415CD1BDF977600861253 /* AppDelegate.m */; };
 		30D415D11BDF977600861253 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D415D01BDF977600861253 /* ViewController.m */; };
 		30D415D41BDF977600861253 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D415D21BDF977600861253 /* Main.storyboard */; };
 		30D415D61BDF977600861253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D415D51BDF977600861253 /* Assets.xcassets */; };
 		30D415D91BDF977600861253 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D415D71BDF977600861253 /* LaunchScreen.storyboard */; };
-		30D4168F1BDF986000861253 /* ASPPdfApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D415F11BDF986000861253 /* ASPPdfApi.m */; settings = {ASSET_TAGS = (); }; };
-		30D416901BDF986000861253 /* ASPApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D415F41BDF986000861253 /* ASPApiClient.m */; settings = {ASSET_TAGS = (); }; };
-		30D416911BDF986000861253 /* ASPConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D415F61BDF986000861253 /* ASPConfiguration.m */; settings = {ASSET_TAGS = (); }; };
-		30D416921BDF986000861253 /* ASPJSONRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D415F81BDF986000861253 /* ASPJSONRequestSerializer.m */; settings = {ASSET_TAGS = (); }; };
-		30D416931BDF986000861253 /* ASPJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D415FA1BDF986000861253 /* ASPJSONResponseSerializer.m */; settings = {ASSET_TAGS = (); }; };
-		30D416941BDF986000861253 /* ASPQueryParamCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D415FC1BDF986000861253 /* ASPQueryParamCollection.m */; settings = {ASSET_TAGS = (); }; };
-		30D416951BDF986000861253 /* ASPAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D415FF1BDF986000861253 /* ASPAnnotation.m */; settings = {ASSET_TAGS = (); }; };
-		30D416961BDF986000861253 /* ASPAnnotationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416011BDF986000861253 /* ASPAnnotationResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416971BDF986000861253 /* ASPAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416031BDF986000861253 /* ASPAnnotations.m */; settings = {ASSET_TAGS = (); }; };
-		30D416981BDF986000861253 /* ASPAnnotationsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416051BDF986000861253 /* ASPAnnotationsResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416991BDF986000861253 /* ASPAppendDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416071BDF986000861253 /* ASPAppendDocument.m */; settings = {ASSET_TAGS = (); }; };
-		30D4169A1BDF986000861253 /* ASPAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416091BDF986000861253 /* ASPAttachment.m */; settings = {ASSET_TAGS = (); }; };
-		30D4169B1BDF986000861253 /* ASPAttachmentResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4160B1BDF986000861253 /* ASPAttachmentResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D4169C1BDF986000861253 /* ASPAttachments.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4160D1BDF986000861253 /* ASPAttachments.m */; settings = {ASSET_TAGS = (); }; };
-		30D4169D1BDF986000861253 /* ASPAttachmentsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4160F1BDF986000861253 /* ASPAttachmentsResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D4169E1BDF986000861253 /* ASPBarcodeResponseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416111BDF986000861253 /* ASPBarcodeResponseList.m */; settings = {ASSET_TAGS = (); }; };
-		30D4169F1BDF986000861253 /* ASPBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416131BDF986000861253 /* ASPBaseResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416A01BDF986000861253 /* ASPBookmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416151BDF986000861253 /* ASPBookmarks.m */; settings = {ASSET_TAGS = (); }; };
-		30D416A11BDF986000861253 /* ASPBookmarksResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416171BDF986000861253 /* ASPBookmarksResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416A21BDF986000861253 /* ASPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416191BDF986000861253 /* ASPColor.m */; settings = {ASSET_TAGS = (); }; };
-		30D416A31BDF986000861253 /* ASPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4161B1BDF986000861253 /* ASPDocument.m */; settings = {ASSET_TAGS = (); }; };
-		30D416A41BDF986000861253 /* ASPDocumentPagesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4161D1BDF986000861253 /* ASPDocumentPagesResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416A51BDF986000861253 /* ASPDocumentProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4161F1BDF986000861253 /* ASPDocumentProperties.m */; settings = {ASSET_TAGS = (); }; };
-		30D416A61BDF986000861253 /* ASPDocumentPropertiesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416211BDF986000861253 /* ASPDocumentPropertiesResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416A71BDF986000861253 /* ASPDocumentProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416231BDF986000861253 /* ASPDocumentProperty.m */; settings = {ASSET_TAGS = (); }; };
-		30D416A81BDF986000861253 /* ASPDocumentPropertyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416251BDF986000861253 /* ASPDocumentPropertyResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416A91BDF986000861253 /* ASPDocumentResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416271BDF986000861253 /* ASPDocumentResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416AA1BDF986000861253 /* ASPDocumentTextReplaceResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416291BDF986000861253 /* ASPDocumentTextReplaceResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416AB1BDF986000861253 /* ASPField.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4162B1BDF986000861253 /* ASPField.m */; settings = {ASSET_TAGS = (); }; };
-		30D416AC1BDF986000861253 /* ASPFieldResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4162D1BDF986000861253 /* ASPFieldResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416AD1BDF986000861253 /* ASPFields.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4162F1BDF986000861253 /* ASPFields.m */; settings = {ASSET_TAGS = (); }; };
-		30D416AE1BDF986000861253 /* ASPFieldsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416311BDF986000861253 /* ASPFieldsResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416AF1BDF986000861253 /* ASPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416331BDF986000861253 /* ASPImage.m */; settings = {ASSET_TAGS = (); }; };
-		30D416B01BDF986000861253 /* ASPImageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416351BDF986000861253 /* ASPImageResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416B11BDF986000861253 /* ASPImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416371BDF986000861253 /* ASPImages.m */; settings = {ASSET_TAGS = (); }; };
-		30D416B21BDF986000861253 /* ASPImagesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416391BDF986000861253 /* ASPImagesResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416B31BDF986000861253 /* ASPLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4163B1BDF986000861253 /* ASPLink.m */; settings = {ASSET_TAGS = (); }; };
-		30D416B41BDF986000861253 /* ASPLinkAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4163D1BDF986000861253 /* ASPLinkAnnotation.m */; settings = {ASSET_TAGS = (); }; };
-		30D416B51BDF986000861253 /* ASPLinkAnnotationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4163F1BDF986000861253 /* ASPLinkAnnotationResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416B61BDF986000861253 /* ASPLinkAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416411BDF986000861253 /* ASPLinkAnnotations.m */; settings = {ASSET_TAGS = (); }; };
-		30D416B71BDF986000861253 /* ASPLinkAnnotationsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416431BDF986000861253 /* ASPLinkAnnotationsResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416B81BDF986000861253 /* ASPLinkElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416451BDF986000861253 /* ASPLinkElement.m */; settings = {ASSET_TAGS = (); }; };
-		30D416B91BDF986000861253 /* ASPMergeDocuments.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416471BDF986000861253 /* ASPMergeDocuments.m */; settings = {ASSET_TAGS = (); }; };
-		30D416BA1BDF986000861253 /* ASPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416491BDF986000861253 /* ASPObject.m */; settings = {ASSET_TAGS = (); }; };
-		30D416BB1BDF986000861253 /* ASPPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4164B1BDF986000861253 /* ASPPage.m */; settings = {ASSET_TAGS = (); }; };
-		30D416BC1BDF986000861253 /* ASPPages.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4164D1BDF986000861253 /* ASPPages.m */; settings = {ASSET_TAGS = (); }; };
-		30D416BD1BDF986000861253 /* ASPPageTextReplaceResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4164F1BDF986000861253 /* ASPPageTextReplaceResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416BE1BDF986000861253 /* ASPPageWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416511BDF986000861253 /* ASPPageWordCount.m */; settings = {ASSET_TAGS = (); }; };
-		30D416BF1BDF986000861253 /* ASPRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416531BDF986000861253 /* ASPRectangle.m */; settings = {ASSET_TAGS = (); }; };
-		30D416C01BDF986000861253 /* ASPSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416551BDF986000861253 /* ASPSignature.m */; settings = {ASSET_TAGS = (); }; };
-		30D416C11BDF986000861253 /* ASPSplitResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416571BDF986000861253 /* ASPSplitResult.m */; settings = {ASSET_TAGS = (); }; };
-		30D416C21BDF986000861253 /* ASPSplitResultDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416591BDF986000861253 /* ASPSplitResultDocument.m */; settings = {ASSET_TAGS = (); }; };
-		30D416C31BDF986000861253 /* ASPSplitResultResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4165B1BDF986000861253 /* ASPSplitResultResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416C41BDF986000861253 /* ASPStamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4165D1BDF986000861253 /* ASPStamp.m */; settings = {ASSET_TAGS = (); }; };
-		30D416C51BDF986000861253 /* ASPTextFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4165F1BDF986000861253 /* ASPTextFormat.m */; settings = {ASSET_TAGS = (); }; };
-		30D416C61BDF986000861253 /* ASPTextFormatResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416611BDF986000861253 /* ASPTextFormatResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416C71BDF986000861253 /* ASPTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416631BDF986000861253 /* ASPTextItem.m */; settings = {ASSET_TAGS = (); }; };
-		30D416C81BDF986000861253 /* ASPTextItemResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416651BDF986000861253 /* ASPTextItemResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416C91BDF986000861253 /* ASPTextItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416671BDF986000861253 /* ASPTextItems.m */; settings = {ASSET_TAGS = (); }; };
-		30D416CA1BDF986000861253 /* ASPTextItemsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416691BDF986000861253 /* ASPTextItemsResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416CB1BDF986000861253 /* ASPTextReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4166B1BDF986000861253 /* ASPTextReplace.m */; settings = {ASSET_TAGS = (); }; };
-		30D416CC1BDF986000861253 /* ASPTextReplaceListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4166D1BDF986000861253 /* ASPTextReplaceListRequest.m */; settings = {ASSET_TAGS = (); }; };
-		30D416CD1BDF986000861253 /* ASPTextState.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4166F1BDF986000861253 /* ASPTextState.m */; settings = {ASSET_TAGS = (); }; };
-		30D416CE1BDF986000861253 /* ASPTiffExportOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416711BDF986000861253 /* ASPTiffExportOptions.m */; settings = {ASSET_TAGS = (); }; };
-		30D416CF1BDF986000861253 /* ASPWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416731BDF986000861253 /* ASPWordCount.m */; settings = {ASSET_TAGS = (); }; };
-		30D416D01BDF986000861253 /* ASPWordCountResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416751BDF986000861253 /* ASPWordCountResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416D11BDF986000861253 /* JSONValueTransformer+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416771BDF986000861253 /* JSONValueTransformer+ISO8601.m */; settings = {ASSET_TAGS = (); }; };
-		30D416D21BDF986000861253 /* ASPStorageApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4167B1BDF986000861253 /* ASPStorageApi.m */; settings = {ASSET_TAGS = (); }; };
-		30D416D31BDF986000861253 /* ASPDiscUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4167E1BDF986000861253 /* ASPDiscUsage.m */; settings = {ASSET_TAGS = (); }; };
-		30D416D41BDF986000861253 /* ASPDiscUsageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416801BDF986000861253 /* ASPDiscUsageResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416D51BDF986000861253 /* ASPFileExist.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416821BDF986000861253 /* ASPFileExist.m */; settings = {ASSET_TAGS = (); }; };
-		30D416D61BDF986000861253 /* ASPFileExistResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416841BDF986000861253 /* ASPFileExistResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416D71BDF986000861253 /* ASPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416861BDF986000861253 /* ASPFileResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416D81BDF986000861253 /* ASPFileVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416881BDF986000861253 /* ASPFileVersion.m */; settings = {ASSET_TAGS = (); }; };
-		30D416D91BDF986000861253 /* ASPFileVersionsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4168A1BDF986000861253 /* ASPFileVersionsResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416DA1BDF986000861253 /* ASPFolderResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4168C1BDF986000861253 /* ASPFolderResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416DB1BDF986000861253 /* ASPStorageExistResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4168E1BDF986000861253 /* ASPStorageExistResponse.m */; settings = {ASSET_TAGS = (); }; };
-		30D416F41BDF987200861253 /* ASPPdfApiTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416DD1BDF987200861253 /* ASPPdfApiTestCase.m */; settings = {ASSET_TAGS = (); }; };
-		30D416F51BDF987200861253 /* aspose-cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D416DF1BDF987200861253 /* aspose-cloud.png */; settings = {ASSET_TAGS = (); }; };
-		30D416F61BDF987200861253 /* Einstein_JPEG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E01BDF987200861253 /* Einstein_JPEG.jpg */; settings = {ASSET_TAGS = (); }; };
-		30D416F71BDF987200861253 /* Example.svg in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E11BDF987200861253 /* Example.svg */; settings = {ASSET_TAGS = (); }; };
-		30D416F81BDF987200861253 /* pkc7-sample.pfx in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E21BDF987200861253 /* pkc7-sample.pfx */; settings = {ASSET_TAGS = (); }; };
-		30D416F91BDF987200861253 /* Sample-Annotation-Property.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E31BDF987200861253 /* Sample-Annotation-Property.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D416FA1BDF987200861253 /* Sample-Annotation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E41BDF987200861253 /* Sample-Annotation.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D416FB1BDF987200861253 /* Sample-Bookmark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E51BDF987200861253 /* Sample-Bookmark.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D416FC1BDF987200861253 /* sample-document.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E61BDF987200861253 /* sample-document.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D416FD1BDF987200861253 /* sample-field.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E71BDF987200861253 /* sample-field.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D416FE1BDF987200861253 /* sample-home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E81BDF987200861253 /* sample-home.jpg */; settings = {ASSET_TAGS = (); }; };
-		30D416FF1BDF987200861253 /* sample-input.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E91BDF987200861253 /* sample-input.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D417001BDF987200861253 /* sample-merged.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EA1BDF987200861253 /* sample-merged.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D417011BDF987200861253 /* Sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EB1BDF987200861253 /* Sample.html */; settings = {ASSET_TAGS = (); }; };
-		30D417021BDF987200861253 /* Sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EC1BDF987200861253 /* Sample.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D417031BDF987200861253 /* sample.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 30D416ED1BDF987200861253 /* sample.tiff */; settings = {ASSET_TAGS = (); }; };
-		30D417041BDF987200861253 /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EE1BDF987200861253 /* sample.xml */; settings = {ASSET_TAGS = (); }; };
-		30D417051BDF987200861253 /* sample.xsl in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EF1BDF987200861253 /* sample.xsl */; settings = {ASSET_TAGS = (); }; };
-		30D417061BDF987200861253 /* SampleAttachment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F01BDF987200861253 /* SampleAttachment.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D417071BDF987200861253 /* SampleBarCodeImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F11BDF987200861253 /* SampleBarCodeImage.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D417081BDF987200861253 /* SampleContactForm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F21BDF987200861253 /* SampleContactForm.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D417091BDF987200861253 /* SampleImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F31BDF987200861253 /* SampleImage.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D4170A1BDF98FF00861253 /* aspose-cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D416DF1BDF987200861253 /* aspose-cloud.png */; settings = {ASSET_TAGS = (); }; };
-		30D4170B1BDF98FF00861253 /* Einstein_JPEG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E01BDF987200861253 /* Einstein_JPEG.jpg */; settings = {ASSET_TAGS = (); }; };
-		30D4170C1BDF98FF00861253 /* Example.svg in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E11BDF987200861253 /* Example.svg */; settings = {ASSET_TAGS = (); }; };
-		30D4170D1BDF98FF00861253 /* pkc7-sample.pfx in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E21BDF987200861253 /* pkc7-sample.pfx */; settings = {ASSET_TAGS = (); }; };
-		30D4170E1BDF98FF00861253 /* Sample-Annotation-Property.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E31BDF987200861253 /* Sample-Annotation-Property.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D4170F1BDF98FF00861253 /* Sample-Annotation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E41BDF987200861253 /* Sample-Annotation.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D417101BDF98FF00861253 /* Sample-Bookmark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E51BDF987200861253 /* Sample-Bookmark.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D417111BDF98FF00861253 /* sample-document.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E61BDF987200861253 /* sample-document.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D417121BDF98FF00861253 /* sample-field.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E71BDF987200861253 /* sample-field.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D417131BDF98FF00861253 /* sample-home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E81BDF987200861253 /* sample-home.jpg */; settings = {ASSET_TAGS = (); }; };
-		30D417141BDF98FF00861253 /* sample-input.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E91BDF987200861253 /* sample-input.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D417151BDF98FF00861253 /* sample-merged.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EA1BDF987200861253 /* sample-merged.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D417161BDF98FF00861253 /* Sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EB1BDF987200861253 /* Sample.html */; settings = {ASSET_TAGS = (); }; };
-		30D417171BDF98FF00861253 /* Sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EC1BDF987200861253 /* Sample.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D417181BDF98FF00861253 /* sample.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 30D416ED1BDF987200861253 /* sample.tiff */; settings = {ASSET_TAGS = (); }; };
-		30D417191BDF98FF00861253 /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EE1BDF987200861253 /* sample.xml */; settings = {ASSET_TAGS = (); }; };
-		30D4171A1BDF98FF00861253 /* sample.xsl in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EF1BDF987200861253 /* sample.xsl */; settings = {ASSET_TAGS = (); }; };
-		30D4171B1BDF98FF00861253 /* SampleAttachment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F01BDF987200861253 /* SampleAttachment.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D4171C1BDF98FF00861253 /* SampleBarCodeImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F11BDF987200861253 /* SampleBarCodeImage.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D4171D1BDF98FF00861253 /* SampleContactForm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F21BDF987200861253 /* SampleContactForm.pdf */; settings = {ASSET_TAGS = (); }; };
-		30D4171E1BDF98FF00861253 /* SampleImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F31BDF987200861253 /* SampleImage.pdf */; settings = {ASSET_TAGS = (); }; };
+		30D4168F1BDF986000861253 /* ASPPdfApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D415F11BDF986000861253 /* ASPPdfApi.m */; };
+		30D416951BDF986000861253 /* ASPAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D415FF1BDF986000861253 /* ASPAnnotation.m */; };
+		30D416961BDF986000861253 /* ASPAnnotationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416011BDF986000861253 /* ASPAnnotationResponse.m */; };
+		30D416971BDF986000861253 /* ASPAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416031BDF986000861253 /* ASPAnnotations.m */; };
+		30D416981BDF986000861253 /* ASPAnnotationsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416051BDF986000861253 /* ASPAnnotationsResponse.m */; };
+		30D416991BDF986000861253 /* ASPAppendDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416071BDF986000861253 /* ASPAppendDocument.m */; };
+		30D4169A1BDF986000861253 /* ASPAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416091BDF986000861253 /* ASPAttachment.m */; };
+		30D4169B1BDF986000861253 /* ASPAttachmentResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4160B1BDF986000861253 /* ASPAttachmentResponse.m */; };
+		30D4169C1BDF986000861253 /* ASPAttachments.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4160D1BDF986000861253 /* ASPAttachments.m */; };
+		30D4169D1BDF986000861253 /* ASPAttachmentsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4160F1BDF986000861253 /* ASPAttachmentsResponse.m */; };
+		30D4169E1BDF986000861253 /* ASPBarcodeResponseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416111BDF986000861253 /* ASPBarcodeResponseList.m */; };
+		30D416A01BDF986000861253 /* ASPBookmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416151BDF986000861253 /* ASPBookmarks.m */; };
+		30D416A11BDF986000861253 /* ASPBookmarksResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416171BDF986000861253 /* ASPBookmarksResponse.m */; };
+		30D416A21BDF986000861253 /* ASPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416191BDF986000861253 /* ASPColor.m */; };
+		30D416A31BDF986000861253 /* ASPDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4161B1BDF986000861253 /* ASPDocument.m */; };
+		30D416A41BDF986000861253 /* ASPDocumentPagesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4161D1BDF986000861253 /* ASPDocumentPagesResponse.m */; };
+		30D416A51BDF986000861253 /* ASPDocumentProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4161F1BDF986000861253 /* ASPDocumentProperties.m */; };
+		30D416A61BDF986000861253 /* ASPDocumentPropertiesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416211BDF986000861253 /* ASPDocumentPropertiesResponse.m */; };
+		30D416A71BDF986000861253 /* ASPDocumentProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416231BDF986000861253 /* ASPDocumentProperty.m */; };
+		30D416A81BDF986000861253 /* ASPDocumentPropertyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416251BDF986000861253 /* ASPDocumentPropertyResponse.m */; };
+		30D416A91BDF986000861253 /* ASPDocumentResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416271BDF986000861253 /* ASPDocumentResponse.m */; };
+		30D416AA1BDF986000861253 /* ASPDocumentTextReplaceResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416291BDF986000861253 /* ASPDocumentTextReplaceResponse.m */; };
+		30D416AB1BDF986000861253 /* ASPField.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4162B1BDF986000861253 /* ASPField.m */; };
+		30D416AC1BDF986000861253 /* ASPFieldResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4162D1BDF986000861253 /* ASPFieldResponse.m */; };
+		30D416AD1BDF986000861253 /* ASPFields.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4162F1BDF986000861253 /* ASPFields.m */; };
+		30D416AE1BDF986000861253 /* ASPFieldsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416311BDF986000861253 /* ASPFieldsResponse.m */; };
+		30D416AF1BDF986000861253 /* ASPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416331BDF986000861253 /* ASPImage.m */; };
+		30D416B01BDF986000861253 /* ASPImageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416351BDF986000861253 /* ASPImageResponse.m */; };
+		30D416B11BDF986000861253 /* ASPImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416371BDF986000861253 /* ASPImages.m */; };
+		30D416B21BDF986000861253 /* ASPImagesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416391BDF986000861253 /* ASPImagesResponse.m */; };
+		30D416B31BDF986000861253 /* ASPLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4163B1BDF986000861253 /* ASPLink.m */; };
+		30D416B41BDF986000861253 /* ASPLinkAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4163D1BDF986000861253 /* ASPLinkAnnotation.m */; };
+		30D416B51BDF986000861253 /* ASPLinkAnnotationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4163F1BDF986000861253 /* ASPLinkAnnotationResponse.m */; };
+		30D416B61BDF986000861253 /* ASPLinkAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416411BDF986000861253 /* ASPLinkAnnotations.m */; };
+		30D416B71BDF986000861253 /* ASPLinkAnnotationsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416431BDF986000861253 /* ASPLinkAnnotationsResponse.m */; };
+		30D416B81BDF986000861253 /* ASPLinkElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416451BDF986000861253 /* ASPLinkElement.m */; };
+		30D416B91BDF986000861253 /* ASPMergeDocuments.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416471BDF986000861253 /* ASPMergeDocuments.m */; };
+		30D416BB1BDF986000861253 /* ASPPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4164B1BDF986000861253 /* ASPPage.m */; };
+		30D416BC1BDF986000861253 /* ASPPages.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4164D1BDF986000861253 /* ASPPages.m */; };
+		30D416BD1BDF986000861253 /* ASPPageTextReplaceResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4164F1BDF986000861253 /* ASPPageTextReplaceResponse.m */; };
+		30D416BE1BDF986000861253 /* ASPPageWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416511BDF986000861253 /* ASPPageWordCount.m */; };
+		30D416BF1BDF986000861253 /* ASPRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416531BDF986000861253 /* ASPRectangle.m */; };
+		30D416C01BDF986000861253 /* ASPSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416551BDF986000861253 /* ASPSignature.m */; };
+		30D416C11BDF986000861253 /* ASPSplitResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416571BDF986000861253 /* ASPSplitResult.m */; };
+		30D416C21BDF986000861253 /* ASPSplitResultDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416591BDF986000861253 /* ASPSplitResultDocument.m */; };
+		30D416C31BDF986000861253 /* ASPSplitResultResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4165B1BDF986000861253 /* ASPSplitResultResponse.m */; };
+		30D416C41BDF986000861253 /* ASPStamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4165D1BDF986000861253 /* ASPStamp.m */; };
+		30D416C51BDF986000861253 /* ASPTextFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4165F1BDF986000861253 /* ASPTextFormat.m */; };
+		30D416C61BDF986000861253 /* ASPTextFormatResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416611BDF986000861253 /* ASPTextFormatResponse.m */; };
+		30D416C71BDF986000861253 /* ASPTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416631BDF986000861253 /* ASPTextItem.m */; };
+		30D416C81BDF986000861253 /* ASPTextItemResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416651BDF986000861253 /* ASPTextItemResponse.m */; };
+		30D416C91BDF986000861253 /* ASPTextItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416671BDF986000861253 /* ASPTextItems.m */; };
+		30D416CA1BDF986000861253 /* ASPTextItemsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416691BDF986000861253 /* ASPTextItemsResponse.m */; };
+		30D416CB1BDF986000861253 /* ASPTextReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4166B1BDF986000861253 /* ASPTextReplace.m */; };
+		30D416CC1BDF986000861253 /* ASPTextReplaceListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4166D1BDF986000861253 /* ASPTextReplaceListRequest.m */; };
+		30D416CD1BDF986000861253 /* ASPTextState.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4166F1BDF986000861253 /* ASPTextState.m */; };
+		30D416CE1BDF986000861253 /* ASPTiffExportOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416711BDF986000861253 /* ASPTiffExportOptions.m */; };
+		30D416CF1BDF986000861253 /* ASPWordCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416731BDF986000861253 /* ASPWordCount.m */; };
+		30D416D01BDF986000861253 /* ASPWordCountResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416751BDF986000861253 /* ASPWordCountResponse.m */; };
+		30D416D11BDF986000861253 /* JSONValueTransformer+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416771BDF986000861253 /* JSONValueTransformer+ISO8601.m */; };
+		30D416D21BDF986000861253 /* ASPStorageApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4167B1BDF986000861253 /* ASPStorageApi.m */; };
+		30D416D31BDF986000861253 /* ASPDiscUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4167E1BDF986000861253 /* ASPDiscUsage.m */; };
+		30D416D41BDF986000861253 /* ASPDiscUsageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416801BDF986000861253 /* ASPDiscUsageResponse.m */; };
+		30D416D51BDF986000861253 /* ASPFileExist.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416821BDF986000861253 /* ASPFileExist.m */; };
+		30D416D61BDF986000861253 /* ASPFileExistResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416841BDF986000861253 /* ASPFileExistResponse.m */; };
+		30D416D71BDF986000861253 /* ASPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416861BDF986000861253 /* ASPFileResponse.m */; };
+		30D416D81BDF986000861253 /* ASPFileVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416881BDF986000861253 /* ASPFileVersion.m */; };
+		30D416D91BDF986000861253 /* ASPFileVersionsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4168A1BDF986000861253 /* ASPFileVersionsResponse.m */; };
+		30D416DA1BDF986000861253 /* ASPFolderResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4168C1BDF986000861253 /* ASPFolderResponse.m */; };
+		30D416DB1BDF986000861253 /* ASPStorageExistResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D4168E1BDF986000861253 /* ASPStorageExistResponse.m */; };
+		30D416F41BDF987200861253 /* ASPPdfApiTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D416DD1BDF987200861253 /* ASPPdfApiTestCase.m */; };
+		30D416F51BDF987200861253 /* aspose-cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D416DF1BDF987200861253 /* aspose-cloud.png */; };
+		30D416F61BDF987200861253 /* Einstein_JPEG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E01BDF987200861253 /* Einstein_JPEG.jpg */; };
+		30D416F71BDF987200861253 /* Example.svg in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E11BDF987200861253 /* Example.svg */; };
+		30D416F81BDF987200861253 /* pkc7-sample.pfx in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E21BDF987200861253 /* pkc7-sample.pfx */; };
+		30D416F91BDF987200861253 /* Sample-Annotation-Property.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E31BDF987200861253 /* Sample-Annotation-Property.pdf */; };
+		30D416FA1BDF987200861253 /* Sample-Annotation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E41BDF987200861253 /* Sample-Annotation.pdf */; };
+		30D416FB1BDF987200861253 /* Sample-Bookmark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E51BDF987200861253 /* Sample-Bookmark.pdf */; };
+		30D416FC1BDF987200861253 /* sample-document.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E61BDF987200861253 /* sample-document.pdf */; };
+		30D416FD1BDF987200861253 /* sample-field.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E71BDF987200861253 /* sample-field.pdf */; };
+		30D416FE1BDF987200861253 /* sample-home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E81BDF987200861253 /* sample-home.jpg */; };
+		30D416FF1BDF987200861253 /* sample-input.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E91BDF987200861253 /* sample-input.pdf */; };
+		30D417001BDF987200861253 /* sample-merged.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EA1BDF987200861253 /* sample-merged.pdf */; };
+		30D417011BDF987200861253 /* Sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EB1BDF987200861253 /* Sample.html */; };
+		30D417021BDF987200861253 /* Sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EC1BDF987200861253 /* Sample.pdf */; };
+		30D417031BDF987200861253 /* sample.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 30D416ED1BDF987200861253 /* sample.tiff */; };
+		30D417041BDF987200861253 /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EE1BDF987200861253 /* sample.xml */; };
+		30D417051BDF987200861253 /* sample.xsl in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EF1BDF987200861253 /* sample.xsl */; };
+		30D417061BDF987200861253 /* SampleAttachment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F01BDF987200861253 /* SampleAttachment.pdf */; };
+		30D417071BDF987200861253 /* SampleBarCodeImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F11BDF987200861253 /* SampleBarCodeImage.pdf */; };
+		30D417081BDF987200861253 /* SampleContactForm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F21BDF987200861253 /* SampleContactForm.pdf */; };
+		30D417091BDF987200861253 /* SampleImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F31BDF987200861253 /* SampleImage.pdf */; };
+		30D4170A1BDF98FF00861253 /* aspose-cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 30D416DF1BDF987200861253 /* aspose-cloud.png */; };
+		30D4170B1BDF98FF00861253 /* Einstein_JPEG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E01BDF987200861253 /* Einstein_JPEG.jpg */; };
+		30D4170C1BDF98FF00861253 /* Example.svg in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E11BDF987200861253 /* Example.svg */; };
+		30D4170D1BDF98FF00861253 /* pkc7-sample.pfx in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E21BDF987200861253 /* pkc7-sample.pfx */; };
+		30D4170E1BDF98FF00861253 /* Sample-Annotation-Property.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E31BDF987200861253 /* Sample-Annotation-Property.pdf */; };
+		30D4170F1BDF98FF00861253 /* Sample-Annotation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E41BDF987200861253 /* Sample-Annotation.pdf */; };
+		30D417101BDF98FF00861253 /* Sample-Bookmark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E51BDF987200861253 /* Sample-Bookmark.pdf */; };
+		30D417111BDF98FF00861253 /* sample-document.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E61BDF987200861253 /* sample-document.pdf */; };
+		30D417121BDF98FF00861253 /* sample-field.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E71BDF987200861253 /* sample-field.pdf */; };
+		30D417131BDF98FF00861253 /* sample-home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E81BDF987200861253 /* sample-home.jpg */; };
+		30D417141BDF98FF00861253 /* sample-input.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416E91BDF987200861253 /* sample-input.pdf */; };
+		30D417151BDF98FF00861253 /* sample-merged.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EA1BDF987200861253 /* sample-merged.pdf */; };
+		30D417161BDF98FF00861253 /* Sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EB1BDF987200861253 /* Sample.html */; };
+		30D417171BDF98FF00861253 /* Sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EC1BDF987200861253 /* Sample.pdf */; };
+		30D417181BDF98FF00861253 /* sample.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 30D416ED1BDF987200861253 /* sample.tiff */; };
+		30D417191BDF98FF00861253 /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EE1BDF987200861253 /* sample.xml */; };
+		30D4171A1BDF98FF00861253 /* sample.xsl in Resources */ = {isa = PBXBuildFile; fileRef = 30D416EF1BDF987200861253 /* sample.xsl */; };
+		30D4171B1BDF98FF00861253 /* SampleAttachment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F01BDF987200861253 /* SampleAttachment.pdf */; };
+		30D4171C1BDF98FF00861253 /* SampleBarCodeImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F11BDF987200861253 /* SampleBarCodeImage.pdf */; };
+		30D4171D1BDF98FF00861253 /* SampleContactForm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F21BDF987200861253 /* SampleContactForm.pdf */; };
+		30D4171E1BDF98FF00861253 /* SampleImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F31BDF987200861253 /* SampleImage.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +146,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		301C240D1BF9F53800B29A32 /* ASPBaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPBaseResponse.h; sourceTree = "<group>"; };
+		301C240E1BF9F53800B29A32 /* ASPBaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPBaseResponse.m; sourceTree = "<group>"; };
+		301C240F1BF9F53800B29A32 /* ASPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPObject.h; sourceTree = "<group>"; };
+		301C24101BF9F53800B29A32 /* ASPObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPObject.m; sourceTree = "<group>"; };
+		301C24141BF9F54300B29A32 /* ASPApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPApiClient.h; sourceTree = "<group>"; };
+		301C24151BF9F54300B29A32 /* ASPApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPApiClient.m; sourceTree = "<group>"; };
+		301C24161BF9F54300B29A32 /* ASPConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPConfiguration.h; sourceTree = "<group>"; };
+		301C24171BF9F54300B29A32 /* ASPConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPConfiguration.m; sourceTree = "<group>"; };
+		301C24181BF9F54300B29A32 /* ASPJSONRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPJSONRequestSerializer.h; sourceTree = "<group>"; };
+		301C24191BF9F54300B29A32 /* ASPJSONRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPJSONRequestSerializer.m; sourceTree = "<group>"; };
+		301C241A1BF9F54300B29A32 /* ASPJSONResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPJSONResponseSerializer.h; sourceTree = "<group>"; };
+		301C241B1BF9F54300B29A32 /* ASPJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPJSONResponseSerializer.m; sourceTree = "<group>"; };
+		301C241C1BF9F54300B29A32 /* ASPQueryParamCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPQueryParamCollection.h; sourceTree = "<group>"; };
+		301C241D1BF9F54300B29A32 /* ASPQueryParamCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPQueryParamCollection.m; sourceTree = "<group>"; };
 		30D415C61BDF977600861253 /* Aspose.Pdf_Cloud_SDK_for_Objective_C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aspose.Pdf_Cloud_SDK_for_Objective_C.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D415CA1BDF977600861253 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		30D415CC1BDF977600861253 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -160,16 +174,6 @@
 		30D415E51BDF977600861253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30D415F01BDF986000861253 /* ASPPdfApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPPdfApi.h; sourceTree = "<group>"; };
 		30D415F11BDF986000861253 /* ASPPdfApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPPdfApi.m; sourceTree = "<group>"; };
-		30D415F31BDF986000861253 /* ASPApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPApiClient.h; sourceTree = "<group>"; };
-		30D415F41BDF986000861253 /* ASPApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPApiClient.m; sourceTree = "<group>"; };
-		30D415F51BDF986000861253 /* ASPConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPConfiguration.h; sourceTree = "<group>"; };
-		30D415F61BDF986000861253 /* ASPConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPConfiguration.m; sourceTree = "<group>"; };
-		30D415F71BDF986000861253 /* ASPJSONRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPJSONRequestSerializer.h; sourceTree = "<group>"; };
-		30D415F81BDF986000861253 /* ASPJSONRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPJSONRequestSerializer.m; sourceTree = "<group>"; };
-		30D415F91BDF986000861253 /* ASPJSONResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPJSONResponseSerializer.h; sourceTree = "<group>"; };
-		30D415FA1BDF986000861253 /* ASPJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPJSONResponseSerializer.m; sourceTree = "<group>"; };
-		30D415FB1BDF986000861253 /* ASPQueryParamCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPQueryParamCollection.h; sourceTree = "<group>"; };
-		30D415FC1BDF986000861253 /* ASPQueryParamCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPQueryParamCollection.m; sourceTree = "<group>"; };
 		30D415FE1BDF986000861253 /* ASPAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPAnnotation.h; sourceTree = "<group>"; };
 		30D415FF1BDF986000861253 /* ASPAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPAnnotation.m; sourceTree = "<group>"; };
 		30D416001BDF986000861253 /* ASPAnnotationResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPAnnotationResponse.h; sourceTree = "<group>"; };
@@ -190,8 +194,6 @@
 		30D4160F1BDF986000861253 /* ASPAttachmentsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPAttachmentsResponse.m; sourceTree = "<group>"; };
 		30D416101BDF986000861253 /* ASPBarcodeResponseList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPBarcodeResponseList.h; sourceTree = "<group>"; };
 		30D416111BDF986000861253 /* ASPBarcodeResponseList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPBarcodeResponseList.m; sourceTree = "<group>"; };
-		30D416121BDF986000861253 /* ASPBaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPBaseResponse.h; sourceTree = "<group>"; };
-		30D416131BDF986000861253 /* ASPBaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPBaseResponse.m; sourceTree = "<group>"; };
 		30D416141BDF986000861253 /* ASPBookmarks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPBookmarks.h; sourceTree = "<group>"; };
 		30D416151BDF986000861253 /* ASPBookmarks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPBookmarks.m; sourceTree = "<group>"; };
 		30D416161BDF986000861253 /* ASPBookmarksResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPBookmarksResponse.h; sourceTree = "<group>"; };
@@ -244,8 +246,6 @@
 		30D416451BDF986000861253 /* ASPLinkElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPLinkElement.m; sourceTree = "<group>"; };
 		30D416461BDF986000861253 /* ASPMergeDocuments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPMergeDocuments.h; sourceTree = "<group>"; };
 		30D416471BDF986000861253 /* ASPMergeDocuments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPMergeDocuments.m; sourceTree = "<group>"; };
-		30D416481BDF986000861253 /* ASPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPObject.h; sourceTree = "<group>"; };
-		30D416491BDF986000861253 /* ASPObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPObject.m; sourceTree = "<group>"; };
 		30D4164A1BDF986000861253 /* ASPPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPPage.h; sourceTree = "<group>"; };
 		30D4164B1BDF986000861253 /* ASPPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPPage.m; sourceTree = "<group>"; };
 		30D4164C1BDF986000861253 /* ASPPages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPPages.h; sourceTree = "<group>"; };
@@ -354,6 +354,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301C24131BF9F54300B29A32 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				301C24141BF9F54300B29A32 /* ASPApiClient.h */,
+				301C24151BF9F54300B29A32 /* ASPApiClient.m */,
+				301C24161BF9F54300B29A32 /* ASPConfiguration.h */,
+				301C24171BF9F54300B29A32 /* ASPConfiguration.m */,
+				301C24181BF9F54300B29A32 /* ASPJSONRequestSerializer.h */,
+				301C24191BF9F54300B29A32 /* ASPJSONRequestSerializer.m */,
+				301C241A1BF9F54300B29A32 /* ASPJSONResponseSerializer.h */,
+				301C241B1BF9F54300B29A32 /* ASPJSONResponseSerializer.m */,
+				301C241C1BF9F54300B29A32 /* ASPQueryParamCollection.h */,
+				301C241D1BF9F54300B29A32 /* ASPQueryParamCollection.m */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
 		30D415BD1BDF977600861253 = {
 			isa = PBXGroup;
 			children = (
@@ -412,7 +429,6 @@
 			isa = PBXGroup;
 			children = (
 				30D415EF1BDF986000861253 /* api */,
-				30D415F21BDF986000861253 /* client */,
 				30D415FD1BDF986000861253 /* model */,
 			);
 			path = pdf;
@@ -425,23 +441,6 @@
 				30D415F11BDF986000861253 /* ASPPdfApi.m */,
 			);
 			path = api;
-			sourceTree = "<group>";
-		};
-		30D415F21BDF986000861253 /* client */ = {
-			isa = PBXGroup;
-			children = (
-				30D415F31BDF986000861253 /* ASPApiClient.h */,
-				30D415F41BDF986000861253 /* ASPApiClient.m */,
-				30D415F51BDF986000861253 /* ASPConfiguration.h */,
-				30D415F61BDF986000861253 /* ASPConfiguration.m */,
-				30D415F71BDF986000861253 /* ASPJSONRequestSerializer.h */,
-				30D415F81BDF986000861253 /* ASPJSONRequestSerializer.m */,
-				30D415F91BDF986000861253 /* ASPJSONResponseSerializer.h */,
-				30D415FA1BDF986000861253 /* ASPJSONResponseSerializer.m */,
-				30D415FB1BDF986000861253 /* ASPQueryParamCollection.h */,
-				30D415FC1BDF986000861253 /* ASPQueryParamCollection.m */,
-			);
-			path = client;
 			sourceTree = "<group>";
 		};
 		30D415FD1BDF986000861253 /* model */ = {
@@ -467,8 +466,6 @@
 				30D4160F1BDF986000861253 /* ASPAttachmentsResponse.m */,
 				30D416101BDF986000861253 /* ASPBarcodeResponseList.h */,
 				30D416111BDF986000861253 /* ASPBarcodeResponseList.m */,
-				30D416121BDF986000861253 /* ASPBaseResponse.h */,
-				30D416131BDF986000861253 /* ASPBaseResponse.m */,
 				30D416141BDF986000861253 /* ASPBookmarks.h */,
 				30D416151BDF986000861253 /* ASPBookmarks.m */,
 				30D416161BDF986000861253 /* ASPBookmarksResponse.h */,
@@ -521,8 +518,6 @@
 				30D416451BDF986000861253 /* ASPLinkElement.m */,
 				30D416461BDF986000861253 /* ASPMergeDocuments.h */,
 				30D416471BDF986000861253 /* ASPMergeDocuments.m */,
-				30D416481BDF986000861253 /* ASPObject.h */,
-				30D416491BDF986000861253 /* ASPObject.m */,
 				30D4164A1BDF986000861253 /* ASPPage.h */,
 				30D4164B1BDF986000861253 /* ASPPage.m */,
 				30D4164C1BDF986000861253 /* ASPPages.h */,
@@ -577,6 +572,7 @@
 			isa = PBXGroup;
 			children = (
 				30D416791BDF986000861253 /* api */,
+				301C24131BF9F54300B29A32 /* client */,
 				30D4167C1BDF986000861253 /* model */,
 			);
 			path = storage;
@@ -594,6 +590,10 @@
 		30D4167C1BDF986000861253 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				301C240D1BF9F53800B29A32 /* ASPBaseResponse.h */,
+				301C240E1BF9F53800B29A32 /* ASPBaseResponse.m */,
+				301C240F1BF9F53800B29A32 /* ASPObject.h */,
+				301C24101BF9F53800B29A32 /* ASPObject.m */,
 				30D4167D1BDF986000861253 /* ASPDiscUsage.h */,
 				30D4167E1BDF986000861253 /* ASPDiscUsage.m */,
 				30D4167F1BDF986000861253 /* ASPDiscUsageResponse.h */,
@@ -794,7 +794,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30D416921BDF986000861253 /* ASPJSONRequestSerializer.m in Sources */,
 				30D416991BDF986000861253 /* ASPAppendDocument.m in Sources */,
 				30D416C61BDF986000861253 /* ASPTextFormatResponse.m in Sources */,
 				30D416CC1BDF986000861253 /* ASPTextReplaceListRequest.m in Sources */,
@@ -802,9 +801,11 @@
 				30D4169A1BDF986000861253 /* ASPAttachment.m in Sources */,
 				30D4169C1BDF986000861253 /* ASPAttachments.m in Sources */,
 				30D416961BDF986000861253 /* ASPAnnotationResponse.m in Sources */,
+				301C24211BF9F54300B29A32 /* ASPJSONResponseSerializer.m in Sources */,
 				30D416D11BDF986000861253 /* JSONValueTransformer+ISO8601.m in Sources */,
 				30D416B21BDF986000861253 /* ASPImagesResponse.m in Sources */,
 				30D416C41BDF986000861253 /* ASPStamp.m in Sources */,
+				301C24201BF9F54300B29A32 /* ASPJSONRequestSerializer.m in Sources */,
 				30D416D71BDF986000861253 /* ASPFileResponse.m in Sources */,
 				30D416B11BDF986000861253 /* ASPImages.m in Sources */,
 				30D415D11BDF977600861253 /* ViewController.m in Sources */,
@@ -831,29 +832,28 @@
 				30D416C01BDF986000861253 /* ASPSignature.m in Sources */,
 				30D416B51BDF986000861253 /* ASPLinkAnnotationResponse.m in Sources */,
 				30D416D51BDF986000861253 /* ASPFileExist.m in Sources */,
+				301C241F1BF9F54300B29A32 /* ASPConfiguration.m in Sources */,
 				30D416D01BDF986000861253 /* ASPWordCountResponse.m in Sources */,
 				30D416B81BDF986000861253 /* ASPLinkElement.m in Sources */,
 				30D416A81BDF986000861253 /* ASPDocumentPropertyResponse.m in Sources */,
 				30D416C91BDF986000861253 /* ASPTextItems.m in Sources */,
 				30D416C11BDF986000861253 /* ASPSplitResult.m in Sources */,
-				30D416911BDF986000861253 /* ASPConfiguration.m in Sources */,
 				30D416C81BDF986000861253 /* ASPTextItemResponse.m in Sources */,
 				30D416A21BDF986000861253 /* ASPColor.m in Sources */,
 				30D416D61BDF986000861253 /* ASPFileExistResponse.m in Sources */,
 				30D416981BDF986000861253 /* ASPAnnotationsResponse.m in Sources */,
 				30D416A91BDF986000861253 /* ASPDocumentResponse.m in Sources */,
 				30D416AA1BDF986000861253 /* ASPDocumentTextReplaceResponse.m in Sources */,
-				30D416931BDF986000861253 /* ASPJSONResponseSerializer.m in Sources */,
 				30D416BD1BDF986000861253 /* ASPPageTextReplaceResponse.m in Sources */,
 				30D416AD1BDF986000861253 /* ASPFields.m in Sources */,
 				30D416B01BDF986000861253 /* ASPImageResponse.m in Sources */,
-				30D416BA1BDF986000861253 /* ASPObject.m in Sources */,
+				301C241E1BF9F54300B29A32 /* ASPApiClient.m in Sources */,
 				30D416CE1BDF986000861253 /* ASPTiffExportOptions.m in Sources */,
 				30D416C51BDF986000861253 /* ASPTextFormat.m in Sources */,
+				301C24121BF9F53800B29A32 /* ASPObject.m in Sources */,
 				30D416D91BDF986000861253 /* ASPFileVersionsResponse.m in Sources */,
-				30D416901BDF986000861253 /* ASPApiClient.m in Sources */,
 				30D416DA1BDF986000861253 /* ASPFolderResponse.m in Sources */,
-				30D416941BDF986000861253 /* ASPQueryParamCollection.m in Sources */,
+				301C24111BF9F53800B29A32 /* ASPBaseResponse.m in Sources */,
 				30D416D31BDF986000861253 /* ASPDiscUsage.m in Sources */,
 				30D416CB1BDF986000861253 /* ASPTextReplace.m in Sources */,
 				30D416B61BDF986000861253 /* ASPLinkAnnotations.m in Sources */,
@@ -866,10 +866,10 @@
 				30D416C31BDF986000861253 /* ASPSplitResultResponse.m in Sources */,
 				30D416C21BDF986000861253 /* ASPSplitResultDocument.m in Sources */,
 				30D416CD1BDF986000861253 /* ASPTextState.m in Sources */,
-				30D4169F1BDF986000861253 /* ASPBaseResponse.m in Sources */,
 				30D416DB1BDF986000861253 /* ASPStorageExistResponse.m in Sources */,
 				30D416951BDF986000861253 /* ASPAnnotation.m in Sources */,
 				30D416B91BDF986000861253 /* ASPMergeDocuments.m in Sources */,
+				301C24221BF9F54300B29A32 /* ASPQueryParamCollection.m in Sources */,
 				30D416CA1BDF986000861253 /* ASPTextItemsResponse.m in Sources */,
 				30D416A41BDF986000861253 /* ASPDocumentPagesResponse.m in Sources */,
 				30D416CF1BDF986000861253 /* ASPWordCount.m in Sources */,
@@ -1062,6 +1062,7 @@
 				30D415EA1BDF977600861253 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30D415EB1BDF977600861253 /* Build configuration list for PBXNativeTarget "Aspose.Pdf_Cloud_SDK_for_Objective_CTests" */ = {
 			isa = XCConfigurationList;
@@ -1070,6 +1071,7 @@
 				30D415ED1BDF977600861253 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

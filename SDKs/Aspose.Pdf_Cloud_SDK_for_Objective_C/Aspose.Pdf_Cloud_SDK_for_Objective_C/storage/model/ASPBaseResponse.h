@@ -19,6 +19,4 @@
 
 @property(nonatomic) NSString* status;
 
-@property(nonatomic) NSString* message;
-
 @end
