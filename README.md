@@ -13,10 +13,12 @@ Aspose.Pdf for Cloud is implemented as a REST API. If you use SDK, it hides the 
 
 Directory | Description
 --------- | -----------
-[Java SDK](https://github.com/asposepdf/Aspose_Pdf_Cloud/tree/master/SDKs/Aspose.Pdf_Cloud_SDK_for_Java)  |  Aspose.Pdf Cloud SDK for Java.
-[PHP SDK](https://github.com/asposepdf/Aspose_Pdf_Cloud/tree/master/SDKs/Aspose.Pdf_Cloud_SDK_for_PHP)  | Aspose.Pdf Cloud SDK for PHP.
-[Python SDK](https://github.com/asposepdf/Aspose_Pdf_Cloud/tree/master/SDKs/Aspose.Pdf_Cloud_SDK_for_Python)  | Aspose.Pdf Cloud SDK for Python.
-[Objective C SDK](https://github.com/asposepdf/Aspose_Pdf_Cloud/tree/master/SDKs/Aspose.Pdf_Cloud_SDK_for_Objective_C)  | Aspose.Pdf Cloud SDK for Objective C.
+[Java SDK](SDKs/Aspose.Pdf_Cloud_SDK_for_Java)  |  Aspose.Pdf Cloud SDK for Java.
+[PHP SDK](SDKs/Aspose.Pdf_Cloud_SDK_for_PHP)  | Aspose.Pdf Cloud SDK for PHP.
+[Python SDK](SDKs/Aspose.Pdf_Cloud_SDK_for_Python)  | Aspose.Pdf Cloud SDK for Python.
+[Objective C SDK](SDKs/Aspose.Pdf_Cloud_SDK_for_Objective_C)  | Aspose.Pdf Cloud SDK for Objective C.
+[Node.js SDK](SDKs/Aspose.Pdf_Cloud_SDK_for_NodeJS)  | Aspose.Pdf Cloud SDK for Node.js.
+
 ## Resources
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
