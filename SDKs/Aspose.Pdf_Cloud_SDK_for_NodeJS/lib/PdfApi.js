@@ -18,7 +18,7 @@ function PdfApi(config) {
 * @param  (String) format  -  The format to convert. (optional) 
 * @param  (String) url  -   (optional) 
 * @param  (String) outPath  -  Path to save result (optional) 
-* @param  (File) file  -   (required) 
+* @param  (File) file   
 * @returns ResponseMessage (Map)
 */
 PdfApi.prototype.PutConvertDocument = function(format, url, outPath, file, callback) {
@@ -26,9 +26,6 @@ PdfApi.prototype.PutConvertDocument = function(format, url, outPath, file, callb
     var self = this;
 	   	
 	
-	if( typeof file === 'undefined' || file === null && file === ''){
-		throw new Error('missing required file.');
-    }	
 	var resourcePath = '/pdf/convert/?appSid={appSid}&amp;toFormat={toFormat}&amp;url={url}&amp;outPath={outPath}';
 	
 	resourcePath = resourcePath.replace(new RegExp('\\*', 'g'), "");
@@ -2718,7 +2715,7 @@ PdfApi.prototype.GetImages = function(name, pageNumber, storage, folder, callbac
 * @param  (String) imageFile  -  Path to image file if specified. Request content is used otherwise. (optional) 
 * @param  (String) storage  -  The document storage. (optional) 
 * @param  (String) folder  -  The document folder. (optional) 
-* @param  (File) file  -   (required) 
+* @param  (File) file  -    
 * @returns ImageResponse (Map)
 */
 PdfApi.prototype.PostReplaceImage = function(name, pageNumber, imageNumber, imageFile, storage, folder, file, callback) {
