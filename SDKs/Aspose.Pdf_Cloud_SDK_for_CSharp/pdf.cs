@@ -14,8 +14,8 @@ namespace AsposePDF
 public static void Main(String[] args)
 {
 
-string APIKEY = "76706419dc70d5a2c37421570d1405c8";
-string APPSID = "b8d0bf27-62f0-4b5c-a9d7-83268ac53861";
+string APIKEY = "xxxxx";
+string APPSID = "xxxxx";
 string BASEPATH = "http://api.aspose.com/v1.1";
 
             ////try
