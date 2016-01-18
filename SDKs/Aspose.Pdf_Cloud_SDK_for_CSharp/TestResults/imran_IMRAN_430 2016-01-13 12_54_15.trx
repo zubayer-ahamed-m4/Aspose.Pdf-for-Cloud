@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9c20c709-ff91-4d7d-97f1-849a1c36bbbd" name="imran@IMRAN_430 2016-01-13 12:54:15" runUser="IMRAN_430\imran" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0f063a22-b4ba-4613-a4a2-0f24466c04ba">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="imran_IMRAN_430 2016-01-13 12_54_15">
+      <DeploymentItem filename="D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\bin\Debug\ConsoleApplication.exe" />
+      <DeploymentItem filename="D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\packages\LinqBridge.1.3.0\lib\net20\LinqBridge.dll" />
+      <DeploymentItem filename="D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\packages\Aspose.Storage_Cloud.1.0.0\lib\Aspose.Storage_Cloud.dll" />
+      <DeploymentItem filename="D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\bin\Newtonsoft.Json.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2016-01-13T12:54:15.5202328+05:00" queuing="2016-01-13T12:54:15.5517564+05:00" start="2016-01-13T12:54:15.5557596+05:00" finish="2016-01-13T12:54:22.2203862+05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestDeleteProperty" storage="d:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\pdftest\bin\debug\pdftest.dll" id="4ef86ff8-465c-b4ef-9960-5b417177a327">
+      <Execution id="4ea6bce1-ea2b-4929-92e6-c25b9cd7f3bf" />
+      <TestMethod codeBase="D:/aspose/swagger/swagger-codegen-2.0.17/aspose/csharp/pdf/PDFTest/bin/Debug/PDFTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PDFTest.TestPdfApi, PDFTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDeleteProperty" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4ef86ff8-465c-b4ef-9960-5b417177a327" executionId="4ea6bce1-ea2b-4929-92e6-c25b9cd7f3bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4ea6bce1-ea2b-4929-92e6-c25b9cd7f3bf" testId="4ef86ff8-465c-b4ef-9960-5b417177a327" testName="TestDeleteProperty" computerName="IMRAN_430" duration="00:00:06.4686781" startTime="2016-01-13T12:54:15.5577614+05:00" endTime="2016-01-13T12:54:22.2047914+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ea6bce1-ea2b-4929-92e6-c25b9cd7f3bf">
+    </UnitTestResult>
+  </Results>
+</TestRun>

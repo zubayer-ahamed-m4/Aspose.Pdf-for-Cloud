@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5c3647ac-f2ff-4eec-b6a3-f8e79b151753" name="imran@IMRAN_430 2016-01-15 17:07:22" runUser="IMRAN_430\imran" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0f063a22-b4ba-4613-a4a2-0f24466c04ba">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="imran_IMRAN_430 2016-01-15 17_07_22">
+      <DeploymentItem filename="D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\storage\bin\Debug\Aspose.Storage-Cloud.dll" />
+      <DeploymentItem filename="D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\bin\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\bin\Debug\ConsoleApplication.exe" />
+      <DeploymentItem filename="D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\packages\LinqBridge.1.3.0\lib\net20\LinqBridge.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2016-01-15T17:07:22.7093040+05:00" queuing="2016-01-15T17:07:22.9538065+05:00" start="2016-01-15T17:07:22.9583098+05:00" finish="2016-01-15T17:07:39.8472243+05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestPutUpdateField" storage="d:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\pdftest\bin\debug\pdftest.dll" id="77dcbc6f-1d34-0c2c-d8ac-ec2677c1afae">
+      <Execution id="8410328e-e89a-4a78-ae49-fcc2aefdfa5b" />
+      <TestMethod codeBase="D:/aspose/swagger/swagger-codegen-2.0.17/aspose/csharp/pdf/PDFTest/bin/Debug/PDFTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PDFTest.TestPdfApi, PDFTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestPutUpdateField" />
+    </UnitTest>
+    <UnitTest name="TestPutUpdateFields" storage="d:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\pdftest\bin\debug\pdftest.dll" id="4a1e0c87-93b4-2852-a359-7554778ed935">
+      <Execution id="ffb9c5cc-9f3c-4229-84ab-902adfae951b" />
+      <TestMethod codeBase="D:/aspose/swagger/swagger-codegen-2.0.17/aspose/csharp/pdf/PDFTest/bin/Debug/PDFTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PDFTest.TestPdfApi, PDFTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestPutUpdateFields" />
+    </UnitTest>
+    <UnitTest name="TestPutSetProperty" storage="d:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\pdftest\bin\debug\pdftest.dll" id="f0622397-d5a2-9175-8744-2cadcd55d58e">
+      <Execution id="27845f02-34e7-4ba6-b604-f3b02972bc3d" />
+      <TestMethod codeBase="D:/aspose/swagger/swagger-codegen-2.0.17/aspose/csharp/pdf/PDFTest/bin/Debug/PDFTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PDFTest.TestPdfApi, PDFTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestPutSetProperty" />
+    </UnitTest>
+    <UnitTest name="TestPutPageAddStamp" storage="d:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\pdftest\bin\debug\pdftest.dll" id="369d6cb1-d255-4a7c-e78e-3b2f13d5db34">
+      <Execution id="d855dc20-b239-4aa7-99bd-aed22f8df908" />
+      <TestMethod codeBase="D:/aspose/swagger/swagger-codegen-2.0.17/aspose/csharp/pdf/PDFTest/bin/Debug/PDFTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PDFTest.TestPdfApi, PDFTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestPutPageAddStamp" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="77dcbc6f-1d34-0c2c-d8ac-ec2677c1afae" executionId="8410328e-e89a-4a78-ae49-fcc2aefdfa5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="369d6cb1-d255-4a7c-e78e-3b2f13d5db34" executionId="d855dc20-b239-4aa7-99bd-aed22f8df908" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4a1e0c87-93b4-2852-a359-7554778ed935" executionId="ffb9c5cc-9f3c-4229-84ab-902adfae951b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f0622397-d5a2-9175-8744-2cadcd55d58e" executionId="27845f02-34e7-4ba6-b604-f3b02972bc3d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8410328e-e89a-4a78-ae49-fcc2aefdfa5b" testId="77dcbc6f-1d34-0c2c-d8ac-ec2677c1afae" testName="TestPutUpdateField" computerName="IMRAN_430" duration="00:00:10.7977913" startTime="2016-01-15T17:07:22.9598123+05:00" endTime="2016-01-15T17:07:33.9223673+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8410328e-e89a-4a78-ae49-fcc2aefdfa5b">
+    </UnitTestResult>
+    <UnitTestResult executionId="d855dc20-b239-4aa7-99bd-aed22f8df908" testId="369d6cb1-d255-4a7c-e78e-3b2f13d5db34" testName="TestPutPageAddStamp" computerName="IMRAN_430" duration="00:00:02.6478744" startTime="2016-01-15T17:07:33.9233514+05:00" endTime="2016-01-15T17:07:36.5748035+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d855dc20-b239-4aa7-99bd-aed22f8df908">
+    </UnitTestResult>
+    <UnitTestResult executionId="ffb9c5cc-9f3c-4229-84ab-902adfae951b" testId="4a1e0c87-93b4-2852-a359-7554778ed935" testName="TestPutUpdateFields" computerName="IMRAN_430" duration="00:00:01.0113535" startTime="2016-01-15T17:07:36.5773063+05:00" endTime="2016-01-15T17:07:37.5953068+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ffb9c5cc-9f3c-4229-84ab-902adfae951b">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method PDFTest.TestPdfApi.TestPutUpdateFields threw exception: 
+Com.Aspose.PDF.ApiException: The remote server returned an error: (400) Bad Request.</Message>
+          <StackTrace>    at Com.Aspose.PDF.Api.PdfApi.PutUpdateFields(String name, String storage, String folder, Fields body) in D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\src\Com\Aspose\PDF\Api\PdfApi.cs:line 1553
+   at PDFTest.TestPdfApi.TestPutUpdateFields() in D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\PDFTest\PdfApiTest.cs:line 1498
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="27845f02-34e7-4ba6-b604-f3b02972bc3d" testId="f0622397-d5a2-9175-8744-2cadcd55d58e" testName="TestPutSetProperty" computerName="IMRAN_430" duration="00:00:02.1935236" startTime="2016-01-15T17:07:37.5962921+05:00" endTime="2016-01-15T17:07:39.7941876+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27845f02-34e7-4ba6-b604-f3b02972bc3d">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method PDFTest.TestPdfApi.TestPutSetProperty threw exception: 
+Com.Aspose.PDF.ApiException: The remote server returned an error: (400) Bad Request.</Message>
+          <StackTrace>    at Com.Aspose.PDF.Api.PdfApi.PutSetProperty(String name, String propertyName, String storage, String folder, DocumentProperty body) in D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\src\Com\Aspose\PDF\Api\PdfApi.cs:line 3336
+   at PDFTest.TestPdfApi.TestPutSetProperty() in D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\PDFTest\PdfApiTest.cs:line 1416
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsposePDF", "AsposePDF.csproj", "{48736F74-C05B-42F9-B4C3-5C8C716C686C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFTest", "PDFTest\PDFTest.csproj", "{E79829AB-E196-4619-A7A9-299E92DFBC00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EA107584-DD21-4852-8191-A9401AA46D18}"
+	ProjectSection(SolutionItems) = preProject
+		AsposePDF.vsmdi = AsposePDF.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = AsposePDF.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48736F74-C05B-42F9-B4C3-5C8C716C686C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{48736F74-C05B-42F9-B4C3-5C8C716C686C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{48736F74-C05B-42F9-B4C3-5C8C716C686C}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{48736F74-C05B-42F9-B4C3-5C8C716C686C}.Debug|x86.ActiveCfg = Debug|x86
+		{48736F74-C05B-42F9-B4C3-5C8C716C686C}.Debug|x86.Build.0 = Debug|x86
+		{48736F74-C05B-42F9-B4C3-5C8C716C686C}.Release|Any CPU.ActiveCfg = Release|x86
+		{48736F74-C05B-42F9-B4C3-5C8C716C686C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{48736F74-C05B-42F9-B4C3-5C8C716C686C}.Release|Mixed Platforms.Build.0 = Release|x86
+		{48736F74-C05B-42F9-B4C3-5C8C716C686C}.Release|x86.ActiveCfg = Release|x86
+		{48736F74-C05B-42F9-B4C3-5C8C716C686C}.Release|x86.Build.0 = Release|x86
+		{E79829AB-E196-4619-A7A9-299E92DFBC00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E79829AB-E196-4619-A7A9-299E92DFBC00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E79829AB-E196-4619-A7A9-299E92DFBC00}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E79829AB-E196-4619-A7A9-299E92DFBC00}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E79829AB-E196-4619-A7A9-299E92DFBC00}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E79829AB-E196-4619-A7A9-299E92DFBC00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E79829AB-E196-4619-A7A9-299E92DFBC00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E79829AB-E196-4619-A7A9-299E92DFBC00}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E79829AB-E196-4619-A7A9-299E92DFBC00}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E79829AB-E196-4619-A7A9-299E92DFBC00}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

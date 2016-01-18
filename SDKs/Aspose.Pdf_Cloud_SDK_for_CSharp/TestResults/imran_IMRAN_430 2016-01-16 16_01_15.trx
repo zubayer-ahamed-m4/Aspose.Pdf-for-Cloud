@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="94d76067-64a5-4734-9b21-48ea8c50e0db" name="imran@IMRAN_430 2016-01-16 16:01:15" runUser="IMRAN_430\imran" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0f063a22-b4ba-4613-a4a2-0f24466c04ba">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="imran_IMRAN_430 2016-01-16 16_01_15">
+      <DeploymentItem filename="D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\storage\bin\Debug\Aspose.Storage-Cloud.dll" />
+      <DeploymentItem filename="D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\bin\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\bin\Debug\ConsoleApplication.exe" />
+      <DeploymentItem filename="D:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\packages\LinqBridge.1.3.0\lib\net20\LinqBridge.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2016-01-16T16:01:15.4071194+05:00" queuing="2016-01-16T16:01:15.4729864+05:00" start="2016-01-16T16:01:15.4775092+05:00" finish="2016-01-16T16:01:17.6003261+05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestPutUpdateFields" storage="d:\aspose\swagger\swagger-codegen-2.0.17\aspose\csharp\pdf\pdftest\bin\debug\pdftest.dll" id="4a1e0c87-93b4-2852-a359-7554778ed935">
+      <Execution id="4df2cf36-4924-49a4-9692-e654acd9d610" />
+      <TestMethod codeBase="D:/aspose/swagger/swagger-codegen-2.0.17/aspose/csharp/pdf/PDFTest/bin/Debug/PDFTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PDFTest.TestPdfApi, PDFTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestPutUpdateFields" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4a1e0c87-93b4-2852-a359-7554778ed935" executionId="4df2cf36-4924-49a4-9692-e654acd9d610" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4df2cf36-4924-49a4-9692-e654acd9d610" testId="4a1e0c87-93b4-2852-a359-7554778ed935" testName="TestPutUpdateFields" computerName="IMRAN_430" duration="00:00:01.9387070" startTime="2016-01-16T16:01:15.4794928+05:00" endTime="2016-01-16T16:01:17.5913367+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4df2cf36-4924-49a4-9692-e654acd9d610">
+      <Output>
+        <DebugTrace>IN INVOKE method
+after SERIALIZE
+GETTING RESPONSE
+GET RESPONSE
+json:{"Fields":{"List":[{"Name":"textbox1","Type":0,"Values":["NewFieldValue"],"SelectedItems":[1],"Rect":{"X":0,"Y":0,"Width":0,"Height":0},"Links":[{"Href":"http://api.aspose.com/v1.1/pdf/ABFillablewfields.pdf/fields/NewField","Rel":"self","Type":"link","Title":"textbox1"}]}],"Links":null},"Code":200,"Status":"OK"}
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
