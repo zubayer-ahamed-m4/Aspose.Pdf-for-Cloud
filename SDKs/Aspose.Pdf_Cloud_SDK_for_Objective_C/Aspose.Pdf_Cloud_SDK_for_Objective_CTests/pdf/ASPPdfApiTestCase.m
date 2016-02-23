@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "ASPStorageApi.h"
 #import "ASPPdfApi.h"
+#import "AppDelegate.h"
 
 @interface ASPPdfApiTestCase : XCTestCase
 @property(nonatomic, strong) ASPPdfApi *pdfApi;
@@ -20,6 +21,8 @@
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
     self.pdfApi = [[ASPPdfApi alloc] init];
+    //Get App key and App SID from https://cloud.aspose.com
+    [ASPApiClient setAppKey:ASPAppKey andAppSID:ASPAppSID];
 }
 
 - (void)tearDown {
