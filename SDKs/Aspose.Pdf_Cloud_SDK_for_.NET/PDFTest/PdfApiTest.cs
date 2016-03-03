@@ -14,7 +14,6 @@ namespace PDFTest
     [TestClass()]
     public class TestPdfApi
     {
-
         protected string APIKEY = "xxxxx";
         protected string APPSID = "xxxxx";
         protected string BASEPATH = "http://api.aspose.com/v1.1";
