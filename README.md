@@ -20,6 +20,7 @@ Directory | Description
 [Python SDK](SDKs/Aspose.Pdf_Cloud_SDK_for_Python)  | Aspose.Pdf Cloud SDK for Python.
 [Objective C SDK](SDKs/Aspose.Pdf_Cloud_SDK_for_Objective_C)  | Aspose.Pdf Cloud SDK for Objective C.
 [Node.js SDK](SDKs/Aspose.Pdf_Cloud_SDK_for_NodeJS)  | Aspose.Pdf Cloud SDK for Node.js.
+[Perl SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Perl)  | Aspose.Pdf Cloud SDK for Perl.
 
 ## Resources
 
