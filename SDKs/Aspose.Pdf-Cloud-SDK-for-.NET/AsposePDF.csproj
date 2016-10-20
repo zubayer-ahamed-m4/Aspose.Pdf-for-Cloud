@@ -4,9 +4,9 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{48736F74-C05B-42F9-B4C3-5C8C716C686C}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <NoStandardLibraries>false</NoStandardLibraries>
-    <AssemblyName>ConsoleApplication</AssemblyName>
+    <AssemblyName>Aspose.Pdf-Cloud</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -34,25 +34,22 @@
   <PropertyGroup>
     <RootNamespace>AsposePDF</RootNamespace>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Storage-Cloud">
-      <HintPath>..\storage\bin\Debug\Aspose.Storage-Cloud.dll</HintPath>
-    </Reference>
-    <Reference Include="LinqBridge, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c2b14eb747628076, processorArchitecture=MSIL">
-      <HintPath>packages\LinqBridge.1.3.0\lib\net20\LinqBridge.dll</HintPath>
+    <Reference Include="Aspose.Storage-Cloud, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>packages\Aspose.Storage-Cloud.1.0.5\lib\Aspose.Storage-Cloud.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net20\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
