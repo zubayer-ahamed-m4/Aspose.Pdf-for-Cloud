@@ -84,7 +84,7 @@ public class PdfApiTest {
 
 	@Before
 	public void setUp() {
-		pdfApi = new PdfApi("http://api.aspose.com/v1.1",apiKey,appSID);
+		pdfApi = new PdfApi("http://api.aspose.cloud/v1.1",apiKey,appSID);
 		
 	}
 

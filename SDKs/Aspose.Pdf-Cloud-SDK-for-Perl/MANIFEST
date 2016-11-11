@@ -108,3 +108,6 @@ t/data/sample.tiff
 t/data/SampleAttachment.pdf
 t/data/SampleBarCodeImage.pdf
 t/data/SampleImage.pdf
+Makefile.PL
+META.yml
+META.json

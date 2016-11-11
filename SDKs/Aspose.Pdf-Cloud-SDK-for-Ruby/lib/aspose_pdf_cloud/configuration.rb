@@ -104,7 +104,7 @@ module AsposePDFCloud
 
     def initialize
       @scheme = 'http'
-      @host = 'api.aspose.com'
+      @host = 'api.aspose.cloud'
       @base_path = '/v1.1'
       @api_key = {}
       @api_key_prefix = {}

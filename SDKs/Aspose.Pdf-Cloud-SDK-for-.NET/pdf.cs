@@ -14,7 +14,7 @@ public static void Main(String[] args)
 
 string APIKEY = "xxxxx";
 string APPSID = "xxxxx";
-string BASEPATH = "http://api.aspose.com/v1.1";
+string BASEPATH = "http://api.aspose.cloud/v1.1";
 
             ////try
             ////{
@@ -2489,7 +2489,7 @@ String folder = "";
 try
 {
     Com.Aspose.PDF.Model.Link link = new Com.Aspose.PDF.Model.Link();
-    link.Href = "http://api.aspose.com/v1.1/pdf/sample-field.pdf/fields/signature";
+    link.Href = "http://api.aspose.cloud/v1.1/pdf/sample-field.pdf/fields/signature";
     link.Rel = "self";
     link.Title = "NewField";
     link.Type = "0";
