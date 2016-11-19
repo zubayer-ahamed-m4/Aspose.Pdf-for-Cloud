@@ -15,11 +15,12 @@ Directory | Description
 --------- | -----------
 [.NET SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-.NET)  |  Aspose.Pdf Cloud SDK for .NET.
 [Java SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Java)  |  Aspose.Pdf Cloud SDK for Java.
-[Android SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Android)  |  Aspose.Pdf Cloud SDK for Android.
 [PHP SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-PHP)  | Aspose.Pdf Cloud SDK for PHP.
+[Ruby SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Ruby) | Aspose.Pdf Cloud SDK for Ruby.
 [Python SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Python)  | Aspose.Pdf Cloud SDK for Python.
-[Objective C SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Objective-C)  | Aspose.Pdf Cloud SDK for Objective C.
 [Node.js SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-NodeJS)  | Aspose.Pdf Cloud SDK for Node.js.
+[Android SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Android)  |  Aspose.Pdf Cloud SDK for Android.
+[Objective C SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Objective-C)  | Aspose.Pdf Cloud SDK for Objective C.
 [Perl SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Perl)  | Aspose.Pdf Cloud SDK for Perl.
 
 ## Resources

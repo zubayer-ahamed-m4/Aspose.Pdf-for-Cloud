@@ -920,7 +920,7 @@ namespace PDFTest
             Com.Aspose.PDF.Model.Field body = new Com.Aspose.PDF.Model.Field();
 
             Com.Aspose.PDF.Model.Link link = new Com.Aspose.PDF.Model.Link();
-            link.Href = "http://api.aspose.com/v1.1/pdf/ABFillablewfields.pdf/fields/NewField";
+            link.Href = "http://api.aspose.cloud/v1.1/pdf/ABFillablewfields.pdf/fields/NewField";
             link.Rel = "self";
             link.Title = "NewField";
             link.Type = "link";
@@ -1116,7 +1116,7 @@ namespace PDFTest
             Com.Aspose.PDF.Model.Field field = new Com.Aspose.PDF.Model.Field();
 
             Com.Aspose.PDF.Model.Link link = new Com.Aspose.PDF.Model.Link();
-            link.Href = "http://api.aspose.com/v1.1/pdf/ABFillablewfields.pdf/fields/NewField";
+            link.Href = "http://api.aspose.cloud/v1.1/pdf/ABFillablewfields.pdf/fields/NewField";
             link.Rel = "self";
             link.Title = "NewField";
             link.Type = "0";
@@ -1411,7 +1411,7 @@ namespace PDFTest
             body.BuiltIn = false;
 
             Com.Aspose.PDF.Model.Link link = new Com.Aspose.PDF.Model.Link();
-            link.Href = "http://api.aspose.com/v1.1/pdf/test.pdf/fields/NewProperty";
+            link.Href = "http://api.aspose.cloud/v1.1/pdf/test.pdf/fields/NewProperty";
             link.Title = "NewProperty";
             link.Type = "link";
             link.Rel = "self";
@@ -1444,7 +1444,7 @@ namespace PDFTest
             Com.Aspose.PDF.Model.Field body = new Com.Aspose.PDF.Model.Field();
 
             Com.Aspose.PDF.Model.Link link = new Com.Aspose.PDF.Model.Link();
-            link.Href = "http://api.aspose.com/v1.1/pdf/ABFillablewfields.pdf/fields/NewField";
+            link.Href = "http://api.aspose.cloud/v1.1/pdf/ABFillablewfields.pdf/fields/NewField";
             link.Rel = "self";
             link.Title = "NewField";
             link.Type = "link";
@@ -1483,7 +1483,7 @@ namespace PDFTest
             Com.Aspose.PDF.Model.Fields body = new Com.Aspose.PDF.Model.Fields();
 
             Com.Aspose.PDF.Model.Link link = new Com.Aspose.PDF.Model.Link();
-            link.Href = "http://api.aspose.com/v1.1/pdf/ABFillablewfields.pdf/fields/NewField";
+            link.Href = "http://api.aspose.cloud/v1.1/pdf/ABFillablewfields.pdf/fields/NewField";
             link.Rel = "self";
             link.Title = "textbox1";
             link.Type = "link";
