@@ -16,8 +16,8 @@ Directory | Description
 [.NET SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-.NET)  |  Aspose.Pdf for Cloud .NET SDK
 [Java SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Java)  |  Aspose.Pdf for Cloud Java SDK
 [PHP SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-PHP)  | Aspose.Pdf for Cloud PHP SDK
-[Ruby SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Ruby) | Aspose.Pdf for Cloud SDK Ruby SDK
-[Python SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Python)  | Aspose.Pdf for Cloud SDK Python SDK
+[Ruby SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Ruby) | Aspose.Pdf for Cloud Ruby SDK
+[Python SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Python)  | Aspose.Pdf for Cloud Python SDK
 [Node.js SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-NodeJS)  | Aspose.Pdf for Cloud Node.js SDK
 [Android SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Android)  |  Aspose.Pdf for Cloud Android SDK
 [Objective C SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Objective-C)  | Aspose.Pdf for Cloud Objective C SDK
