@@ -9,4 +9,7 @@ This repository contains Aspose.Pdf Cloud SDK for Java source code. This SDK all
 </p>
 
 ##How to Use the SDK?
-The complete source code is available in this repository folder, you can either directly use it in your project or use Maven. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/pdfcloud/How+to+Setup+Aspose.Pdf+Cloud+SDK+for+Java).
+The complete source code is available in this repository folder, you can either directly use it in your project or use Maven. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/pdfcloud/Available+SDKs).
+
+##Contact Us
+Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://www.aspose.com/community/forums/).

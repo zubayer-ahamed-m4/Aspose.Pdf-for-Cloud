@@ -1,5 +1,6 @@
-## Aspose.Pdf Cloud SDK for PHP
-This repository contains Aspose.Pdf Cloud SDK for PHP source code. This SDK allows you to work with Aspose.Pdf Cloud REST APIs in your PHP applications quickly and easily.
+##Aspose.Pdf Cloud SDK for Android
+
+This repository contains Aspose.Pdf Cloud SDK for Android source code. This SDK allows you to work with Aspose.Pdf Cloud REST APIs in your Android applications quickly and easily. 
 
 <p align="center">
   <a title="Download complete Aspose.Pdf for Cloud source code" href="https://github.com/asposepdf/Aspose_Pdf_Cloud/archive/master.zip">

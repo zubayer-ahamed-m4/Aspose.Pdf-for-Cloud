@@ -4,7 +4,7 @@ This repository contains Aspose.Pdf Cloud SDK for Node.js source code. This SDK 
 
 ## How to use the SDK?
 
-The complete source code is available in this repository folder. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/pdfcloud/How+to+Setup+Aspose.Pdf+Cloud+SDK+for+Node.js).
+The complete source code is available in this repository folder. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/pdfcloud/Available+SDKs).
 
 ## Quick SDK Tutorial
 ```javascript
@@ -48,3 +48,6 @@ storageApi.PutCreate(name, null, null, file= data_path + name , function(respons
   console.log(e);
 }
 ```
+
+##Contact Us
+Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://www.aspose.com/community/forums/).

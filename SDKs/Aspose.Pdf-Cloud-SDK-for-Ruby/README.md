@@ -1,10 +1,8 @@
 # Aspose.Pdf Cloud SDK For Ruby
 This SDK lets you use [Aspose Cloud PDF APIs](http://www.aspose.com/cloud/pdf-api.aspx) in your web apps.
 
-## Installing
-You can simply install AsposePDFCloud with gem:
-
-`gem install aspose_pdf_cloud`
+##How to Use the SDK?
+The complete source code is available in this repository folder, you can either directly use it in your project or use Maven. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/pdfcloud/Available+SDKs).
 
 ## Usage
 APIs of this SDK can be called as follows:
@@ -34,8 +32,6 @@ end
 ## Unit Tests
 Aspose PDF SDK includes a suite of unit tests within the [test](https://github.com/asposepdf/Aspose_Pdf_Cloud/blob/master/SDKs/Aspose.Pdf_Cloud_SDK_for_Ruby/test/pdf_tests.rb) subdirectory. These Unit Tests also serves as examples of how to use the Aspose PDF SDK.
 
-## Contact
-Your feedback is very important to us. Please email us all your queries and feedback at marketplace@aspose.com.
+##Contact Us
+Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://www.aspose.com/community/forums/).
 
-## License
-Aspose PDF SDK is available under the MIT license. See the [LICENSE](https://github.com/asposepdf/Aspose_Pdf_Cloud/blob/master/SDKs/Aspose.Pdf_Cloud_SDK_for_Ruby/LICENSE) file for more info.
