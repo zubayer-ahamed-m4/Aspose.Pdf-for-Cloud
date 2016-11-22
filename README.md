@@ -13,15 +13,15 @@ Aspose.Pdf for Cloud is implemented as a REST API. If you use SDK, it hides the 
 
 Directory | Description
 --------- | -----------
-[.NET SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-.NET)  |  Aspose.Pdf Cloud SDK for .NET.
-[Java SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Java)  |  Aspose.Pdf Cloud SDK for Java.
-[PHP SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-PHP)  | Aspose.Pdf Cloud SDK for PHP.
-[Ruby SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Ruby) | Aspose.Pdf Cloud SDK for Ruby.
-[Python SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Python)  | Aspose.Pdf Cloud SDK for Python.
-[Node.js SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-NodeJS)  | Aspose.Pdf Cloud SDK for Node.js.
-[Android SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Android)  |  Aspose.Pdf Cloud SDK for Android.
-[Objective C SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Objective-C)  | Aspose.Pdf Cloud SDK for Objective C.
-[Perl SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Perl)  | Aspose.Pdf Cloud SDK for Perl.
+[.NET SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-.NET)  |  Aspose.Pdf for Cloud .NET SDK
+[Java SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Java)  |  Aspose.Pdf for Cloud Java SDK
+[PHP SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-PHP)  | Aspose.Pdf for Cloud PHP SDK
+[Ruby SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Ruby) | Aspose.Pdf for Cloud Ruby SDK
+[Python SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Python)  | Aspose.Pdf for Cloud Python SDK
+[Node.js SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-NodeJS)  | Aspose.Pdf for Cloud Node.js SDK
+[Android SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Android)  |  Aspose.Pdf for Cloud Android SDK
+[Objective C SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Objective-C)  | Aspose.Pdf for Cloud Objective C SDK
+[Perl SDK](SDKs/Aspose.Pdf-Cloud-SDK-for-Perl)  | Aspose.Pdf for Cloud Perl SDK
 
 ## Resources
 
