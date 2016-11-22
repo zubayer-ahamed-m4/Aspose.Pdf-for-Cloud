@@ -3,7 +3,7 @@
 This repository contains Aspose.Pdf Cloud SDK for Perl source code. This SDK allows you to work with Aspose.Pdf Cloud REST APIs in your Perl applications quickly and easily. 
 
 ##How to Use the SDK?
-The complete source code is available in this repository folder, you can either directly use it in your project or use Maven. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/pdfcloud/Available+SDKs).
+The complete source code is available in this repository folder. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/pdfcloud/Available+SDKs).
 
 
 ##Quick SDK Tutorial
