@@ -1,6 +1,12 @@
 # Aspose.Pdf Cloud SDK For Ruby
 This SDK lets you use [Aspose Cloud PDF APIs](http://www.aspose.com/cloud/pdf-api.aspx) in your web apps.
 
+<p align="center">
+  <a title="Download complete Aspose.PDF for Cloud source code" href="https://github.com/asposepdf/Aspose_pdf_Cloud/archive/master.zip">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
+  </a>
+</p>
+
 ##How to Use the SDK?
 The complete source code is available in this repository folder, you can either directly use it in your project or use RubyGems. For more details, please visit our [documentation website](http://www.aspose.com/docs/display/pdfcloud/Available+SDKs).
 
