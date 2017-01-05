@@ -56,6 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.cs" />
+    <Compile Include="Document-Properties\GetParticularProperty.cs" />
+    <Compile Include="Document-Properties\RemoveAllProperties.cs" />
+    <Compile Include="Document-Properties\GetAllProperties.cs" />
+    <Compile Include="Document-Properties\SetSingleDocumentProperty.cs" />
     <Compile Include="Document\ConvertPdfToOtherFormat.cs" />
     <Compile Include="Document\ConvertPdfFromImages.cs" />
     <Compile Include="Document\AppendPdfFiles.cs" />
@@ -69,6 +73,12 @@
     <Compile Include="Document\CreateFromXML.cs" />
     <Compile Include="Document\CreateFromHTML.cs" />
     <Compile Include="Document\CreateEmptyPdf.cs" />
+    <Compile Include="Pages\ConvertToImageWithSpecifiedSize.cs" />
+    <Compile Include="Pages\GetPageCount.cs" />
+    <Compile Include="Pages\ConvertToImageWithDefaultSize.cs" />
+    <Compile Include="Pages\MovePages.cs" />
+    <Compile Include="Pages\DeletePage.cs" />
+    <Compile Include="Pages\AddNewPage.cs" />
     <Compile Include="RunExamples.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -97,6 +97,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.vb" />
+    <Compile Include="Document-Properties\GetAllProperties.vb" />
+    <Compile Include="Document-Properties\GetParticularProperty.vb" />
+    <Compile Include="Document-Properties\RemoveAllProperties.vb" />
+    <Compile Include="Document-Properties\SetSingleDocumentProperty.vb" />
     <Compile Include="Document\AppendPdfFiles.vb" />
     <Compile Include="Document\ConvertPdfFromImages.vb" />
     <Compile Include="Document\ConvertPdfFromRemoteServer.vb" />
@@ -124,6 +128,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AddNewPage.vb" />
+    <Compile Include="Pages\ConvertToImageWithDefaultSize.vb" />
+    <Compile Include="Pages\ConvertToImageWithSpecifiedSize.vb" />
+    <Compile Include="Pages\DeletePage.vb" />
+    <Compile Include="Pages\GetPageCount.vb" />
+    <Compile Include="Pages\MovePages.vb" />
     <Compile Include="RunExamples.vb" />
   </ItemGroup>
   <ItemGroup>

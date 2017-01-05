@@ -2,6 +2,8 @@ Imports System.Collections.Generic
 Imports System.IO
 Imports System.Configuration
 Imports Aspose.Pdf.Cloud.Examples.VisualBasic.Document
+Imports Aspose.Pdf.Cloud.Examples.VisualBasic.Pages
+Imports Aspose.Pdf.Cloud.Examples.VisualBasic.Document_Properties
 
 Module RunExamples
 
@@ -29,6 +31,30 @@ Module RunExamples
         'CreatePdfFromJPEG.Run()
         'CreatePdfFromSVG.Run()
         'CreatePdfFromTIFF.Run()
+
+        '''' =====================================================
+        '''' =====================================================
+        '''' Pages
+        '''' =====================================================
+        '''' =====================================================
+
+        'AddNewPage.Run()
+        'DeletePage.Run()
+        'MovePages.Run()
+        'GetPageCount.Run()
+        'ConvertToImageWithDefaultSize.Run()
+        'ConvertToImageWithSpecifiedSize.Run()
+
+        '''' =====================================================
+        '''' =====================================================
+        '''' Document-Properties
+        '''' =====================================================
+        '''' =====================================================
+
+        'SetSingleDocumentProperty.Run();
+        'GetAllProperties.Run();
+        'RemoveAllProperties.Run();  
+        GetParticularProperty.Run()
 
         ' Stop before exiting
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")

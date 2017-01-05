@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Configuration;
 using Document;
+using Pages;
+using Document_Properties;
 
 namespace CSharp
 {
@@ -33,7 +35,31 @@ namespace CSharp
             //AppendPdfFiles.Run();
             //CreatePdfFromJPEG.Run();
             //CreatePdfFromSVG.Run();
-            CreatePdfFromTIFF.Run();
+            //CreatePdfFromTIFF.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// Pages
+            //// =====================================================
+            //// =====================================================
+
+            //AddNewPage.Run();
+            //DeletePage.Run();
+            //MovePages.Run();
+            //GetPageCount.Run();
+            //ConvertToImageWithDefaultSize.Run();
+            //ConvertToImageWithSpecifiedSize.Run();
+
+            //// =====================================================
+            //// =====================================================
+            //// Document-Properties
+            //// =====================================================
+            //// =====================================================
+
+            //SetSingleDocumentProperty.Run();
+            //GetAllProperties.Run();
+            //RemoveAllProperties.Run();  
+            GetParticularProperty.Run();
             
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");
