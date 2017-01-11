@@ -55,6 +55,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Annotations\GetSpecificAnnotation.cs" />
+    <Compile Include="Annotations\GetCountFromPage.cs" />
+    <Compile Include="Annotations\GetAllAnnotationsFromPage.cs" />
+    <Compile Include="Attachments\GetAttachmentCount.cs" />
+    <Compile Include="Attachments\DownloadSpecificAttachment.cs" />
+    <Compile Include="Attachments\GetSpecificAttachment.cs" />
+    <Compile Include="Attachments\GetAllAttachments.cs" />
+    <Compile Include="Bookmarks\GetBookmarkCount.cs" />
+    <Compile Include="Bookmarks\GetSpecificBookmark.cs" />
+    <Compile Include="Bookmarks\GetAllBookmarks.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="Document-Properties\GetParticularProperty.cs" />
     <Compile Include="Document-Properties\RemoveAllProperties.cs" />
@@ -73,6 +83,18 @@
     <Compile Include="Document\CreateFromXML.cs" />
     <Compile Include="Document\CreateFromHTML.cs" />
     <Compile Include="Document\CreateEmptyPdf.cs" />
+    <Compile Include="Form-Fields\GetFieldCount.cs" />
+    <Compile Include="Form-Fields\UpdateFormField.cs" />
+    <Compile Include="Form-Fields\GetParticularField.cs" />
+    <Compile Include="Form-Fields\GetAllFields.cs" />
+    <Compile Include="Images\ReplaceImageUsingLocalImageStream.cs" />
+    <Compile Include="Images\ReplaceImageUsingImageFile.cs" />
+    <Compile Include="Images\GetImageCount.cs" />
+    <Compile Include="Images\ExtractParticularImageWithSpecifiedSize.cs" />
+    <Compile Include="Images\ExtractParticularImageWithDefaultSize.cs" />
+    <Compile Include="Links\GetLinkCount.cs" />
+    <Compile Include="Links\GetSpecificLink.cs" />
+    <Compile Include="Links\GetAllLinks.cs" />
     <Compile Include="Pages\ConvertToImageWithSpecifiedSize.cs" />
     <Compile Include="Pages\GetPageCount.cs" />
     <Compile Include="Pages\ConvertToImageWithDefaultSize.cs" />
@@ -80,6 +102,21 @@
     <Compile Include="Pages\DeletePage.cs" />
     <Compile Include="Pages\AddNewPage.cs" />
     <Compile Include="RunExamples.cs" />
+    <Compile Include="Text\ReplaceMultipleTextInPdf.cs" />
+    <Compile Include="Text\ReplaceTextInFile.cs" />
+    <Compile Include="Text\ReplaceMultipleTextInPage.cs" />
+    <Compile Include="Text\ReplaceTextInPage.cs" />
+    <Compile Include="Text\GetTextFormatOfParticularSegment.cs" />
+    <Compile Include="Text\GetTextFormatOfFragment.cs" />
+    <Compile Include="Text\GetSegmentCountFromPdfFragment.cs" />
+    <Compile Include="Text\GetFragmentCountFromPage.cs" />
+    <Compile Include="Text\GetTextItemsFromParticularFragment.cs" />
+    <Compile Include="Text\GetTextItemsFromPage.cs" />
+    <Compile Include="Text\GetTextItemsFromDoc.cs" />
+    <Compile Include="WatermarksOrStamps\AddPageNumberStamp.cs" />
+    <Compile Include="WatermarksOrStamps\AddPdfPageAsStamp.cs" />
+    <Compile Include="WatermarksOrStamps\AddImageStamp.cs" />
+    <Compile Include="WatermarksOrStamps\AddTextStamp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

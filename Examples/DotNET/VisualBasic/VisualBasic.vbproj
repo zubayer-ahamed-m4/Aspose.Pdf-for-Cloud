@@ -96,6 +96,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Annotations\GetAllAnnotationsFromPage.vb" />
+    <Compile Include="Annotations\GetCountFromPage.vb" />
+    <Compile Include="Annotations\GetSpecificAnnotation.vb" />
+    <Compile Include="Attachments\DownloadSpecificAttachment.vb" />
+    <Compile Include="Attachments\GetAllAttachments.vb" />
+    <Compile Include="Attachments\GetAttachmentCount.vb" />
+    <Compile Include="Attachments\GetSpecificAttachment.vb" />
+    <Compile Include="Bookmarks\GetAllBookmarks.vb" />
+    <Compile Include="Bookmarks\GetBookmarkCount.vb" />
+    <Compile Include="Bookmarks\GetSpecificBookmark.vb" />
     <Compile Include="Common.vb" />
     <Compile Include="Document-Properties\GetAllProperties.vb" />
     <Compile Include="Document-Properties\GetParticularProperty.vb" />
@@ -114,6 +124,18 @@
     <Compile Include="Document\MergePdfFiles.vb" />
     <Compile Include="Document\SignPdfDoc.vb" />
     <Compile Include="Document\SplitPdfFiles.vb" />
+    <Compile Include="Form-Fields\GetAllFields.vb" />
+    <Compile Include="Form-Fields\GetFieldCount.vb" />
+    <Compile Include="Form-Fields\GetParticularField.vb" />
+    <Compile Include="Form-Fields\UpdateFormField.vb" />
+    <Compile Include="Images\ExtractParticularImageWithDefaultSize.vb" />
+    <Compile Include="Images\ExtractParticularImageWithSpecifiedSize.vb" />
+    <Compile Include="Images\GetImageCount.vb" />
+    <Compile Include="Images\ReplaceImageUsingImageFile.vb" />
+    <Compile Include="Images\ReplaceImageUsingLocalImageStream.vb" />
+    <Compile Include="Links\GetAllLinks.vb" />
+    <Compile Include="Links\GetLinkCount.vb" />
+    <Compile Include="Links\GetSpecificLink.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
@@ -135,6 +157,21 @@
     <Compile Include="Pages\GetPageCount.vb" />
     <Compile Include="Pages\MovePages.vb" />
     <Compile Include="RunExamples.vb" />
+    <Compile Include="Text\GetFragmentCountFromPage.vb" />
+    <Compile Include="Text\GetSegmentCountFromPdfFragment.vb" />
+    <Compile Include="Text\GetTextFormatOfFragment.vb" />
+    <Compile Include="Text\GetTextFormatOfParticularSegment.vb" />
+    <Compile Include="Text\GetTextItemsFromDoc.vb" />
+    <Compile Include="Text\GetTextItemsFromPage.vb" />
+    <Compile Include="Text\GetTextItemsFromParticularFragment.vb" />
+    <Compile Include="Text\ReplaceMultipleTextInPage.vb" />
+    <Compile Include="Text\ReplaceMultipleTextInPdf.vb" />
+    <Compile Include="Text\ReplaceTextInFile.vb" />
+    <Compile Include="Text\ReplaceTextInPage.vb" />
+    <Compile Include="WatermarksOrStamps\AddImageStamp.vb" />
+    <Compile Include="WatermarksOrStamps\AddPageNumberStamp.vb" />
+    <Compile Include="WatermarksOrStamps\AddPdfPageAsStamp.vb" />
+    <Compile Include="WatermarksOrStamps\AddTextStamp.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

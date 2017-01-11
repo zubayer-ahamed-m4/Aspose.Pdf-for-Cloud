@@ -14,8 +14,8 @@ namespace PDFTest
     [TestClass()]
     public class TestPdfApi
     {
-        protected string APIKEY = "xxxxx";
-        protected string APPSID = "xxxxx";
+        protected string APIKEY = "xxxx";
+        protected string APPSID = "xxxx";
         protected string BASEPATH = "http://api.aspose.cloud/v1.1";
 
         private TestContext testContextInstance;
@@ -64,8 +64,7 @@ namespace PDFTest
         //{
         //}
         //
-        #endregion
-
+        #endregion        
 
         /// <summary>
         ///A test for DeletePage

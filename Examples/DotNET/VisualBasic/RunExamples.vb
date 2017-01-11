@@ -4,7 +4,14 @@ Imports System.Configuration
 Imports Aspose.Pdf.Cloud.Examples.VisualBasic.Document
 Imports Aspose.Pdf.Cloud.Examples.VisualBasic.Pages
 Imports Aspose.Pdf.Cloud.Examples.VisualBasic.Document_Properties
-
+Imports Aspose.Pdf.Cloud.Examples.VisualBasic.Form_Fields
+Imports Aspose.Pdf.Cloud.Examples.VisualBasic.Images
+Imports Aspose.Pdf.Cloud.Examples.VisualBasic.Text
+Imports Aspose.Pdf.Cloud.Examples.VisualBasic.Annotations
+Imports Aspose.Pdf.Cloud.Examples.VisualBasic.Bookmarks
+Imports Aspose.Pdf.Cloud.Examples.VisualBasic.Links
+Imports Aspose.Pdf.Cloud.Examples.VisualBasic.WatermarksOrStamps
+Imports Aspose.Pdf.Cloud.Examples.VisualBasic.Attachments
 Module RunExamples
 
     Sub Main()
@@ -54,7 +61,101 @@ Module RunExamples
         'SetSingleDocumentProperty.Run();
         'GetAllProperties.Run();
         'RemoveAllProperties.Run();  
-        GetParticularProperty.Run()
+        'GetParticularProperty.Run()
+
+        '''' =====================================================
+        '''' =====================================================
+        '''' Form-Fields
+        '''' =====================================================
+        '''' =====================================================
+
+        'GetAllFields.Run()
+        'GetParticularField.Run()
+        'GetFieldCount.Run()
+        'UpdateFormField.Run()
+
+        '''' =====================================================
+        '''' =====================================================
+        '''' Images
+        '''' =====================================================
+        '''' =====================================================
+
+        'ExtractParticularImageWithDefaultSize.Run()
+        'ExtractParticularImageWithSpecifiedSize.Run()
+        'GetImageCount.Run()
+        'ReplaceImageUsingImageFile.Run()
+        'ReplaceImageUsingLocalImageStream.Run()
+
+        '''' =====================================================
+        '''' =====================================================
+        '''' Text
+        '''' =====================================================
+        '''' =====================================================
+
+        'GetTextItemsFromDoc.Run()
+        'GetTextItemsFromPage.Run()
+        'GetTextItemsFromParticularFragment.Run()
+        'GetFragmentCountFromPage.Run()
+        'GetSegmentCountFromPdfFragment.Run()
+        'GetTextFormatOfFragment.Run()
+        'GetTextFormatOfParticularSegment.Run()
+        'ReplaceTextInPage.Run()
+        'ReplaceTextInFile.Run()
+        'ReplaceMultipleTextInPage.Run()
+        'ReplaceMultipleTextInPdf.Run()
+
+        '''' =====================================================
+        '''' =====================================================
+        '''' Annotations
+        '''' =====================================================
+        '''' =====================================================
+
+        'GetAllAnnotationsFromPage.Run()
+        'GetCountFromPage.Run()
+        'GetSpecificAnnotation.Run()
+
+        '''' =====================================================
+        '''' =====================================================
+        '''' Bookmarks
+        '''' =====================================================
+        '''' =====================================================
+
+        'GetAllBookmarks.Run()
+        'GetSpecificBookmark.Run()
+        'GetBookmarkCount.Run()
+
+
+        '''' =====================================================
+        '''' =====================================================
+        '''' Links
+        '''' =====================================================
+        '''' =====================================================
+
+        'GetAllLinks.Run()
+        'GetSpecificLink.Run()
+        'GetLinkCount.Run()
+
+        '''' =====================================================
+        '''' =====================================================
+        '''' Attachments
+        '''' =====================================================
+        '''' =====================================================
+
+        'GetAllAttachments.Run()
+        'GetSpecificAttachment.Run()
+        'GetAttachmentCount.Run()
+        'DownloadSpecificAttachment.Run()
+
+        '''' =====================================================
+        '''' =====================================================
+        '''' WatermarksOrStamps
+        '''' =====================================================
+        '''' =====================================================
+
+        'AddTextStamp.Run()
+        'AddImageStamp.Run()
+        'AddPdfPageAsStamp.Run()
+        'AddPageNumberStamp.Run()
 
         ' Stop before exiting
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")
