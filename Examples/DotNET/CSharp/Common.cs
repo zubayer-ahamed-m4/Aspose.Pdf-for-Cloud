@@ -13,7 +13,7 @@ using System.IO;
 
         public static string GetDataDir()
         {
-            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
+            var parent = (Directory.GetParent(Directory.GetCurrentDirectory()).Parent).Parent;
             string startDirectory = null;
             if (parent != null)
             {

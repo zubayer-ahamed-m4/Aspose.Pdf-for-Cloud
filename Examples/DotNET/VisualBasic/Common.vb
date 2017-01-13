@@ -10,7 +10,7 @@ Class Common
 
 
     Public Shared Function GetDataDir() As String
-        Dim parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent
+        Dim parent = (Directory.GetParent(Directory.GetCurrentDirectory()).Parent).Parent
         Dim startDirectory As String = Nothing
         If parent IsNot Nothing Then
             Dim directoryInfo = parent.Parent

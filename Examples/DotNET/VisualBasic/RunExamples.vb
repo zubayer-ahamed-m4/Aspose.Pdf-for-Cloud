@@ -155,7 +155,7 @@ Module RunExamples
         'AddTextStamp.Run()
         'AddImageStamp.Run()
         'AddPdfPageAsStamp.Run()
-        'AddPageNumberStamp.Run()
+        AddPageNumberStamp.Run()
 
         ' Stop before exiting
         Console.WriteLine(vbLf & vbLf & "Program Finished. Press any key to exit....")
