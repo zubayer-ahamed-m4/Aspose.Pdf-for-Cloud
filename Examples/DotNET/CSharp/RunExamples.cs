@@ -33,7 +33,7 @@ namespace CSharp
             //// =====================================================
 
             //CreateEmptyPdf.Run();
-            //CreateFromHTML.Run();
+            CreateFromHTML.Run();
             //CreateFromXML.Run();  
             //ConvertPdfFromImages.Run();
             //ConvertPdfToOtherFormat.Run();
@@ -160,7 +160,7 @@ namespace CSharp
             //AddTextStamp.Run();
             //AddImageStamp.Run();
             //AddPdfPageAsStamp.Run();
-            AddPageNumberStamp.Run();
+            //AddPageNumberStamp.Run();
             
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");

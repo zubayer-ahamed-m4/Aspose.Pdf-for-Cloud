@@ -27,7 +27,7 @@ using System.IO;
             {
                 startDirectory = parent.FullName;
             }
-            return Path.Combine(startDirectory, "Data\\");
+            return Path.Combine(startDirectory, "DotNET\\Data\\");
         }
       
     }

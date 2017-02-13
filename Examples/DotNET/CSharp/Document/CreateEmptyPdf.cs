@@ -23,7 +23,7 @@ namespace Document
             try
             {
                 // Upload source file to aspose cloud storage
-                storageApi.PutCreate(fileName, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + fileName));
+                storageApi.PutCreate( fileName, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + fileName));
 
                 // Invoke Aspose.PDF Cloud SDK API to create empty pdf file
                 DocumentResponse apiResponse = pdfApi.PutCreateDocument(fileName, templateFile, dataFile, templateType, storage, folder);
