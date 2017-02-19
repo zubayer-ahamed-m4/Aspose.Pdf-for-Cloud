@@ -16,16 +16,15 @@ class Page
     response = @storage_api.put_create(file_name, File.open("../data/" << file_name,"r") { |io| io.read } )
   end
 
-  # Delete document page by its number.
-  def delete_page
-    file_name = "sample-input.pdf"
+  # Read document pages info.
+  def read_pages_info
+    file_name = "Sample-Annotation.pdf"
     upload_file(file_name)
 
-    page_number = 1
-    response = @pdf_api.delete_page(file_name, page_number)
+    response = @pdf_api.get_pages(file_name)
   end
 
 end
 
 page = Page.new()
-puts page.delete_page
+puts page.read_pages_info

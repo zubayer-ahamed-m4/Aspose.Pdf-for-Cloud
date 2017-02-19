@@ -1,6 +1,6 @@
 require 'aspose_pdf_cloud'
 
-class Page
+class Attachment
 
   include AsposePDFCloud
   include AsposeStorageCloud
@@ -16,16 +16,21 @@ class Page
     response = @storage_api.put_create(file_name, File.open("../data/" << file_name,"r") { |io| io.read } )
   end
 
-  # Delete document page by its number.
-  def delete_page
+  # Add page stamp.
+  def add_page_stamp
     file_name = "sample-input.pdf"
     upload_file(file_name)
 
     page_number = 1
-    response = @pdf_api.delete_page(file_name, page_number)
+    stamp = Stamp.new
+    stamp.value = "Aspose"
+    stamp.background = true
+    stamp.type = "Text"
+
+    response = @pdf_api.put_page_add_stamp(file_name, page_number, stamp)
   end
 
 end
 
-page = Page.new()
-puts page.delete_page
+attachment = Attachment.new()
+puts attachment.add_page_stamp

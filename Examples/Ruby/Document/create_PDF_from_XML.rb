@@ -16,7 +16,7 @@ class Document
     response = @storage_api.put_create(file_name, File.open("../data/" << file_name,"r") { |io| io.read } )
   end
 
-  def create_PDF_from_XML
+  def create_pdf_from_xml
     file_name = "newPDFFromXML.pdf"
     template_file = "sample.xsl"
     data_file = "sample.xml"
@@ -29,4 +29,4 @@ class Document
 end
 
 document = Document.new()
-puts document.create_PDF_from_XML
+puts document.create_pdf_from_xml

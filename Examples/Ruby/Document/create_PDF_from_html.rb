@@ -16,7 +16,7 @@ class Document
     response = @storage_api.put_create(file_name, File.open("../data/" << file_name,"r") { |io| io.read } )
   end
 
-  def create_PDF_from_html
+  def create_pdf_from_html
     file_name = "newPDFFromHTML.pdf"
     template_file = "sample.html"
     upload_file(template_file)
@@ -26,4 +26,4 @@ class Document
 end
 
 document = Document.new()
-puts document.create_PDF_from_html
+puts document.create_pdf_from_html

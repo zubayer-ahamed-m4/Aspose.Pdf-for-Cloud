@@ -1,6 +1,6 @@
 require 'aspose_pdf_cloud'
 
-class Page
+class Document
 
   include AsposePDFCloud
   include AsposeStorageCloud
@@ -16,16 +16,18 @@ class Page
     response = @storage_api.put_create(file_name, File.open("../data/" << file_name,"r") { |io| io.read } )
   end
 
-  # Delete document page by its number.
-  def delete_page
-    file_name = "sample-input.pdf"
-    upload_file(file_name)
+  # Merge a list of documents.
+  def merge_documents
+    upload_file("Sample.pdf")
+    upload_file("sample-input.pdf")
 
-    page_number = 1
-    response = @pdf_api.delete_page(file_name, page_number)
+    merge_documents = MergeDocuments.new
+    merge_documents.list = ["Sample.pdf", "sample-input.pdf"]
+
+    response = @pdf_api.put_merge_documents("sample-merged.pdf", merge_documents)
   end
 
 end
 
-page = Page.new()
-puts page.delete_page
+document = Document.new()
+puts document.merge_documents

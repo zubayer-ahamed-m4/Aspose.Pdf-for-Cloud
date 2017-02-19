@@ -1,6 +1,6 @@
 require 'aspose_pdf_cloud'
 
-class Page
+class DocumentProperty
 
   include AsposePDFCloud
   include AsposeStorageCloud
@@ -16,16 +16,15 @@ class Page
     response = @storage_api.put_create(file_name, File.open("../data/" << file_name,"r") { |io| io.read } )
   end
 
-  # Delete document page by its number.
-  def delete_page
-    file_name = "sample-input.pdf"
+  # Read document property by name.
+  def read_document_property_by_name
+    file_name = "Sample-Annotation.pdf"
     upload_file(file_name)
 
-    page_number = 1
-    response = @pdf_api.delete_page(file_name, page_number)
+    response = @pdf_api.delete_properties(file_name)
   end
 
 end
 
-page = Page.new()
-puts page.delete_page
+documentProperty = DocumentProperty.new()
+puts documentProperty.read_document_property_by_name

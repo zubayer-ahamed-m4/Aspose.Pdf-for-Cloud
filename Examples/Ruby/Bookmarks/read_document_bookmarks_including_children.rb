@@ -1,6 +1,6 @@
 require 'aspose_pdf_cloud'
 
-class Page
+class Bookmark
 
   include AsposePDFCloud
   include AsposeStorageCloud
@@ -16,16 +16,16 @@ class Page
     response = @storage_api.put_create(file_name, File.open("../data/" << file_name,"r") { |io| io.read } )
   end
 
-  # Delete document page by its number.
-  def delete_page
-    file_name = "sample-input.pdf"
+  # Read document bookmark/bookmarks (including children).
+  def read_document_bookmarks_including_children
+    file_name = "Sample-Bookmark.pdf"
     upload_file(file_name)
 
-    page_number = 1
-    response = @pdf_api.delete_page(file_name, page_number)
+    bookmark_path = "1"
+    response = @pdf_api.get_document_bookmarks_children(file_name, bookmark_path)
   end
 
 end
 
-page = Page.new()
-puts page.delete_page
+bookmark = Bookmark.new()
+puts bookmark.read_document_bookmarks_including_children

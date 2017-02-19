@@ -16,6 +16,7 @@ class DocumentProperty
     response = @storage_api.put_create(file_name, File.open("../data/" << file_name,"r") { |io| io.read } )
   end
 
+  # Delete document properties.
   def delete_properties
     file_name = "Sample-Annotation.pdf"
     upload_file(file_name)

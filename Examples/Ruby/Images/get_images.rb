@@ -16,6 +16,7 @@ class Image
     response = @storage_api.put_create(file_name, File.open("../data/" << file_name,"r") { |io| io.read } )
   end
 
+  # Read document images.
   def get_images
     file_name = "SampleImage.pdf"
     upload_file(file_name)

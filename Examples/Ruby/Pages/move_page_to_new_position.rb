@@ -16,16 +16,17 @@ class Page
     response = @storage_api.put_create(file_name, File.open("../data/" << file_name,"r") { |io| io.read } )
   end
 
-  # Delete document page by its number.
-  def delete_page
-    file_name = "sample-input.pdf"
+  # Move page to new position.
+  def move_page_to_new_position
+    file_name = "sample-merged.pdf"
     upload_file(file_name)
 
     page_number = 1
-    response = @pdf_api.delete_page(file_name, page_number)
+    new_index = 1
+    response = @pdf_api.post_move_page(file_name, page_number, new_index)
   end
 
 end
 
 page = Page.new()
-puts page.delete_page
+puts page.move_page_to_new_position

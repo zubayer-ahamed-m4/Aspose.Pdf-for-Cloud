@@ -1,6 +1,6 @@
 require 'aspose_pdf_cloud'
 
-class Page
+class DocumentProperty
 
   include AsposePDFCloud
   include AsposeStorageCloud
@@ -16,19 +16,21 @@ class Page
     response = @storage_api.put_create(file_name, File.open("../data/" << file_name,"r") { |io| io.read } )
   end
 
-  # Get page in specified format.
-  def convert_pdf_page_to_image_with_specified_size
+  # Add/update document property.
+  def update_document_property
     file_name = "Sample-Annotation.pdf"
     upload_file(file_name)
 
-    page_number = 1
-    format = "png"
-    width = 300
-    height = 300
-    response = @pdf_api.get_page_with_format(file_name, page_number, format, {width: width, height: height})
+    property_name = "author"
+    document_property = DocumentProperty.new
+    document_property.name = property_name
+    document_property.value = "Elon"
+    document_property.built_in = true
+
+    response = @pdf_api.put_set_property(file_name, property_name, document_property)
   end
 
 end
 
-page = Page.new()
-puts page.convert_pdf_page_to_image_with_specified_size
+documentProperty = DocumentProperty.new()
+puts documentProperty.update_document_property

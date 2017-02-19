@@ -1,6 +1,6 @@
 require 'aspose_pdf_cloud'
 
-class Page
+class Links
 
   include AsposePDFCloud
   include AsposeStorageCloud
@@ -16,16 +16,17 @@ class Page
     response = @storage_api.put_create(file_name, File.open("../data/" << file_name,"r") { |io| io.read } )
   end
 
-  # Delete document page by its number.
-  def delete_page
-    file_name = "sample-input.pdf"
+  # Read document page link annotation by its index.
+  def read_page_link_annotation_by_index
+    file_name = "Sample-Bookmark.pdf"
     upload_file(file_name)
 
     page_number = 1
-    response = @pdf_api.delete_page(file_name, page_number)
+    link_index = 1
+    response = @pdf_api.get_page_link_annotation_by_index(file_name, page_number, link_index)
   end
 
 end
 
-page = Page.new()
-puts page.delete_page
+links = Links.new()
+puts links.read_page_link_annotation_by_index
