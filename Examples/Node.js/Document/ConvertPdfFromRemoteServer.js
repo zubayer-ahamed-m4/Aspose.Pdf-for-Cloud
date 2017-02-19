@@ -2,8 +2,8 @@
 var fs = require('fs');
 var assert = require('assert');
 var PdfApi = require('asposepdfcloud');
-var configProps = require('../Data/config.json');
-var data_path = '../Data/';
+var configProps = require('../config/config.json');
+var data_path = '../../../Data/';
 
 var AppSID = configProps.app_sid;
 var AppKey = configProps.api_key;

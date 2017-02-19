@@ -13,7 +13,7 @@ using System.IO;
 
         public static string GetDataDir()
         {
-            var parent = (Directory.GetParent(Directory.GetCurrentDirectory()).Parent).Parent;
+            var parent = ((Directory.GetParent(Directory.GetCurrentDirectory()).Parent).Parent).Parent;
             string startDirectory = null;
             if (parent != null)
             {
@@ -27,7 +27,7 @@ using System.IO;
             {
                 startDirectory = parent.FullName;
             }
-            return Path.Combine(startDirectory, "DotNET\\Data\\");
+            return Path.Combine(startDirectory, "Data\\");
         }
       
     }
