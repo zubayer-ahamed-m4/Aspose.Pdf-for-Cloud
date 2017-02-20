@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Page
@@ -28,3 +29,4 @@ end
 
 page = Page.new()
 puts page.add_new_page_to_end_of_document
+#ExEnd:

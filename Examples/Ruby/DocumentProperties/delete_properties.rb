@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class DocumentProperty
@@ -28,3 +29,4 @@ end
 
 documentProperty = DocumentProperty.new()
 puts documentProperty.delete_properties
+#ExEnd:

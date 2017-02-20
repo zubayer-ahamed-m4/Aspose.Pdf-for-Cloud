@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Document
@@ -30,3 +31,4 @@ end
 
 document = Document.new()
 puts document.create_pdf_from_xml
+#ExEnd:

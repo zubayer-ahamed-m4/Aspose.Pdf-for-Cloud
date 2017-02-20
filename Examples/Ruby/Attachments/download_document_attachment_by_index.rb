@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Attachment
@@ -29,3 +30,4 @@ end
 
 attachment = Attachment.new()
 puts attachment.download_document_attachment_by_index
+#ExEnd:

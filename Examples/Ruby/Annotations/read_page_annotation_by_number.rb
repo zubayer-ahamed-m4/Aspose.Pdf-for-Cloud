@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Annotation
@@ -30,3 +31,4 @@ end
 
 annotation = Annotation.new()
 puts annotation.read_page_annotation_by_number
+#ExEnd:

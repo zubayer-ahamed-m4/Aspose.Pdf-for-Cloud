@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Attachment
@@ -28,3 +29,4 @@ end
 
 attachment = Attachment.new()
 puts attachment.read_document_attachments_info
+#ExEnd:

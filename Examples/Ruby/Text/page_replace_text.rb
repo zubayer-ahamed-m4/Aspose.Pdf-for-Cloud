@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Text
@@ -32,3 +33,4 @@ end
 
 text_obj = Text.new()
 puts text_obj.page_replace_text
+#ExEnd:

@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class DocumentProperty
@@ -34,3 +35,4 @@ end
 
 documentProperty = DocumentProperty.new()
 puts documentProperty.update_document_property
+#ExEnd:

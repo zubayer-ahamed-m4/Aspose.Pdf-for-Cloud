@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Page
@@ -28,3 +29,4 @@ end
 
 page = Page.new()
 puts page.read_pages_info
+#ExEnd:

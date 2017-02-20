@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Page
@@ -29,3 +30,4 @@ end
 
 page = Page.new()
 puts page.delete_page
+#ExEnd:

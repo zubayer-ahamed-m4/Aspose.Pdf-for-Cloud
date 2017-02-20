@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Document
@@ -29,3 +30,4 @@ end
 
 document = Document.new()
 puts document.convert_document_to_specified_format
+#ExEnd:

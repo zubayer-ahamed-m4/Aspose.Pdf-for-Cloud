@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Image
@@ -29,3 +30,4 @@ end
 
 image_obj = Image.new()
 puts image_obj.get_images
+#ExEnd:

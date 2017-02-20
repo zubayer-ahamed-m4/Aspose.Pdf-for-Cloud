@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Bookmark
@@ -28,3 +29,4 @@ end
 
 bookmark = Bookmark.new()
 puts bookmark.read_document_bookmarks
+#ExEnd:

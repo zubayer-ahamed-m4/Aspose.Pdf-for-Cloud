@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Page
@@ -32,3 +33,4 @@ end
 
 page = Page.new()
 puts page.convert_pdf_page_to_image_with_specified_size
+#ExEnd:

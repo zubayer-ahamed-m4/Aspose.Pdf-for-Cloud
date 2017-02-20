@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Links
@@ -30,3 +31,4 @@ end
 
 links = Links.new()
 puts links.read_page_link_annotation_by_index
+#ExEnd:

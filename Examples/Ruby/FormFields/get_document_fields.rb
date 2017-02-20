@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class FormField
@@ -28,3 +29,4 @@ end
 
 formField = FormField.new()
 puts formField.get_document_fields
+#ExEnd:

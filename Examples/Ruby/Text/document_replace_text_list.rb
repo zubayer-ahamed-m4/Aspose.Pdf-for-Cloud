@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Text
@@ -39,3 +40,4 @@ end
 
 text_obj = Text.new()
 puts text_obj.document_replace_text_list
+#ExEnd:

@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Document
@@ -26,3 +27,4 @@ end
 
 document = Document.new()
 puts document.create_new_document
+#ExEnd:

@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Attachment
@@ -45,3 +46,4 @@ end
 
 attachment = Attachment.new()
 puts attachment.add_page_number_stamp_to_pdf_page
+#ExEnd:

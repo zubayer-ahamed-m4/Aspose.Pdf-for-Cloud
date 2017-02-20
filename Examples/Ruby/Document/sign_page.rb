@@ -1,3 +1,4 @@
+#ExStart:
 require 'aspose_pdf_cloud'
 
 class Document
@@ -49,3 +50,4 @@ end
 
 document = Document.new()
 puts document.sign_page
+#ExEnd:
