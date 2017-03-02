@@ -80,7 +80,7 @@ namespace PDFTest
             string storage = null;
             string folder = null;
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name));
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name));
 
             Com.Aspose.PDF.Model.SaaSposeResponse actual;
             actual = target.DeletePage(name, pageNumber, storage, folder);
@@ -101,7 +101,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.SaaSposeResponse actual;
             actual = target.DeleteProperties(name, storage, folder);
@@ -124,7 +124,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.SaaSposeResponse actual;
             actual = target.DeleteProperty(name, propertyName, storage, folder);
@@ -146,7 +146,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.ResponseMessage actual;
             actual = target.GetDocument(name, storage, folder);
@@ -169,7 +169,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
             
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.AttachmentResponse actual;
             actual = target.GetDocumentAttachmentByIndex(name, attachmentIndex, storage, folder);
@@ -191,7 +191,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.AttachmentsResponse actual;
             actual = target.GetDocumentAttachments(name, storage, folder);
@@ -213,7 +213,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.BookmarksResponse actual;
             actual = target.GetDocumentBookmarks(name, storage, folder);
@@ -236,7 +236,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.ResponseMessage actual;
             actual = target.GetDocumentBookmarksChildren(name, bookmarkPath, storage, folder);
@@ -258,7 +258,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.DocumentPropertiesResponse actual;
             actual = target.GetDocumentProperties(name, storage, folder);
@@ -281,7 +281,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.DocumentPropertyResponse actual;
             actual = target.GetDocumentProperty(name, propertyName, storage, folder);
@@ -305,7 +305,7 @@ namespace PDFTest
             string folder = null; 
             string outPath = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.ResponseMessage actual;
             actual = target.GetDocumentWithFormat(name, format, storage, folder, outPath);
@@ -328,7 +328,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.ResponseMessage actual;
             actual = target.GetDownloadDocumentAttachmentByIndex(name, attachmentIndex, storage, folder);
@@ -352,7 +352,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.BarcodeResponseList actual;
             actual = target.GetExtractBarcodes(name, pageNumber, imageNumber, storage, folder);
@@ -378,7 +378,7 @@ namespace PDFTest
             String storage = "";
             String folder = "";
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.FieldResponse actual;
             actual = target.GetField(name, fieldName, storage, folder);
@@ -431,7 +431,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.TextItemsResponse actual;
             actual = target.GetFragment(name, pageNumber, fragmentNumber, withEmpty, storage, folder);
@@ -455,7 +455,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.TextFormatResponse actual;
             actual = target.GetFragmentTextFormat(name, pageNumber, fragmentNumber, storage, folder);
@@ -479,7 +479,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.TextItemsResponse actual;
             actual = target.GetFragments(name, pageNumber, withEmpty, storage, folder);
@@ -503,7 +503,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.ResponseMessage actual;
             actual = target.GetImage(name, pageNumber, imageNumber, storage, folder);
@@ -530,7 +530,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.ResponseMessage actual;
             actual = target.GetImageWithFormat(name, pageNumber, imageNumber, format, width, height, storage, folder);
@@ -553,7 +553,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.ImagesResponse actual;
             actual = target.GetImages(name, pageNumber, storage, folder);
@@ -576,7 +576,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.ResponseMessage actual;
             actual = target.GetPage(name, pageNumber, storage, folder);
@@ -600,7 +600,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.AnnotationResponse actual;
             actual = target.GetPageAnnotation(name, pageNumber, annotationNumber, storage, folder);
@@ -623,7 +623,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name));
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name));
 
             Com.Aspose.PDF.Model.AnnotationsResponse actual;
             actual = target.GetPageAnnotations(name, pageNumber, storage, folder);
@@ -647,7 +647,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.LinkAnnotationResponse actual;
             actual = target.GetPageLinkAnnotationByIndex(name, pageNumber, linkIndex, storage, folder);
@@ -670,7 +670,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
             
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.LinkAnnotationsResponse actual;
             actual = target.GetPageLinkAnnotations(name, pageNumber, storage, folder);
@@ -694,7 +694,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.TextItemsResponse actual;
             actual = target.GetPageTextItems(name, pageNumber, withEmpty, storage, folder);
@@ -720,7 +720,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.ResponseMessage actual;
             actual = target.GetPageWithFormat(name, pageNumber, format, width, height, storage, folder);
@@ -742,7 +742,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.DocumentPagesResponse actual;
             actual = target.GetPages(name, storage, folder);
@@ -767,7 +767,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
             
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.TextItemResponse actual;
             actual = target.GetSegment(name, pageNumber, fragmentNumber, segmentNumber, storage, folder);
@@ -792,7 +792,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
             
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.TextFormatResponse actual;
             actual = target.GetSegmentTextFormat(name, pageNumber, fragmentNumber, segmentNumber, storage, folder);
@@ -817,7 +817,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
             
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.TextItemsResponse actual;
             actual = target.GetSegments(name, pageNumber, fragmentNumber, withEmpty, storage, folder);
@@ -840,7 +840,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
             
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.TextItemsResponse actual;
             actual = target.GetTextItems(name, withEmpty, storage, folder);
@@ -862,7 +862,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.WordCountResponse actual;
             actual = target.GetWordsPerPage(name, storage, folder);
@@ -892,8 +892,8 @@ namespace PDFTest
             body.StartPage = 1;
             body.EndPage = 2;
             
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name));
-            storageApi.PutCreate(body.Document, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + body.Document)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name));
+            storageApi.PutCreate(body.Document, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + body.Document)); 
             
             Com.Aspose.PDF.Model.DocumentResponse actual;
             actual = target.PostAppendDocument(name, appendFile, startPage, endPage, storage, folder, body);
@@ -936,7 +936,7 @@ namespace PDFTest
             body.Links = new System.Collections.Generic.List<Com.Aspose.PDF.Model.Link> { link };
 
             
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.SaaSposeResponse actual;            
             actual = target.PostCreateField(name, page, storage, folder, body);
@@ -961,7 +961,7 @@ namespace PDFTest
             Com.Aspose.PDF.Model.TextReplace body = new Com.Aspose.PDF.Model.TextReplace();
             body.NewValue = "This is the new test added by IA";
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.DocumentTextReplaceResponse actual;
             actual = target.PostDocumentReplaceText(name, storage, folder, body);
@@ -988,7 +988,7 @@ namespace PDFTest
             tr.NewValue = "This will be the new text";
             body.TextReplaces = new System.Collections.Generic.List<Com.Aspose.PDF.Model.TextReplace> { tr };
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.DocumentTextReplaceResponse actual;
             actual = target.PostDocumentReplaceTextList(name, storage, folder, body);
@@ -1012,7 +1012,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.SaaSposeResponse actual;
             actual = target.PostMovePage(name, pageNumber, newIndex, storage, folder);
@@ -1038,7 +1038,7 @@ namespace PDFTest
             Com.Aspose.PDF.Model.TextReplace body = new Com.Aspose.PDF.Model.TextReplace();
             body.NewValue = "This is the latest text added by IA";
             
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.PageTextReplaceResponse actual;
             actual = target.PostPageReplaceText(name, pageNumber, storage, folder, body);
@@ -1066,7 +1066,7 @@ namespace PDFTest
             tr.NewValue = "This will be the new text";
             body.TextReplaces = new System.Collections.Generic.List<Com.Aspose.PDF.Model.TextReplace> { tr };
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.PageTextReplaceResponse actual;            
             actual = target.PostPageReplaceTextList(name, pageNumber, storage, folder, body);
@@ -1088,9 +1088,9 @@ namespace PDFTest
             string imageFile = "digi.gif";
             string storage = null; 
             string folder = null;
-            byte[] file = System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + "digi.gif"); 
+            byte[] file = System.IO.File.ReadAllBytes(Common.GetDataDir() + "digi.gif"); 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.ImageResponse actual;
             actual = target.PostReplaceImage(name, pageNumber, imageNumber, imageFile, storage, folder, file);
@@ -1147,7 +1147,7 @@ namespace PDFTest
             body.SignatureType = "PKCS7";
             body.Visible = true;
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name));
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name));
 
 
             Com.Aspose.PDF.Model.FieldResponse fieldResponse = target.PutUpdateField(name, storage, folder, field.Name, field);
@@ -1155,7 +1155,7 @@ namespace PDFTest
             {
                 Console.WriteLine("Field added, Done!");
             }
-            storageApi.PutCreate(body.SignaturePath, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + body.SignaturePath));
+            storageApi.PutCreate(body.SignaturePath, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + body.SignaturePath));
 
 
             target.PutUpdateField(name, storage, folder, "signature", field);
@@ -1199,8 +1199,8 @@ namespace PDFTest
             body.Visible = true;
 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name));
-            storageApi.PutCreate(body.SignaturePath, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + body.SignaturePath)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name));
+            storageApi.PutCreate(body.SignaturePath, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + body.SignaturePath)); 
             
             Com.Aspose.PDF.Model.SaaSposeResponse actual;
             actual = target.PostSignPage(name, pageNumber, storage, folder, body);
@@ -1225,7 +1225,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
             
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.SplitResultResponse actual;
             actual = target.PostSplitDocument(name, format, from, to, storage, folder);
@@ -1247,7 +1247,7 @@ namespace PDFTest
             string storage = null; 
             string folder = null; 
             
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.DocumentPagesResponse actual;
             actual = target.PutAddNewPage(name, storage, folder);
@@ -1267,7 +1267,7 @@ namespace PDFTest
             string format = "tiff"; 
             string url = null; 
             string outPath = null;
-            byte[] file = System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + "test.pdf"); 
+            byte[] file = System.IO.File.ReadAllBytes(Common.GetDataDir() + "test.pdf"); 
 
             Com.Aspose.PDF.Model.ResponseMessage actual;
             actual = target.PutConvertDocument(format, url, outPath, file);
@@ -1328,7 +1328,7 @@ namespace PDFTest
             string folder = null; 
 
             Com.Aspose.PDF.Model.TiffExportOptions body = new Com.Aspose.PDF.Model.TiffExportOptions(); 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.SaaSposeResponse actual;
             actual = target.PutDocumentSaveAsTiff(name, resultFile, brightness, compression, colorDepth, leftMargin, rightMargin, topMargin, bottomMargin, orientation, skipBlankPages, width, height, xResolution, yResolution, pageIndex, pageCount, storage, folder, body);
@@ -1354,8 +1354,8 @@ namespace PDFTest
             Com.Aspose.PDF.Model.MergeDocuments body = new Com.Aspose.PDF.Model.MergeDocuments();
             body.List = new System.Collections.Generic.List<string> { doc };
             
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name));
-            storageApi.PutCreate(doc, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + doc)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name));
+            storageApi.PutCreate(doc, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + doc)); 
             
             Com.Aspose.PDF.Model.DocumentResponse actual;            
             actual = target.PutMergeDocuments(name, storage, folder, body);
@@ -1381,7 +1381,7 @@ namespace PDFTest
             body.FileName = "test.pdf";
             body.Value = "new value";
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.SaaSposeResponse actual;
             actual = target.PutPageAddStamp(name, pageNumber, storage, folder, body);
@@ -1417,7 +1417,7 @@ namespace PDFTest
 
             body.Links = new System.Collections.Generic.List<Com.Aspose.PDF.Model.Link> { link };
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
 
             Com.Aspose.PDF.Model.DocumentPropertyResponse actual;
             actual = target.PutSetProperty(name, propertyName, storage, folder, body);
@@ -1459,7 +1459,7 @@ namespace PDFTest
             body.Type = 0;
             body.Links = new System.Collections.Generic.List<Com.Aspose.PDF.Model.Link> { link };
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes("\\temp\\pdf\\resources\\" + name)); 
+            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             Com.Aspose.PDF.Model.FieldResponse actual;
             actual = target.PutUpdateField(name, storage, folder, fieldName, body);
             Assert.AreEqual("200", actual.Code);
