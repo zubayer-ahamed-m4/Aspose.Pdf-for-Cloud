@@ -13,6 +13,7 @@ use AsposeStorageCloud::Configuration;
 use AsposePdfCloud::PdfApi;
 use AsposePdfCloud::ApiClient;
 use AsposePdfCloud::Configuration;
+use AsposePdfCloud::Object::Stamp;
 
 my $configFile = '../config/config.json';
 my $configPropsText = read_file($configFile);
