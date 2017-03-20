@@ -17,10 +17,10 @@ class Document {
 
 	public function getDocumentWithFormat() {
 		// Upload file to Aspose Cloud Storage
-		$fileName = "Sample.pdf";
-		Utils::uploadFile($fileName);
+		$fileName = "LargeFile.pdf";
+		//Utils::uploadFile($fileName);
 
-		$result = $this->pdfApi->GetDocumentWithFormat($fileName, $format = "tiff", $storage = "", $folder = "", $outPath = "");
+		$result = $this->pdfApi->GetDocumentWithFormat($fileName, $format = "doc", $storage = "", $folder = "", $outPath = "");
 		print_r ( $result );        
 	}
 }

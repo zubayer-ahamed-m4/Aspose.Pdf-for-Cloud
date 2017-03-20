@@ -113,11 +113,11 @@
 }
 
 - (void)getDocumentWithFormat {
-    NSString *fileName = @"Sample.pdf";
+    NSString *fileName = @"LargeFile.pdf";
     [Utils uploadFile:fileName];
     
     [self.pdfApi getDocumentWithFormatWithCompletionBlock:fileName
-                                                   format:@"tiff"
+                                                   format:@"doc"
                                                   outPath:nil
                                                   storage:nil
                                                    folder:nil
