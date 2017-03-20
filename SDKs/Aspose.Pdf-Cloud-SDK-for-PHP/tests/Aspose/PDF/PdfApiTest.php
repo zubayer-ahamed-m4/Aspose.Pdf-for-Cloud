@@ -1,6 +1,7 @@
 <?php
 
 use Aspose\PDF\PdfApi;
+use Aspose\Cells\AsposeApp;
 
 class PdfApiTest extends PHPUnit_Framework_TestCase {
     
@@ -8,13 +9,15 @@ class PdfApiTest extends PHPUnit_Framework_TestCase {
 
     protected function setUp()
     {	
+        AsposeApp::$appSID = "";
+        AsposeApp::$apiKey = "";
         $this->pdf = new PdfApi();
     }
     
     public function testDeletePage()
     {        
         $result = $this->pdf->DeletePage($name="sample-input.pdf", $pageNumber="1", $storage = "", $folder = "");
-	  $this->assertInstanceOf('\Aspose\PDF\Models\SaaSposeResponse',$result );
+	    $this->assertInstanceOf('\Aspose\PDF\Models\SaaSposeResponse',$result );
         $this->assertEquals(200, $result->Code);
     }
        
@@ -86,10 +89,10 @@ class PdfApiTest extends PHPUnit_Framework_TestCase {
     {        
         $result = $this->pdf->GetDownloadDocumentAttachmentByIndex($name="SampleAttachment.pdf", $attachmentIndex=1, $storage = "", $folder = "");
         //print_r($result); exit;
-        $fh = fopen(getcwd(). '/Data/Output/update-test.tiff', 'w');
+        $fh = fopen(getcwd(). '/../../../Data/Output/update-test.tiff', 'w');
         fwrite($fh, $result);
         fclose($fh);
-        $this->assertFileExists(getcwd(). '/Data/Output/update-test.tiff');
+        $this->assertFileExists(getcwd(). '/../../../Data/Output/update-test.tiff');
 	$this->assertInternalType('string',$result );
     }
     
@@ -137,10 +140,10 @@ class PdfApiTest extends PHPUnit_Framework_TestCase {
     public function testGetImageWithFormat()
     {        
         $result = $this->pdf->GetImageWithFormat($name="SampleImage.pdf", $pageNumber=1, $imageNumber=1, $format="png", $width = 100, $height = 100, $storage = "", $folder = "");
-        $fh = fopen(getcwd(). '/Data/Output/Test.png', 'w');
+        $fh = fopen(getcwd(). '/../../../Data/Output/Test.png', 'w');
         fwrite($fh, $result);
         fclose($fh);
-        $this->assertFileExists(getcwd(). '/Data/Output/Test.png');
+        $this->assertFileExists(getcwd(). '/../../../Data/Output/Test.png');
 	$this->assertInternalType('string',$result );
     }
     
@@ -188,10 +191,10 @@ class PdfApiTest extends PHPUnit_Framework_TestCase {
     public function testGetPageWithFormat()
     {        
         $result = $this->pdf->GetPageWithFormat($name="sample-input.pdf", $pageNumber=1, $format="gif", $width = "", $height = "", $storage = "", $folder = "");        
-        $fh = fopen(getcwd(). '/Data/Output/Test.gif', 'w');
+        $fh = fopen(getcwd(). '/../../../Data/Output/Test.gif', 'w');
         fwrite($fh, $result);
         fclose($fh);
-        $this->assertFileExists(getcwd(). '/Data/Output/Test.gif');
+        $this->assertFileExists(getcwd(). '/../../../Data/Output/Test.gif');
 	$this->assertInternalType('string',$result );
     }
     
@@ -307,7 +310,7 @@ class PdfApiTest extends PHPUnit_Framework_TestCase {
     }
 
     public function testPostReplaceImage() {
-	$file = getcwd() . '/Data/Input/aspose-cloud.png';
+	$file = getcwd(). '/../../../Data/aspose-cloud.png';
 	$result = $this->pdf->PostReplaceImage($name = "SampleImage.pdf", $pageNumber = 1, $imageNumber = 1, $imageFile = "", $storage = "", $folder = "", $file);
 	$this->assertInstanceOf('\Aspose\PDF\Models\ImageResponse', $result);
 	$this->assertEquals(200, $result->Code);
@@ -376,12 +379,12 @@ class PdfApiTest extends PHPUnit_Framework_TestCase {
     }
 
     public function testPutConvertDocument() {
-	$file = getcwd() . '/Data/Input/sample-input.pdf';
+	$file = getcwd(). '/../../../Data/sample-input.pdf';
 	$result = $this->pdf->PutConvertDocument($format = "tiff", $url = "", $outPath = "", $file);
-	$fh = fopen(getcwd() . '/Data/Output/Test.tiff', 'w');
+	$fh = fopen(getcwd(). '/../../../Data/Output/Test.tiff', 'w');
 	fwrite($fh, $result);
 	fclose($fh);
-	$this->assertFileExists(getcwd() . '/Data/Output/Test.tiff');
+	$this->assertFileExists(getcwd(). '/../../../Data/Output/Test.tiff');
     }
 
     public function testPutCreateDocument() {
