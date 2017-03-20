@@ -1,7 +1,7 @@
 <?php
 
 use Aspose\PDF\PdfApi;
-use Aspose\Cells\AsposeApp;
+use Aspose\PDF\AsposeApp;
 
 class PdfApiTest extends PHPUnit_Framework_TestCase {
     
