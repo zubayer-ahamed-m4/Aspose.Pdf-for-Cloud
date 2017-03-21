@@ -14,5 +14,5 @@ composer install --no-dev
 4. Each class is a standalone example of Aspose.Pdf APIs. Run any example by 
 ```ruby
 php className
-e.g. php  	GetPageAnnotation.php
+e.g. php GetPageAnnotation.php
 ```
