@@ -21,6 +21,7 @@
 }
 
 - (void)getPageLinkAnnotationByIndex {
+//ExStart:GetPageLinkAnnotationByIndex
     NSString *fileName = @"Sample-Bookmark.pdf";
     [Utils uploadFile:fileName];
     
@@ -32,9 +33,11 @@
                                                completionHandler:^(ASPLinkAnnotationResponse *output, NSError *error) {
                                                    NSLog(@"%@", output);
                                                }];
+//ExEnd:GetPageLinkAnnotationByIndex
 }
 
 - (void)getPageLinkAnnotations {
+//ExStart:GetPageLinkAnnotations
     NSString *fileName = @"Sample-Bookmark.pdf";
     [Utils uploadFile:fileName];
     
@@ -45,6 +48,7 @@
                                          completionHandler:^(ASPLinkAnnotationsResponse *output, NSError *error) {
                                              NSLog(@"%@", output);
                                          }];
+//ExEnd:GetPageLinkAnnotations
 }
 
 @end

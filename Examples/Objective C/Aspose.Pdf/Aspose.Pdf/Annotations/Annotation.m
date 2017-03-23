@@ -21,6 +21,7 @@
 }
 
 - (void)getPageAnnotation {
+//ExStart:GetPageAnnotation
     NSString *fileName = @"Sample-Annotation.pdf";
     [Utils uploadFile:fileName];
     
@@ -32,9 +33,11 @@
                                     completionHandler:^(ASPAnnotationResponse *output, NSError *error) {
                                         NSLog(@"%@", output);
                                     }];
+//ExEnd:GetPageAnnotation
 }
 
 - (void)getPageAnnotations {
+//ExStart:GetPageAnnotations
     NSString *fileName = @"Sample-Annotation.pdf";
     [Utils uploadFile:fileName];
     
@@ -45,6 +48,7 @@
                                      completionHandler:^(ASPAnnotationsResponse *output, NSError *error) {
                                          NSLog(@"%@", output);
                                      }];
+//ExEnd:GetPageAnnotations
 }
 
 

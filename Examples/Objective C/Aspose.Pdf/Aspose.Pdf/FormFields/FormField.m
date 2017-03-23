@@ -21,6 +21,7 @@
 }
 
 - (void)getField {
+//ExStart:GetField
     NSString *fileName = @"sample-field.pdf";
     [Utils uploadFile:fileName];
     
@@ -31,9 +32,11 @@
                            completionHandler:^(ASPFieldResponse *output, NSError *error) {
                                NSLog(@"%@", output);
                            }];
+//ExEnd:GetField
 }
 
 - (void)getFields {
+//ExStart:GetFields
     NSString *fileName = @"sample-field.pdf";
     [Utils uploadFile:fileName];
     
@@ -43,9 +46,11 @@
                             completionHandler:^(ASPFieldsResponse *output, NSError *error) {
                                 NSLog(@"%@", output);
                             }];
+//ExEnd:GetFields
 }
 
 - (void)putUpdateField {
+//ExStart:PutUpdateField
     NSString *fileName = @"sample-field.pdf";
     [Utils uploadFile:fileName];
     
@@ -63,6 +68,7 @@
                                  completionHandler:^(ASPFieldResponse *output, NSError *error) {
                                      NSLog(@"%@", output);
                                  }];
+//ExEnd:PutUpdateField
 }
 
 @end

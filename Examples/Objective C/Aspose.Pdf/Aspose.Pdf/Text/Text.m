@@ -21,6 +21,7 @@
 }
 
 - (void)getFragment {
+//ExStart:GetFragment
     
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
@@ -34,9 +35,11 @@
                               completionHandler:^(ASPTextItemsResponse *output, NSError *error) {
                                   NSLog(@"%@", output);
                               }];
+//ExEnd:GetFragment
 }
 
 - (void)getFragmentTextFormat {
+//ExStart:GetFragmentTextFormat
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -48,9 +51,11 @@
                                         completionHandler:^(ASPTextFormatResponse *output, NSError *error) {
                                             NSLog(@"%@", output);
                                         }];
+//ExEnd:GetFragmentTextFormat
 }
 
 - (void)getFragments {
+//ExStart:GetFragments
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -62,9 +67,11 @@
                                completionHandler:^(ASPTextItemsResponse *output, NSError *error) {
                                    NSLog(@"%@", output);
                                }];
+//ExEnd:GetFragments
 }
 
 - (void)getPageTextItems {
+//ExStart:GetPageTextItems
     NSString *fileName = @"Sample-Annotation.pdf";
     [Utils uploadFile:fileName];
     
@@ -76,9 +83,11 @@
                                    completionHandler:^(ASPTextItemsResponse *output, NSError *error) {
                                        NSLog(@"%@", output);
                                    }];
+//ExEnd:GetPageTextItems
 }
 
 - (void)getSegmentTextFormat {
+//ExStart:GetSegmentTextFormat
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -91,9 +100,11 @@
                                        completionHandler:^(ASPTextFormatResponse *output, NSError *error) {
                                            NSLog(@"%@", output);
                                        }];
+//ExEnd:GetSegmentTextFormat
 }
 
 - (void)getSegments {
+//ExStart:GetSegments
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -106,9 +117,11 @@
                               completionHandler:^(ASPTextItemsResponse *output, NSError *error) {
                                   NSLog(@"%@", output);
                               }];
+//ExEnd:GetSegments
 }
 
 - (void)testGetTextItems {
+//ExStart:TestGetTextItems
     NSString *fileName = @"Sample-Annotation.pdf";
     [Utils uploadFile:fileName];
     
@@ -119,9 +132,11 @@
                                completionHandler:^(ASPTextItemsResponse *output, NSError *error) {
                                    NSLog(@"%@", output);
                                }];
+//ExEnd:TestGetTextItems
 }
 
 - (void)testPostDocumentReplaceText {
+//ExStart:TestPostDocumentReplaceText
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -136,9 +151,11 @@
                                           completionHandler:^(ASPDocumentTextReplaceResponse *output, NSError *error) {
                                               NSLog(@"%@", output);
                                           }];
+//ExEnd:TestPostDocumentReplaceText
 }
 
 - (void)postDocumentReplaceTextList {
+//ExStart:PostDocumentReplaceTextList
     NSString *fileName = @"Sample-Annotation.pdf";
     [Utils uploadFile:fileName];
     
@@ -163,9 +180,11 @@
                                               completionHandler:^(ASPDocumentTextReplaceResponse *output, NSError *error) {
                                                   NSLog(@"%@", output);
                                               }];
+//ExEnd:PostDocumentReplaceTextList
 }
 
 - (void)testPostPageReplaceText {
+//ExStart:TestPostPageReplaceText
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -181,9 +200,11 @@
                                       completionHandler:^(ASPPageTextReplaceResponse *output, NSError *error) {
                                           NSLog(@"%@", output);
                                       }];
+//ExEnd:TestPostPageReplaceText
 }
 
 - (void)postPageReplaceTextList {
+//ExStart:PostPageReplaceTextList
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -207,6 +228,7 @@
                                           completionHandler:^(ASPPageTextReplaceResponse *output, NSError *error) {
                                               NSLog(@"%@", output);
                                           }];
+//ExEnd:PostPageReplaceTextList
 }
 
 @end

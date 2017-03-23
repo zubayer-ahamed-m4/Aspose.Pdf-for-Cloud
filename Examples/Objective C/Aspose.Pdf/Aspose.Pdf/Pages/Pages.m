@@ -21,6 +21,7 @@
 }
 
 - (void)getPageWithFormat {
+//ExStart:GetPageWithFormat
     NSString *fileName = @"Sample-Annotation.pdf";
     [Utils uploadFile:fileName];
     
@@ -34,9 +35,11 @@
                                     completionHandler:^(NSURL *output, NSError *error) {
                                         NSLog(@"%@", output);
                                     }];
+//ExEnd:GetPageWithFormat
 }
 
 - (void)deletePage {
+//ExStart:DeletePage
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -47,9 +50,11 @@
                              completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                  NSLog(@"%@", output);
                              }];
+//ExEnd:DeletePage
 }
 
 - (void)getPages {
+//ExStart:GetPages
     NSString *fileName = @"Sample-Annotation.pdf";
     [Utils uploadFile:fileName];
     
@@ -59,9 +64,11 @@
                            completionHandler:^(ASPDocumentPagesResponse *output, NSError *error) {
                                NSLog(@"%@", output);
                            }];
+//ExEnd:GetPages
 }
 
 - (void)postMovePage {
+//ExStart:PostMovePage
     NSString *fileName = @"sample-merged.pdf";
     [Utils uploadFile:fileName];
     
@@ -73,9 +80,11 @@
                                completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                    NSLog(@"%@", output);
                                }];
+//ExEnd:PostMovePage
 }
 
 - (void)putAddNewPage {
+//ExStart:PutAddNewPage
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -85,6 +94,7 @@
                                 completionHandler:^(ASPDocumentPagesResponse *output, NSError *error) {
                                     NSLog(@"%@", output);
                                 }];
+//ExEnd:PutAddNewPage
 }
 
 @end

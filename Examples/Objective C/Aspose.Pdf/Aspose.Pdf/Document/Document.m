@@ -21,6 +21,7 @@
 }
 
 - (void)createNewDocument {
+//ExStart:CreateNewDocument
     
     [self.pdfApi putCreateDocumentWithCompletionBlock:@"newPDFFile.pdf"
                                          templateFile:nil
@@ -31,9 +32,11 @@
                                     completionHandler:^(ASPDocumentResponse *output, NSError *error) {
                                         NSLog(@"%@", output);
                                     }];
+//ExEnd:CreateNewDocument
 }
 
 - (void)createPDFFromHTML {
+//ExStart:CreatePDFFromHTML
     
     NSString *templateFile = @"sample.html";
     [Utils uploadFile:templateFile];
@@ -47,9 +50,11 @@
                                     completionHandler:^(ASPDocumentResponse *output, NSError *error) {
                                         NSLog(@"%@", output);
                                     }];
+//ExEnd:CreatePDFFromHTML
 }
 
 - (void)createPDFFromJPEG {
+//ExStart:CreatePDFFromJPEG
     
     NSString *templateFile = @"Einstein_JPEG.jpg";
     [Utils uploadFile:templateFile];
@@ -63,9 +68,11 @@
                                     completionHandler:^(ASPDocumentResponse *output, NSError *error) {
                                         NSLog(@"%@", output);
                                     }];
+//ExEnd:CreatePDFFromJPEG
 }
 
 - (void)createPDFFromSVG {
+//ExStart:CreatePDFFromSVG
     NSString *templateFile = @"Example.svg";
     [Utils uploadFile:templateFile];
     
@@ -78,9 +85,11 @@
                                     completionHandler:^(ASPDocumentResponse *output, NSError *error) {
                                         NSLog(@"%@", output);
                                     }];
+//ExEnd:CreatePDFFromSVG
 }
 
 - (void)createPDFFromTIFF {
+//ExStart:CreatePDFFromTIFF
     NSString *templateFile = @"Sample.tiff";
     [Utils uploadFile:templateFile];
     
@@ -93,9 +102,11 @@
                                     completionHandler:^(ASPDocumentResponse *output, NSError *error) {
                                         NSLog(@"%@", output);
                                     }];
+//ExEnd:CreatePDFFromTIFF
 }
 
 - (void)createPDFFromXML {
+//ExStart:CreatePDFFromXML
     NSString *templateFile = @"sample.xsl";
     [Utils uploadFile:templateFile];
     NSString *dataFile = @"sample.xml";
@@ -110,9 +121,11 @@
                                     completionHandler:^(ASPDocumentResponse *output, NSError *error) {
                                         NSLog(@"%@", output);
                                     }];
+//ExEnd:CreatePDFFromXML
 }
 
 - (void)getDocumentWithFormat {
+//ExStart:GetDocumentWithFormat
     NSString *fileName = @"LargeFile.pdf";
     [Utils uploadFile:fileName];
     
@@ -124,9 +137,11 @@
                                         completionHandler:^(NSURL *output, NSError *error) {
                                             NSLog(@"%@", output);
                                         }];
+//ExEnd:GetDocumentWithFormat
 }
 
 - (void)postAppendDocument {
+//ExStart:PostAppendDocument
     NSString *fileName = @"Sample.pdf";
     [Utils uploadFile:fileName];
     NSString *appendFileName = @"sample-input.pdf";
@@ -147,9 +162,11 @@
                                      completionHandler:^(ASPDocumentResponse *output, NSError *error) {
                                          NSLog(@"%@", output);
                                      }];
+//ExEnd:PostAppendDocument
 }
 
 - (void)postSignPage {
+//ExStart:PostSignPage
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -183,9 +200,11 @@
                                completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                    NSLog(@"%@", output);
                                }];
+//ExEnd:PostSignPage
 }
 
 - (void)postSplitDocument {
+//ExStart:PostSplitDocument
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -198,9 +217,11 @@
                                     completionHandler:^(ASPSplitResultResponse *output, NSError *error) {
                                         NSLog(@"%@", output);
                                     }];
+//ExEnd:PostSplitDocument
 }
 
 - (void)putConvertDocument {
+//ExStart:PutConvertDocument
     NSURL *pathToFile = [[NSBundle mainBundle] URLForResource:@"Sample" withExtension:@"pdf"];
     
     [self.pdfApi putConvertDocumentWithCompletionBlock:pathToFile
@@ -210,9 +231,11 @@
                                      completionHandler:^(NSURL *output, NSError *error) {
                                          NSLog(@"%@", output);
                                      }];
+//ExEnd:PutConvertDocument
 }
 
 - (void)putMergeDocuments {
+//ExStart:PutMergeDocuments
     
     [Utils uploadFile:@"Sample.pdf"];
     [Utils uploadFile:@"sample-input.pdf"];
@@ -227,6 +250,7 @@
                                     completionHandler:^(ASPDocumentResponse *output, NSError *error) {
                                         NSLog(@"%@", output);
                                     }];
+//ExEnd:PutMergeDocuments
 }
 
 @end

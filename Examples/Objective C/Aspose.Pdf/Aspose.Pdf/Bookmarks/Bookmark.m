@@ -21,6 +21,7 @@
 }
 
 - (void)getDocumentBookmarks {
+//ExStart:GetDocumentBookmarks
     NSString *fileName = @"Sample-Bookmark.pdf";
     [Utils uploadFile:fileName];
     
@@ -30,9 +31,11 @@
                                        completionHandler:^(ASPBookmarksResponse *output, NSError *error) {
                                            NSLog(@"%@", output);
                                        }];
+//ExEnd:GetDocumentBookmarks
 }
 
 - (void)getDocumentBookmarksChildren {
+//ExStart:GetDocumentBookmarksChildren
     NSString *fileName = @"Sample-Bookmark.pdf";
     [Utils uploadFile:fileName];
     
@@ -43,6 +46,7 @@
                                                completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                                    NSLog(@"%@", output);
                                                }];
+//ExEnd:GetDocumentBookmarksChildren
 }
 
 

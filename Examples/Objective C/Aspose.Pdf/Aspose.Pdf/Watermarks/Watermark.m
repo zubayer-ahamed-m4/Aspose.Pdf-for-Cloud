@@ -21,6 +21,7 @@
 }
 
 - (void)addImageStampToAPDFPage {
+//ExStart:AddImageStampToAPDFPage
     
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
@@ -52,10 +53,12 @@
                                   completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                       NSLog(@"%@", output);
                                   }];
+//ExEnd:AddImageStampToAPDFPage
 
 }
 
 - (void)addPDFPageAsStampToPDFPage {
+//ExStart:AddPDFPageAsStampToPDFPage
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -85,9 +88,11 @@
                                   completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                       NSLog(@"%@", output);
                                   }];
+//ExEnd:AddPDFPageAsStampToPDFPage
 }
 
 - (void)addPageNumberStampToPDFPage {
+//ExStart:AddPageNumberStampToPDFPage
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -115,9 +120,11 @@
                                   completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                       NSLog(@"%@", output);
                                   }];
+//ExEnd:AddPageNumberStampToPDFPage
 }
 
 - (void)addPageStamp {
+//ExStart:AddPageStamp
     NSString *fileName = @"sample-input.pdf";
     [Utils uploadFile:fileName];
     
@@ -134,6 +141,7 @@
                                   completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                       NSLog(@"%@", output);
                                   }];
+//ExEnd:AddPageStamp
 }
 
 @end

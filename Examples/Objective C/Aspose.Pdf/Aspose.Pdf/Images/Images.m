@@ -21,6 +21,7 @@
 }
 
 - (void)getImageWithFormat {
+//ExStart:GetImageWithFormat
     NSString *fileName = @"SampleImage.pdf";
     [Utils uploadFile:fileName];
     
@@ -35,9 +36,11 @@
                                      completionHandler:^(NSURL *output, NSError *error) {
                                          NSLog(@"%@", output);
                                      }];
+//ExEnd:GetImageWithFormat
 }
 
 - (void)getImages {
+//ExStart:GetImages
     NSString *fileName = @"SampleImage.pdf";
     [Utils uploadFile:fileName];
     
@@ -48,9 +51,11 @@
                             completionHandler:^(ASPImagesResponse *output, NSError *error) {
                                 NSLog(@"%@", output);
                             }];
+//ExEnd:GetImages
 }
 
 - (void)postReplaceImage {
+//ExStart:PostReplaceImage
     NSString *fileName = @"SampleImage.pdf";
     [Utils uploadFile:fileName];
     
@@ -66,6 +71,7 @@
                                    completionHandler:^(ASPImageResponse *output, NSError *error) {
                                        NSLog(@"%@", output);
                                    }];
+//ExEnd:PostReplaceImage
 }
 
 @end

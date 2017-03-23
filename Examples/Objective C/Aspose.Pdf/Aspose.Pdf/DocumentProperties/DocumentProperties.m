@@ -21,6 +21,7 @@
 }
 
 - (void)deleteProperties {
+//ExStart:DeleteProperties
     NSString *fileName = @"Sample-Annotation.pdf";
     [Utils uploadFile:fileName];
     
@@ -30,9 +31,11 @@
                                    completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                        NSLog(@"%@", output);
                                    }];
+//ExEnd:DeleteProperties
 }
 
 - (void)getDocumentProperties {
+//ExStart:GetDocumentProperties
     NSString *fileName = @"Sample-Annotation.pdf";
     [Utils uploadFile:fileName];
     
@@ -42,9 +45,11 @@
                                         completionHandler:^(ASPDocumentPropertiesResponse *output, NSError *error) {
                                             NSLog(@"%@", output);
                                         }];
+//ExEnd:GetDocumentProperties
 }
 
 - (void)getDocumentProperty {
+//ExStart:GetDocumentProperty
     NSString *fileName = @"Sample-Annotation.pdf";
     [Utils uploadFile:fileName];
     
@@ -55,9 +60,11 @@
                                       completionHandler:^(ASPDocumentPropertyResponse *output, NSError *error) {
                                           NSLog(@"%@", output);
                                       }];
+//ExEnd:GetDocumentProperty
 }
 
 - (void)putSetProperty {
+//ExStart:PutSetProperty
     NSString *fileName = @"Sample-Annotation.pdf";
     [Utils uploadFile:fileName];
     
@@ -76,6 +83,7 @@
                                  completionHandler:^(ASPDocumentPropertyResponse *output, NSError *error) {
                                      NSLog(@"%@", output);
                                  }];
+//ExEnd:PutSetProperty
 }
 
 @end

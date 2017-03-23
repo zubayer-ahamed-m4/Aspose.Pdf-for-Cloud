@@ -21,6 +21,7 @@
 }
 
 - (void)getDocumentAttachmentByIndex {
+//ExStart:GetDocumentAttachmentByIndex
     NSString *fileName = @"SampleAttachment.pdf";
     [Utils uploadFile:fileName];
     
@@ -31,9 +32,11 @@
                                                completionHandler:^(ASPAttachmentResponse *output, NSError *error) {
                                                    NSLog(@"%@", output);
                                                }];
+//ExEnd:GetDocumentAttachmentByIndex
 }
 
 - (void)getDocumentAttachments {
+//ExStart:GetDocumentAttachments
     NSString *fileName = @"SampleAttachment.pdf";
     [Utils uploadFile:fileName];
     
@@ -43,9 +46,11 @@
                                          completionHandler:^(ASPAttachmentsResponse *output, NSError *error) {
                                              NSLog(@"%@", output);
                                          }];
+//ExEnd:GetDocumentAttachments
 }
 
 - (void)getDownloadDocumentAttachmentByIndex {
+//ExStart:GetDownloadDocumentAttachmentByIndex
     NSString *fileName = @"SampleAttachment.pdf";
     [Utils uploadFile:fileName];
     
@@ -56,6 +61,7 @@
                                                        completionHandler:^(ASPBaseResponse *output, NSError *error) {
                                                            NSLog(@"%@", output);
                                                        }];
+//ExEnd:GetDownloadDocumentAttachmentByIndex
 }
 
 @end
