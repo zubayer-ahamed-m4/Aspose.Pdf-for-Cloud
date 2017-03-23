@@ -1,3 +1,4 @@
+//ExStart:
 <?php
 require_once realpath(__DIR__ . '/..') . '/vendor/autoload.php';
 require_once realpath(__DIR__ . '/..') . '/Utils.php';
@@ -31,3 +32,4 @@ $pages = new Pages();
 $pages->getPageWithFormat();
 
 ?>
+//ExEnd:

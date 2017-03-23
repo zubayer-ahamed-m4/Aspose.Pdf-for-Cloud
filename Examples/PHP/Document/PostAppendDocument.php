@@ -1,3 +1,4 @@
+//ExStart:
 <?php
 require_once realpath(__DIR__ . '/..') . '/vendor/autoload.php';
 require_once realpath(__DIR__ . '/..') . '/Utils.php';
@@ -32,3 +33,4 @@ $document = new Document();
 $document->postAppendDocument();
 
 ?>
+//ExEnd:
