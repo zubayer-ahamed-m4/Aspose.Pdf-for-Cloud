@@ -16,7 +16,7 @@ var storageApi = new StorageApi(config);
 var pdfApi = new PdfApi(config);
 
 // Set input file name
-var name = "sample-merged.pdf";
+var name = "sample-input.pdf";
 
 try {
 // Upload source file to aspose cloud storage
@@ -24,8 +24,15 @@ storageApi.PutCreate(name, null, null, data_path + name , function(responseMessa
 	
 		assert.equal(responseMessage.status, 'OK', '');		
 		
-		pdfApi.GetPages(name, null, null, function(responseMessage) {
+		pdfApi.GetWordsPerPage(name, null, null, function(responseMessage) {
 				assert.equal(responseMessage.status, 'OK');
+
+
+			// Display the annotation info
+			responseMessage.body.WordsPerPage.List.forEach(function(PageWordCount) {
+				console.log("Page Number :: " + PageWordCount.PageNumber + " Total Words :: " + PageWordCount.Count);
+				});
+
 			});
 		});
 

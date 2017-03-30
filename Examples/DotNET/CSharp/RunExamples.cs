@@ -33,7 +33,7 @@ namespace CSharp
             //// =====================================================
 
             //CreateEmptyPdf.Run();
-            CreateFromHTML.Run();
+            //CreateFromHTML.Run();
             //CreateFromXML.Run();  
             //ConvertPdfFromImages.Run();
             //ConvertPdfToOtherFormat.Run();
@@ -57,6 +57,7 @@ namespace CSharp
             //GetPageCount.Run();
             //ConvertToImageWithDefaultSize.Run();
             //ConvertToImageWithSpecifiedSize.Run();
+            GetWordsCount.Run();
 
             //// =====================================================
             //// =====================================================

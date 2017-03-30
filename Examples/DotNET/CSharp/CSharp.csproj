@@ -96,6 +96,7 @@
     <Compile Include="Links\GetSpecificLink.cs" />
     <Compile Include="Links\GetAllLinks.cs" />
     <Compile Include="Pages\ConvertToImageWithSpecifiedSize.cs" />
+    <Compile Include="Pages\GetWordsCount.cs" />
     <Compile Include="Pages\GetPageCount.cs" />
     <Compile Include="Pages\ConvertToImageWithDefaultSize.cs" />
     <Compile Include="Pages\MovePages.cs" />
