@@ -26,7 +26,7 @@ class PDFTests < Minitest::Test
 	def test_put_convert_document
         file_name = "Sample.pdf"
 
-        response = @pdf_api.put_convert_document(File.open("../../../data/" << file_name,"r") { |io| io.read }, {format: "tiff"})
+        response = @pdf_api.put_convert_document(File.open("../../../data/" << file_name,"r") { |io| io.read }, {format: "doc"})
 	 	assert(response, message="Failed to convert document from request content to format specified")
 	end
 
@@ -34,7 +34,7 @@ class PDFTests < Minitest::Test
         file_name = "Sample.pdf"
         upload_file(file_name)
 
-        format = "doc"
+        format = "html"
         response = @pdf_api.get_document_with_format(file_name, format)
 	 	assert(response, message="Failed to convert document to specified format")
 	end	
