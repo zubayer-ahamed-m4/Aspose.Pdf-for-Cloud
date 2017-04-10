@@ -8,7 +8,7 @@ class Document
 
   def initialize
     #Get App key and App SID from https://cloud.aspose.com
-    AsposeApp.app_key_and_sid("APP_KEY", "APP_SID")
+    AsposeApp.app_key_and_sid("App KEY", "App SID")
     @pdf_api = PdfApi.new  
   end
 
@@ -20,7 +20,7 @@ class Document
   # Convert document from request content to format specified.
   def convert_document_from_request_content_to_specified_format
     file_name = "Sample.pdf"
-    response = @pdf_api.put_convert_document(File.open("../../../data/" << file_name,"r") { |io| io.read }, {format: "tiff"})
+    response = @pdf_api.put_convert_document(File.open("../../../data/" << file_name,"r") { |io| io.read }, {format: "html"})
   end
 
 end
