@@ -17,8 +17,6 @@ var pdfApi = new PdfApi(config);
 
 // Set input file name
 var name = "sample-merged.pdf";
-var pageNumber = 1;
-var newIndex = 2;
 
 try {
 // Upload source file to aspose cloud storage

@@ -8,7 +8,7 @@ class Document
 
   def initialize
     #Get App key and App SID from https://cloud.aspose.com
-    AsposeApp.app_key_and_sid("APP_KEY", "APP_SID")
+    AsposeApp.app_key_and_sid("App Key", "App SID")
     @pdf_api = PdfApi.new  
   end
 
@@ -22,7 +22,7 @@ class Document
     file_name = "Sample.pdf"
     upload_file(file_name)
 
-    format = "doc"
+    format = "html"
     response = @pdf_api.get_document_with_format(file_name, format)
   end
 

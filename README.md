@@ -1,14 +1,22 @@
 ## Aspose.Pdf for Cloud
-This repository contains examples and SDKs for [Aspose.Pdf for Cloud](http://www.aspose.com/cloud/pdf-api.aspx).
+[Aspose.Pdf for Cloud](https://www.aspose.com/products/pdf/cloud) helps you manipulate elements of a PDF file like text, annotations, watermarks, signatures, bookmarks, stamps and so on. Its REST API also allows you to add images to a PDF file or convert PDF to images as well as managing PDF pages by using features like PDF merging, splitting and inserting.
+
+This repository contains [Data](Data), [Examples](Examples) and [SDKs](SDKs) for [Aspose.Pdf for Cloud](https://www.aspose.com/products/pdf/cloud) to help you learn and write your own applications.
+
+[Data](Data) folder at the root contains input files which both Examples and SDKs (Unit test case project) used. It is mandatory that you download the Data folder.
 
 ## Why SDKs?
 Aspose.Pdf for Cloud is implemented as a REST API. If you use SDK, it hides the REST API calls and lets you use Aspose.Pdf features in a native way for your preferred language.
 
 <p align="center">
+
   <a title="Download complete Aspose.Pdf for Cloud source code" href="https://github.com/asposepdf/Aspose_Pdf_Cloud/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
+
+
+
 
 
 Directory | Description

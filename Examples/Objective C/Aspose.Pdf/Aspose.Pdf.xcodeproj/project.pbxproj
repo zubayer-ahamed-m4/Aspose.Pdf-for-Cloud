@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30C3E8BA1E7687CE00414EBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E8B91E7687CE00414EBF /* main.m */; };
+		30C3E8BD1E7687CE00414EBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E8BC1E7687CE00414EBF /* AppDelegate.m */; };
+		30C3E8C31E7687CE00414EBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8C11E7687CE00414EBF /* Main.storyboard */; };
+		30C3E8C51E7687CE00414EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8C41E7687CE00414EBF /* Assets.xcassets */; };
+		30C3E8C81E7687CE00414EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8C61E7687CE00414EBF /* LaunchScreen.storyboard */; };
+		30C3E8D11E76881100414EBF /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E8D01E76881100414EBF /* Utils.m */; };
+		30C3E8F61E76885600414EBF /* 123.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8D31E76885600414EBF /* 123.pdf */; };
+		30C3E8F71E76885600414EBF /* 123.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8D41E76885600414EBF /* 123.tiff */; };
+		30C3E8F81E76885600414EBF /* ABFillablewfields.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8D51E76885600414EBF /* ABFillablewfields.pdf */; };
+		30C3E8F91E76885600414EBF /* ACORD90.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8D61E76885600414EBF /* ACORD90.pdf */; };
+		30C3E8FA1E76885600414EBF /* annotation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8D71E76885600414EBF /* annotation.pdf */; };
+		30C3E8FB1E76885600414EBF /* aspose-cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8D81E76885600414EBF /* aspose-cloud.png */; };
+		30C3E8FC1E76885600414EBF /* attachments.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8D91E76885600414EBF /* attachments.pdf */; };
+		30C3E8FD1E76885600414EBF /* Barcode.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8DA1E76885600414EBF /* Barcode.pdf */; };
+		30C3E8FE1E76885600414EBF /* digi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8DB1E76885600414EBF /* digi.gif */; };
+		30C3E8FF1E76885600414EBF /* Einstein_JPEG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8DC1E76885600414EBF /* Einstein_JPEG.jpg */; };
+		30C3E9001E76885600414EBF /* Example.svg in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8DD1E76885600414EBF /* Example.svg */; };
+		30C3E9011E76885600414EBF /* Lenovo_Tablet_2_Datasheet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8DE1E76885600414EBF /* Lenovo_Tablet_2_Datasheet.pdf */; };
+		30C3E9021E76885600414EBF /* pkc7-sample.pfx in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8DF1E76885600414EBF /* pkc7-sample.pfx */; };
+		30C3E9031E76885600414EBF /* pst-barcode-doc.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8E01E76885600414EBF /* pst-barcode-doc.pdf */; };
+		30C3E9041E76885600414EBF /* Sample-Annotation-Property.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8E11E76885600414EBF /* Sample-Annotation-Property.pdf */; };
+		30C3E9051E76885600414EBF /* Sample-Annotation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8E21E76885600414EBF /* Sample-Annotation.pdf */; };
+		30C3E9061E76885600414EBF /* Sample-Bookmark.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8E31E76885600414EBF /* Sample-Bookmark.pdf */; };
+		30C3E9071E76885600414EBF /* sample-field.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8E41E76885600414EBF /* sample-field.pdf */; };
+		30C3E9081E76885600414EBF /* sample-home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8E51E76885600414EBF /* sample-home.jpg */; };
+		30C3E9091E76885600414EBF /* sample-input-2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8E61E76885600414EBF /* sample-input-2.pdf */; };
+		30C3E90A1E76885600414EBF /* sample-input.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8E71E76885600414EBF /* sample-input.pdf */; };
+		30C3E90B1E76885600414EBF /* sample-merged.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8E81E76885600414EBF /* sample-merged.pdf */; };
+		30C3E90C1E76885600414EBF /* sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8E91E76885600414EBF /* sample.html */; };
+		30C3E90D1E76885600414EBF /* Sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8EA1E76885600414EBF /* Sample.pdf */; };
+		30C3E90E1E76885600414EBF /* Sample.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8EB1E76885600414EBF /* Sample.tiff */; };
+		30C3E90F1E76885600414EBF /* sample.xml in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8EC1E76885600414EBF /* sample.xml */; };
+		30C3E9101E76885600414EBF /* sample.xsl in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8ED1E76885600414EBF /* sample.xsl */; };
+		30C3E9111E76885600414EBF /* SampleAttachment.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8EE1E76885600414EBF /* SampleAttachment.pdf */; };
+		30C3E9121E76885600414EBF /* SampleBarCodeImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8EF1E76885600414EBF /* SampleBarCodeImage.pdf */; };
+		30C3E9131E76885600414EBF /* SampleContactForm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8F01E76885600414EBF /* SampleContactForm.pdf */; };
+		30C3E9141E76885600414EBF /* SampleImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8F11E76885600414EBF /* SampleImage.pdf */; };
+		30C3E9151E76885600414EBF /* segments.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8F21E76885600414EBF /* segments.pdf */; };
+		30C3E9161E76885600414EBF /* signature.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8F31E76885600414EBF /* signature.pdf */; };
+		30C3E9171E76885600414EBF /* storageTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8F41E76885600414EBF /* storageTest.png */; };
+		30C3E9181E76885600414EBF /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30C3E8F51E76885600414EBF /* test.pdf */; };
+		30C3E91C1E7689B200414EBF /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E91B1E7689B200414EBF /* Annotation.m */; };
+		30C3E9201E76A40300414EBF /* Attachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E91F1E76A40300414EBF /* Attachment.m */; };
+		30C3E9241E76A7E200414EBF /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E9231E76A7E200414EBF /* Bookmark.m */; };
+		30C3E9281E76A9AA00414EBF /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E9271E76A9AA00414EBF /* Document.m */; };
+		30C3E92C1E76B34700414EBF /* DocumentProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E92B1E76B34700414EBF /* DocumentProperties.m */; };
+		30C3E9301E76B62B00414EBF /* FormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E92F1E76B62B00414EBF /* FormField.m */; };
+		30C3E9341E76B81100414EBF /* Images.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E9331E76B81100414EBF /* Images.m */; };
+		30C3E9381E76B98900414EBF /* Links.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E9371E76B98900414EBF /* Links.m */; };
+		30C3E93C1E76C23000414EBF /* Pages.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E93B1E76C23000414EBF /* Pages.m */; };
+		30C3E9401E76C4D000414EBF /* Text.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E93F1E76C4D000414EBF /* Text.m */; };
+		30C3E9441E76CA3000414EBF /* Watermark.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3E9431E76CA3000414EBF /* Watermark.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30C3E8B51E7687CE00414EBF /* Aspose.Pdf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aspose.Pdf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C3E8B91E7687CE00414EBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30C3E8BB1E7687CE00414EBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30C3E8BC1E7687CE00414EBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30C3E8C21E7687CE00414EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30C3E8C41E7687CE00414EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30C3E8C71E7687CE00414EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30C3E8C91E7687CE00414EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C3E8CF1E76881100414EBF /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		30C3E8D01E76881100414EBF /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		30C3E8D31E76885600414EBF /* 123.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = 123.pdf; path = Data/123.pdf; sourceTree = "<group>"; };
+		30C3E8D41E76885600414EBF /* 123.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = 123.tiff; path = Data/123.tiff; sourceTree = "<group>"; };
+		30C3E8D51E76885600414EBF /* ABFillablewfields.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ABFillablewfields.pdf; path = Data/ABFillablewfields.pdf; sourceTree = "<group>"; };
+		30C3E8D61E76885600414EBF /* ACORD90.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ACORD90.pdf; path = Data/ACORD90.pdf; sourceTree = "<group>"; };
+		30C3E8D71E76885600414EBF /* annotation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = annotation.pdf; path = Data/annotation.pdf; sourceTree = "<group>"; };
+		30C3E8D81E76885600414EBF /* aspose-cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "aspose-cloud.png"; path = "Data/aspose-cloud.png"; sourceTree = "<group>"; };
+		30C3E8D91E76885600414EBF /* attachments.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = attachments.pdf; path = Data/attachments.pdf; sourceTree = "<group>"; };
+		30C3E8DA1E76885600414EBF /* Barcode.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Barcode.pdf; path = Data/Barcode.pdf; sourceTree = "<group>"; };
+		30C3E8DB1E76885600414EBF /* digi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = digi.gif; path = Data/digi.gif; sourceTree = "<group>"; };
+		30C3E8DC1E76885600414EBF /* Einstein_JPEG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Einstein_JPEG.jpg; path = Data/Einstein_JPEG.jpg; sourceTree = "<group>"; };
+		30C3E8DD1E76885600414EBF /* Example.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Example.svg; path = Data/Example.svg; sourceTree = "<group>"; };
+		30C3E8DE1E76885600414EBF /* Lenovo_Tablet_2_Datasheet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Lenovo_Tablet_2_Datasheet.pdf; path = Data/Lenovo_Tablet_2_Datasheet.pdf; sourceTree = "<group>"; };
+		30C3E8DF1E76885600414EBF /* pkc7-sample.pfx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "pkc7-sample.pfx"; path = "Data/pkc7-sample.pfx"; sourceTree = "<group>"; };
+		30C3E8E01E76885600414EBF /* pst-barcode-doc.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "pst-barcode-doc.pdf"; path = "Data/pst-barcode-doc.pdf"; sourceTree = "<group>"; };
+		30C3E8E11E76885600414EBF /* Sample-Annotation-Property.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Sample-Annotation-Property.pdf"; path = "Data/Sample-Annotation-Property.pdf"; sourceTree = "<group>"; };
+		30C3E8E21E76885600414EBF /* Sample-Annotation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Sample-Annotation.pdf"; path = "Data/Sample-Annotation.pdf"; sourceTree = "<group>"; };
+		30C3E8E31E76885600414EBF /* Sample-Bookmark.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Sample-Bookmark.pdf"; path = "Data/Sample-Bookmark.pdf"; sourceTree = "<group>"; };
+		30C3E8E41E76885600414EBF /* sample-field.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "sample-field.pdf"; path = "Data/sample-field.pdf"; sourceTree = "<group>"; };
+		30C3E8E51E76885600414EBF /* sample-home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "sample-home.jpg"; path = "Data/sample-home.jpg"; sourceTree = "<group>"; };
+		30C3E8E61E76885600414EBF /* sample-input-2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "sample-input-2.pdf"; path = "Data/sample-input-2.pdf"; sourceTree = "<group>"; };
+		30C3E8E71E76885600414EBF /* sample-input.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "sample-input.pdf"; path = "Data/sample-input.pdf"; sourceTree = "<group>"; };
+		30C3E8E81E76885600414EBF /* sample-merged.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "sample-merged.pdf"; path = "Data/sample-merged.pdf"; sourceTree = "<group>"; };
+		30C3E8E91E76885600414EBF /* sample.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = sample.html; path = Data/sample.html; sourceTree = "<group>"; };
+		30C3E8EA1E76885600414EBF /* Sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Sample.pdf; path = Data/Sample.pdf; sourceTree = "<group>"; };
+		30C3E8EB1E76885600414EBF /* Sample.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Sample.tiff; path = Data/Sample.tiff; sourceTree = "<group>"; };
+		30C3E8EC1E76885600414EBF /* sample.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = sample.xml; path = Data/sample.xml; sourceTree = "<group>"; };
+		30C3E8ED1E76885600414EBF /* sample.xsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = sample.xsl; path = Data/sample.xsl; sourceTree = "<group>"; };
+		30C3E8EE1E76885600414EBF /* SampleAttachment.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SampleAttachment.pdf; path = Data/SampleAttachment.pdf; sourceTree = "<group>"; };
+		30C3E8EF1E76885600414EBF /* SampleBarCodeImage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SampleBarCodeImage.pdf; path = Data/SampleBarCodeImage.pdf; sourceTree = "<group>"; };
+		30C3E8F01E76885600414EBF /* SampleContactForm.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SampleContactForm.pdf; path = Data/SampleContactForm.pdf; sourceTree = "<group>"; };
+		30C3E8F11E76885600414EBF /* SampleImage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SampleImage.pdf; path = Data/SampleImage.pdf; sourceTree = "<group>"; };
+		30C3E8F21E76885600414EBF /* segments.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = segments.pdf; path = Data/segments.pdf; sourceTree = "<group>"; };
+		30C3E8F31E76885600414EBF /* signature.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = signature.pdf; path = Data/signature.pdf; sourceTree = "<group>"; };
+		30C3E8F41E76885600414EBF /* storageTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = storageTest.png; path = Data/storageTest.png; sourceTree = "<group>"; };
+		30C3E8F51E76885600414EBF /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = test.pdf; path = Data/test.pdf; sourceTree = "<group>"; };
+		30C3E91A1E7689B200414EBF /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Annotation.h; path = Annotations/Annotation.h; sourceTree = "<group>"; };
+		30C3E91B1E7689B200414EBF /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Annotation.m; path = Annotations/Annotation.m; sourceTree = "<group>"; };
+		30C3E91E1E76A40300414EBF /* Attachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Attachment.h; path = Attachments/Attachment.h; sourceTree = "<group>"; };
+		30C3E91F1E76A40300414EBF /* Attachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Attachment.m; path = Attachments/Attachment.m; sourceTree = "<group>"; };
+		30C3E9221E76A7E200414EBF /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bookmark.h; path = Bookmarks/Bookmark.h; sourceTree = "<group>"; };
+		30C3E9231E76A7E200414EBF /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bookmark.m; path = Bookmarks/Bookmark.m; sourceTree = "<group>"; };
+		30C3E9261E76A9AA00414EBF /* Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Document.h; path = Document/Document.h; sourceTree = "<group>"; };
+		30C3E9271E76A9AA00414EBF /* Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Document.m; path = Document/Document.m; sourceTree = "<group>"; };
+		30C3E92A1E76B34700414EBF /* DocumentProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DocumentProperties.h; path = DocumentProperties/DocumentProperties.h; sourceTree = "<group>"; };
+		30C3E92B1E76B34700414EBF /* DocumentProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DocumentProperties.m; path = DocumentProperties/DocumentProperties.m; sourceTree = "<group>"; };
+		30C3E92E1E76B62B00414EBF /* FormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormField.h; path = FormFields/FormField.h; sourceTree = "<group>"; };
+		30C3E92F1E76B62B00414EBF /* FormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FormField.m; path = FormFields/FormField.m; sourceTree = "<group>"; };
+		30C3E9321E76B81100414EBF /* Images.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Images.h; path = Images/Images.h; sourceTree = "<group>"; };
+		30C3E9331E76B81100414EBF /* Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Images.m; path = Images/Images.m; sourceTree = "<group>"; };
+		30C3E9361E76B98900414EBF /* Links.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Links.h; path = Links/Links.h; sourceTree = "<group>"; };
+		30C3E9371E76B98900414EBF /* Links.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Links.m; path = Links/Links.m; sourceTree = "<group>"; };
+		30C3E93A1E76C23000414EBF /* Pages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pages.h; path = Pages/Pages.h; sourceTree = "<group>"; };
+		30C3E93B1E76C23000414EBF /* Pages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pages.m; path = Pages/Pages.m; sourceTree = "<group>"; };
+		30C3E93E1E76C4D000414EBF /* Text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Text.h; path = Text/Text.h; sourceTree = "<group>"; };
+		30C3E93F1E76C4D000414EBF /* Text.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Text.m; path = Text/Text.m; sourceTree = "<group>"; };
+		30C3E9421E76CA3000414EBF /* Watermark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Watermark.h; path = Watermarks/Watermark.h; sourceTree = "<group>"; };
+		30C3E9431E76CA3000414EBF /* Watermark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Watermark.m; path = Watermarks/Watermark.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30C3E8B21E7687CE00414EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30C3E8AC1E7687CE00414EBF = {
+			isa = PBXGroup;
+			children = (
+				30C3E8B71E7687CE00414EBF /* Aspose.Pdf */,
+				30C3E8B61E7687CE00414EBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30C3E8B61E7687CE00414EBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E8B51E7687CE00414EBF /* Aspose.Pdf.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30C3E8B71E7687CE00414EBF /* Aspose.Pdf */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E9411E76CA0800414EBF /* Watermarks */,
+				30C3E93D1E76C4C100414EBF /* Text */,
+				30C3E9391E76C21900414EBF /* Pages */,
+				30C3E9351E76B96500414EBF /* Links */,
+				30C3E9311E76B7F900414EBF /* Images */,
+				30C3E92D1E76B60400414EBF /* FormFields */,
+				30C3E9291E76B32000414EBF /* DocumentProperties */,
+				30C3E9251E76A99600414EBF /* Document */,
+				30C3E9211E76A69200414EBF /* Bookmarks */,
+				30C3E91D1E76A3E300414EBF /* Attachments */,
+				30C3E9191E76898D00414EBF /* Annotations */,
+				30C3E8D21E76881D00414EBF /* Data */,
+				30C3E8CF1E76881100414EBF /* Utils.h */,
+				30C3E8D01E76881100414EBF /* Utils.m */,
+				30C3E8BB1E7687CE00414EBF /* AppDelegate.h */,
+				30C3E8BC1E7687CE00414EBF /* AppDelegate.m */,
+				30C3E8C11E7687CE00414EBF /* Main.storyboard */,
+				30C3E8C41E7687CE00414EBF /* Assets.xcassets */,
+				30C3E8C61E7687CE00414EBF /* LaunchScreen.storyboard */,
+				30C3E8C91E7687CE00414EBF /* Info.plist */,
+				30C3E8B81E7687CE00414EBF /* Supporting Files */,
+			);
+			path = Aspose.Pdf;
+			sourceTree = "<group>";
+		};
+		30C3E8B81E7687CE00414EBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E8B91E7687CE00414EBF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30C3E8D21E76881D00414EBF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E8D31E76885600414EBF /* 123.pdf */,
+				30C3E8D41E76885600414EBF /* 123.tiff */,
+				30C3E8D51E76885600414EBF /* ABFillablewfields.pdf */,
+				30C3E8D61E76885600414EBF /* ACORD90.pdf */,
+				30C3E8D71E76885600414EBF /* annotation.pdf */,
+				30C3E8D81E76885600414EBF /* aspose-cloud.png */,
+				30C3E8D91E76885600414EBF /* attachments.pdf */,
+				30C3E8DA1E76885600414EBF /* Barcode.pdf */,
+				30C3E8DB1E76885600414EBF /* digi.gif */,
+				30C3E8DC1E76885600414EBF /* Einstein_JPEG.jpg */,
+				30C3E8DD1E76885600414EBF /* Example.svg */,
+				30C3E8DE1E76885600414EBF /* Lenovo_Tablet_2_Datasheet.pdf */,
+				30C3E8DF1E76885600414EBF /* pkc7-sample.pfx */,
+				30C3E8E01E76885600414EBF /* pst-barcode-doc.pdf */,
+				30C3E8E11E76885600414EBF /* Sample-Annotation-Property.pdf */,
+				30C3E8E21E76885600414EBF /* Sample-Annotation.pdf */,
+				30C3E8E31E76885600414EBF /* Sample-Bookmark.pdf */,
+				30C3E8E41E76885600414EBF /* sample-field.pdf */,
+				30C3E8E51E76885600414EBF /* sample-home.jpg */,
+				30C3E8E61E76885600414EBF /* sample-input-2.pdf */,
+				30C3E8E71E76885600414EBF /* sample-input.pdf */,
+				30C3E8E81E76885600414EBF /* sample-merged.pdf */,
+				30C3E8E91E76885600414EBF /* sample.html */,
+				30C3E8EA1E76885600414EBF /* Sample.pdf */,
+				30C3E8EB1E76885600414EBF /* Sample.tiff */,
+				30C3E8EC1E76885600414EBF /* sample.xml */,
+				30C3E8ED1E76885600414EBF /* sample.xsl */,
+				30C3E8EE1E76885600414EBF /* SampleAttachment.pdf */,
+				30C3E8EF1E76885600414EBF /* SampleBarCodeImage.pdf */,
+				30C3E8F01E76885600414EBF /* SampleContactForm.pdf */,
+				30C3E8F11E76885600414EBF /* SampleImage.pdf */,
+				30C3E8F21E76885600414EBF /* segments.pdf */,
+				30C3E8F31E76885600414EBF /* signature.pdf */,
+				30C3E8F41E76885600414EBF /* storageTest.png */,
+				30C3E8F51E76885600414EBF /* test.pdf */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		30C3E9191E76898D00414EBF /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E91A1E7689B200414EBF /* Annotation.h */,
+				30C3E91B1E7689B200414EBF /* Annotation.m */,
+			);
+			name = Annotations;
+			sourceTree = "<group>";
+		};
+		30C3E91D1E76A3E300414EBF /* Attachments */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E91E1E76A40300414EBF /* Attachment.h */,
+				30C3E91F1E76A40300414EBF /* Attachment.m */,
+			);
+			name = Attachments;
+			sourceTree = "<group>";
+		};
+		30C3E9211E76A69200414EBF /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E9221E76A7E200414EBF /* Bookmark.h */,
+				30C3E9231E76A7E200414EBF /* Bookmark.m */,
+			);
+			name = Bookmarks;
+			sourceTree = "<group>";
+		};
+		30C3E9251E76A99600414EBF /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E9261E76A9AA00414EBF /* Document.h */,
+				30C3E9271E76A9AA00414EBF /* Document.m */,
+			);
+			name = Document;
+			sourceTree = "<group>";
+		};
+		30C3E9291E76B32000414EBF /* DocumentProperties */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E92A1E76B34700414EBF /* DocumentProperties.h */,
+				30C3E92B1E76B34700414EBF /* DocumentProperties.m */,
+			);
+			name = DocumentProperties;
+			sourceTree = "<group>";
+		};
+		30C3E92D1E76B60400414EBF /* FormFields */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E92E1E76B62B00414EBF /* FormField.h */,
+				30C3E92F1E76B62B00414EBF /* FormField.m */,
+			);
+			name = FormFields;
+			sourceTree = "<group>";
+		};
+		30C3E9311E76B7F900414EBF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E9321E76B81100414EBF /* Images.h */,
+				30C3E9331E76B81100414EBF /* Images.m */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		30C3E9351E76B96500414EBF /* Links */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E9361E76B98900414EBF /* Links.h */,
+				30C3E9371E76B98900414EBF /* Links.m */,
+			);
+			name = Links;
+			sourceTree = "<group>";
+		};
+		30C3E9391E76C21900414EBF /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E93A1E76C23000414EBF /* Pages.h */,
+				30C3E93B1E76C23000414EBF /* Pages.m */,
+			);
+			name = Pages;
+			sourceTree = "<group>";
+		};
+		30C3E93D1E76C4C100414EBF /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E93E1E76C4D000414EBF /* Text.h */,
+				30C3E93F1E76C4D000414EBF /* Text.m */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		30C3E9411E76CA0800414EBF /* Watermarks */ = {
+			isa = PBXGroup;
+			children = (
+				30C3E9421E76CA3000414EBF /* Watermark.h */,
+				30C3E9431E76CA3000414EBF /* Watermark.m */,
+			);
+			name = Watermarks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30C3E8B41E7687CE00414EBF /* Aspose.Pdf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C3E8CC1E7687CE00414EBF /* Build configuration list for PBXNativeTarget "Aspose.Pdf" */;
+			buildPhases = (
+				30C3E8B11E7687CE00414EBF /* Sources */,
+				30C3E8B21E7687CE00414EBF /* Frameworks */,
+				30C3E8B31E7687CE00414EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aspose.Pdf;
+			productName = Aspose.Pdf;
+			productReference = 30C3E8B51E7687CE00414EBF /* Aspose.Pdf.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30C3E8AD1E7687CE00414EBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Aspose;
+				TargetAttributes = {
+					30C3E8B41E7687CE00414EBF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 30C3E8B01E7687CE00414EBF /* Build configuration list for PBXProject "Aspose.Pdf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30C3E8AC1E7687CE00414EBF;
+			productRefGroup = 30C3E8B61E7687CE00414EBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30C3E8B41E7687CE00414EBF /* Aspose.Pdf */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30C3E8B31E7687CE00414EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C3E9081E76885600414EBF /* sample-home.jpg in Resources */,
+				30C3E9131E76885600414EBF /* SampleContactForm.pdf in Resources */,
+				30C3E8C81E7687CE00414EBF /* LaunchScreen.storyboard in Resources */,
+				30C3E8FE1E76885600414EBF /* digi.gif in Resources */,
+				30C3E8FF1E76885600414EBF /* Einstein_JPEG.jpg in Resources */,
+				30C3E8FA1E76885600414EBF /* annotation.pdf in Resources */,
+				30C3E9111E76885600414EBF /* SampleAttachment.pdf in Resources */,
+				30C3E9031E76885600414EBF /* pst-barcode-doc.pdf in Resources */,
+				30C3E9151E76885600414EBF /* segments.pdf in Resources */,
+				30C3E90D1E76885600414EBF /* Sample.pdf in Resources */,
+				30C3E8F61E76885600414EBF /* 123.pdf in Resources */,
+				30C3E90A1E76885600414EBF /* sample-input.pdf in Resources */,
+				30C3E9101E76885600414EBF /* sample.xsl in Resources */,
+				30C3E9001E76885600414EBF /* Example.svg in Resources */,
+				30C3E8FC1E76885600414EBF /* attachments.pdf in Resources */,
+				30C3E9051E76885600414EBF /* Sample-Annotation.pdf in Resources */,
+				30C3E9041E76885600414EBF /* Sample-Annotation-Property.pdf in Resources */,
+				30C3E9171E76885600414EBF /* storageTest.png in Resources */,
+				30C3E9071E76885600414EBF /* sample-field.pdf in Resources */,
+				30C3E9091E76885600414EBF /* sample-input-2.pdf in Resources */,
+				30C3E8F71E76885600414EBF /* 123.tiff in Resources */,
+				30C3E8C51E7687CE00414EBF /* Assets.xcassets in Resources */,
+				30C3E9121E76885600414EBF /* SampleBarCodeImage.pdf in Resources */,
+				30C3E8C31E7687CE00414EBF /* Main.storyboard in Resources */,
+				30C3E9161E76885600414EBF /* signature.pdf in Resources */,
+				30C3E9011E76885600414EBF /* Lenovo_Tablet_2_Datasheet.pdf in Resources */,
+				30C3E8F81E76885600414EBF /* ABFillablewfields.pdf in Resources */,
+				30C3E9141E76885600414EBF /* SampleImage.pdf in Resources */,
+				30C3E9181E76885600414EBF /* test.pdf in Resources */,
+				30C3E90B1E76885600414EBF /* sample-merged.pdf in Resources */,
+				30C3E90C1E76885600414EBF /* sample.html in Resources */,
+				30C3E8FB1E76885600414EBF /* aspose-cloud.png in Resources */,
+				30C3E9061E76885600414EBF /* Sample-Bookmark.pdf in Resources */,
+				30C3E90F1E76885600414EBF /* sample.xml in Resources */,
+				30C3E90E1E76885600414EBF /* Sample.tiff in Resources */,
+				30C3E8F91E76885600414EBF /* ACORD90.pdf in Resources */,
+				30C3E8FD1E76885600414EBF /* Barcode.pdf in Resources */,
+				30C3E9021E76885600414EBF /* pkc7-sample.pfx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30C3E8B11E7687CE00414EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C3E9401E76C4D000414EBF /* Text.m in Sources */,
+				30C3E8D11E76881100414EBF /* Utils.m in Sources */,
+				30C3E8BD1E7687CE00414EBF /* AppDelegate.m in Sources */,
+				30C3E91C1E7689B200414EBF /* Annotation.m in Sources */,
+				30C3E9381E76B98900414EBF /* Links.m in Sources */,
+				30C3E92C1E76B34700414EBF /* DocumentProperties.m in Sources */,
+				30C3E9301E76B62B00414EBF /* FormField.m in Sources */,
+				30C3E93C1E76C23000414EBF /* Pages.m in Sources */,
+				30C3E9281E76A9AA00414EBF /* Document.m in Sources */,
+				30C3E9241E76A7E200414EBF /* Bookmark.m in Sources */,
+				30C3E9341E76B81100414EBF /* Images.m in Sources */,
+				30C3E8BA1E7687CE00414EBF /* main.m in Sources */,
+				30C3E9441E76CA3000414EBF /* Watermark.m in Sources */,
+				30C3E9201E76A40300414EBF /* Attachment.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30C3E8C11E7687CE00414EBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30C3E8C21E7687CE00414EBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30C3E8C61E7687CE00414EBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30C3E8C71E7687CE00414EBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30C3E8CA1E7687CE00414EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30C3E8CB1E7687CE00414EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30C3E8CD1E7687CE00414EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Aspose.Pdf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aspose.Aspose-Pdf";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30C3E8CE1E7687CE00414EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Aspose.Pdf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aspose.Aspose-Pdf";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30C3E8B01E7687CE00414EBF /* Build configuration list for PBXProject "Aspose.Pdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C3E8CA1E7687CE00414EBF /* Debug */,
+				30C3E8CB1E7687CE00414EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30C3E8CC1E7687CE00414EBF /* Build configuration list for PBXNativeTarget "Aspose.Pdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C3E8CD1E7687CE00414EBF /* Debug */,
+				30C3E8CE1E7687CE00414EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30C3E8AD1E7687CE00414EBF /* Project object */;
+}
