@@ -3,7 +3,7 @@
 namespace Aspose\PDF;
 
 use Aspose\PDF\ApiException as Exception;
-use Aspose\PDF\ApiClient;
+use Aspose\PDF\APIClient;
 
 class PdfApi {
 

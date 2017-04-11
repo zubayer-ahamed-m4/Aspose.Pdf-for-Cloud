@@ -71,7 +71,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             pageNumber =  1 
             annotationNumber = 1
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetPageAnnotation(name, pageNumber, annotationNumber)            
 
             self.assertIsInstance(response,AnnotationResponse.AnnotationResponse)
@@ -88,7 +88,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "Sample-Annotation.pdf"
             pageNumber =  1 
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetPageAnnotations(name, pageNumber)            
 
             self.assertIsInstance(response,AnnotationsResponse.AnnotationsResponse)
@@ -105,7 +105,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "SampleAttachment.pdf"            
             attachmentIndex = 1
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetDocumentAttachmentByIndex(name, attachmentIndex)            
 
             self.assertIsInstance(response,AttachmentResponse.AttachmentResponse)
@@ -123,7 +123,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             pageNumber =  1 
             annotationNumber = 1
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetDocumentAttachments(name)            
 
             self.assertIsInstance(response,AttachmentsResponse.AttachmentsResponse)
@@ -141,7 +141,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "SampleAttachment.pdf"
             attachmentIndex =  1 
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetDownloadDocumentAttachmentByIndex(name, attachmentIndex)            
          
             self.assertEqual(response.Status,'OK')
@@ -160,7 +160,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             pageNumber =  2 
             imageNumber = 1
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetExtractBarcodes(name, pageNumber, imageNumber)            
 
             self.assertIsInstance(response,BarcodeResponseList.BarcodeResponseList)
@@ -177,7 +177,7 @@ class TestAsposePdfCloud(unittest.TestCase):
         try:
             name = "Sample-Bookmark.pdf"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetDocumentBookmarks(name)            
 
             self.assertIsInstance(response,BookmarksResponse.BookmarksResponse)
@@ -194,7 +194,7 @@ class TestAsposePdfCloud(unittest.TestCase):
         try:
             name = "Sample-Bookmark.pdf"
             
-            #response = self.storageApi.PutCreate(name,'./data/' + name)
+            #response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetDocumentBookmarksChildren(name, bookmarkPath="1")            
             
             self.assertIsInstance(response,BookmarkResponse.BookmarkResponse)
@@ -213,7 +213,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             pageNumber =  1 
             annotationNumber = 1
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetDocument(name)            
             
             self.assertEqual(response.Status,'OK')
@@ -230,7 +230,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "Sample.pdf"
             format =  "DOC"
             
-            #response = self.storageApi.PutCreate(name,'./data/' + name)
+            #response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetDocumentWithFormat(name, format)
             
             self.assertEqual(response.Status,'OK')
@@ -268,8 +268,8 @@ class TestAsposePdfCloud(unittest.TestCase):
             body.Visible = True 
 
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
-            response = self.storageApi.PutCreate(signatureFileName,'./data/' + signatureFileName)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
+            response = self.storageApi.PutCreate(signatureFileName,'../../../Data/' + signatureFileName)
             
             response = self.pdfApi.PostSignPage(name, pageNumber, body)            
 
@@ -290,7 +290,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             ffrom = 1
             to = 2
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PostSplitDocument(name, format=format, ffrom=ffrom, to=to)            
 
             self.assertIsInstance(response,SplitResultResponse.SplitResultResponse)
@@ -308,7 +308,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "Sample.pdf"             
             format = "TIFF"
             
-            response = self.pdfApi.PutConvertDocument(file ='./data/' + name , format=format)            
+            response = self.pdfApi.PutConvertDocument(file ='../../../Data/' + name , format=format)            
             
             self.assertEqual(response.Status,'OK')
         
@@ -349,8 +349,8 @@ class TestAsposePdfCloud(unittest.TestCase):
             body.StartPage = startPage
             body.EndPage = endPage
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
-            response = self.storageApi.PutCreate(appendFileName,'./data/' + appendFileName)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
+            response = self.storageApi.PutCreate(appendFileName,'../../../Data/' + appendFileName)
             
             response = self.pdfApi.PostAppendDocument(name, body, startPage=startPage, endPage=endPage)            
 
@@ -371,8 +371,8 @@ class TestAsposePdfCloud(unittest.TestCase):
             body = MergeDocuments.MergeDocuments()
             body.List = ["Sample.pdf", "sample-input.pdf"]
             
-            response = self.storageApi.PutCreate('Sample.pdf','./data/' + 'Sample.pdf')
-            response = self.storageApi.PutCreate('sample-input.pdf','./data/' + 'sample-input.pdf')
+            response = self.storageApi.PutCreate('Sample.pdf','../../../Data/' + 'Sample.pdf')
+            response = self.storageApi.PutCreate('sample-input.pdf','../../../Data/' + 'sample-input.pdf')
             
             response = self.pdfApi.PutMergeDocuments(name, body)            
 
@@ -393,7 +393,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             body = TiffExportOptions.TiffExportOptions()
             body.ResultFile = "Sample.tiff"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PutDocumentSaveAsTiff(name, body)            
 
             self.assertIsInstance(response,SaaSposeResponse.SaaSposeResponse)
@@ -411,7 +411,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "sample-field.pdf"
             fieldName =  "textbox1" 
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetField(name, fieldName)            
 
             self.assertIsInstance(response,FieldResponse.FieldResponse)
@@ -428,7 +428,7 @@ class TestAsposePdfCloud(unittest.TestCase):
         try:
             name = "sample-field.pdf"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetFields(name)            
 
             self.assertIsInstance(response,FieldsResponse.FieldsResponse)
@@ -458,7 +458,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             rect.Width = 200
             body.Rect = rect
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PostCreateField(name, page, body)            
 
             self.assertIsInstance(response,SaaSposeResponse.SaaSposeResponse)
@@ -480,7 +480,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             body.Name = "textbox1"
             body.Values = ['Aspose']
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PutUpdateField(name, fieldName, body)            
 
             self.assertIsInstance(response,FieldResponse.FieldResponse)
@@ -505,7 +505,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             body = Fields.Fields()
             body.List = [field1]
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PutUpdateFields(name, body)            
 
             self.assertIsInstance(response,FieldsResponse.FieldsResponse)
@@ -524,7 +524,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             pageNumber =  1 
             fragmentNumber = 1
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetFragment(name, pageNumber, fragmentNumber)            
 
             self.assertIsInstance(response,TextItemsResponse.TextItemsResponse)
@@ -542,7 +542,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "sample-input.pdf"
             pageNumber =  1 
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetFragments(name, pageNumber)            
 
             self.assertIsInstance(response,TextItemsResponse.TextItemsResponse)
@@ -561,7 +561,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             pageNumber =  1 
             fragmentNumber = 1
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetFragmentTextFormat(name, pageNumber, fragmentNumber)            
 
             self.assertIsInstance(response,TextFormatResponse.TextFormatResponse)
@@ -581,7 +581,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             fragmentNumber = 1
             segmentNumber = 1
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetSegment(name, pageNumber, fragmentNumber, segmentNumber)            
 
             self.assertIsInstance(response,TextItemResponse.TextItemResponse)
@@ -601,7 +601,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             fragmentNumber = 1
             
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetSegments(name, pageNumber, fragmentNumber)            
 
             self.assertIsInstance(response,TextItemResponse.TextItemResponse)
@@ -622,7 +622,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             fragmentNumber = 1
             segmentNumber = 1
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetSegmentTextFormat(name, pageNumber, fragmentNumber, segmentNumber)            
 
             self.assertIsInstance(response,TextFormatResponse.TextFormatResponse)
@@ -641,7 +641,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             pageNumber =  1 
             imageNumber = 1
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetImage(name, pageNumber, imageNumber)            
 
             self.assertEqual(response.Status,'OK')
@@ -658,7 +658,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "SampleImage.pdf"
             pageNumber =  1 
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetImages(name, pageNumber)            
             
             self.assertIsInstance(response,ImagesResponse.ImagesResponse)
@@ -678,7 +678,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             imageNumber = 1
             format = "jpeg"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetImageWithFormat(name, pageNumber, imageNumber, format)            
             
             self.assertEqual(response.Status,'OK')
@@ -699,9 +699,9 @@ class TestAsposePdfCloud(unittest.TestCase):
             
             imageFile = "aspose-cloud.png"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             
-            response = self.pdfApi.PostReplaceImage(name, pageNumber, imageNumber, file = './data/' + imageFile)            
+            response = self.pdfApi.PostReplaceImage(name, pageNumber, imageNumber, file = '../../../Data/' + imageFile)            
 
             self.assertIsInstance(response,ImageResponse.ImageResponse)
             self.assertEqual(response.Status,'OK')
@@ -719,7 +719,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             pageNumber =  1 
             linkIndex = 1
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetPageLinkAnnotationByIndex(name, pageNumber, linkIndex)            
 
             self.assertIsInstance(response,LinkAnnotationResponse.LinkAnnotationResponse)
@@ -737,7 +737,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "Sample-Bookmark.pdf"
             pageNumber =  1 
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetPageLinkAnnotations(name, pageNumber)            
 
             self.assertIsInstance(response,LinkAnnotationsResponse.LinkAnnotationsResponse)
@@ -755,7 +755,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "sample-input.pdf"
             pageNumber =  1 
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.DeletePage(name, pageNumber)            
 
             self.assertIsInstance(response,SaaSposeResponse.SaaSposeResponse)
@@ -773,7 +773,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "sample-input.pdf"
             pageNumber =  1 
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetPage(name, pageNumber)            
             
             self.assertEqual(response.Status,'OK')
@@ -789,7 +789,7 @@ class TestAsposePdfCloud(unittest.TestCase):
         try:
             name = "Sample-Annotation.pdf"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetPages(name)            
 
             self.assertIsInstance(response,DocumentPagesResponse.DocumentPagesResponse)
@@ -808,7 +808,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             pageNumber =  1 
             format = "png"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetPageWithFormat(name, pageNumber, format)            
             
             self.assertEqual(response.Status,'OK')
@@ -824,7 +824,7 @@ class TestAsposePdfCloud(unittest.TestCase):
         try:
             name = "Sample-Annotation.pdf"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetWordsPerPage(name)            
 
             self.assertIsInstance(response,WordCountResponse.WordCountResponse)
@@ -843,7 +843,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             pageNumber =  1 
             newIndex = 1
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PostMovePage(name, pageNumber, newIndex)            
 
             self.assertIsInstance(response,SaaSposeResponse.SaaSposeResponse)
@@ -883,7 +883,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             body.SignatureType = "PKCS7"
             body.Visible = True 
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PostSignPage(name, pageNumber, body)            
 
             self.assertIsInstance(response,SaaSposeResponse.SaaSposeResponse)
@@ -900,7 +900,7 @@ class TestAsposePdfCloud(unittest.TestCase):
         try:
             name = "sample-input.pdf"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PutAddNewPage(name)            
 
             self.assertIsInstance(response,DocumentPagesResponse.DocumentPagesResponse)
@@ -923,7 +923,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             body.Background = True
             body.Type = "Text"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PutPageAddStamp(name, pageNumber, body)            
 
             self.assertIsInstance(response,SaaSposeResponse.SaaSposeResponse)
@@ -942,7 +942,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             pageNumber =  1 
             annotationNumber = 1
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.DeleteProperties(name)            
 
             self.assertIsInstance(response,SaaSposeResponse.SaaSposeResponse)
@@ -960,7 +960,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "Sample-Annotation-Property.pdf"
             propertyName = "AsposeDev" 
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.DeleteProperty(name, propertyName)            
 
             self.assertIsInstance(response,SaaSposeResponse.SaaSposeResponse)
@@ -977,7 +977,7 @@ class TestAsposePdfCloud(unittest.TestCase):
         try:
             name = "Sample-Annotation.pdf"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetDocumentProperties(name)            
 
             self.assertIsInstance(response,DocumentPropertiesResponse.DocumentPropertiesResponse)
@@ -995,7 +995,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "Sample-Annotation.pdf"
             propertyName = "author";
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetDocumentProperty(name, propertyName)            
 
             self.assertIsInstance(response,DocumentPropertyResponse.DocumentPropertyResponse)
@@ -1018,7 +1018,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             body.Value = "Farooq Sheikh"
             body.BuiltIn = False
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PutSetProperty(name, propertyName, body)            
 
             self.assertIsInstance(response,DocumentPropertyResponse.DocumentPropertyResponse)
@@ -1036,7 +1036,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             name = "Sample-Annotation.pdf"
             pageNumber =  1 
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetPageTextItems(name, pageNumber)            
 
             self.assertIsInstance(response,TextItemsResponse.TextItemsResponse)
@@ -1053,7 +1053,7 @@ class TestAsposePdfCloud(unittest.TestCase):
         try:
             name = "Sample-Annotation.pdf"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.GetTextItems(name)            
 
             self.assertIsInstance(response,TextItemsResponse.TextItemsResponse)
@@ -1074,7 +1074,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             body.OldValue = "Sample PDF"
             body.NewValue = "Sample Aspose PDF"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PostDocumentReplaceText(name, body)            
 
             self.assertIsInstance(response,DocumentTextReplaceResponse.DocumentTextReplaceResponse)
@@ -1103,7 +1103,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             
             body.TextReplaces = [tr1, tr2]
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PostDocumentReplaceTextList(name, body)            
 
             self.assertIsInstance(response,DocumentTextReplaceResponse.DocumentTextReplaceResponse)
@@ -1125,7 +1125,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             body.OldValue = "Sample PDF"
             body.NewValue = "Sample Aspose PDF"
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PostPageReplaceText(name, pageNumber, body)            
 
             self.assertIsInstance(response,PageTextReplaceResponse.PageTextReplaceResponse)
@@ -1155,7 +1155,7 @@ class TestAsposePdfCloud(unittest.TestCase):
             
             body.TextReplaces = [tr1, tr2]
             
-            response = self.storageApi.PutCreate(name,'./data/' + name)
+            response = self.storageApi.PutCreate(name,'../../../Data/' + name)
             response = self.pdfApi.PostPageReplaceTextList(name, pageNumber, body)            
 
             self.assertIsInstance(response,PageTextReplaceResponse.PageTextReplaceResponse)
