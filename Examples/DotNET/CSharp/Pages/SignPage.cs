@@ -3,9 +3,9 @@ using Com.Aspose.PDF.Api;
 using Com.Aspose.PDF.Model;
 using Com.Aspose.Storage.Api;
 
-namespace Document
+namespace Pages
 {
-    class SignPdfDoc
+    class SignPage
     {
         public static void Run()
         {
@@ -13,26 +13,25 @@ namespace Document
             PdfApi pdfApi = new PdfApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
             StorageApi storageApi = new StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
 
-            String fileName = "sample-input.pdf";
-            String signatureFileName = "pkc7-sample.pfx";
-            int pageNumber = 1;
-            String storage = "";
-            String folder = "";
+            string fileName = "sample-input.pdf";
+            int? pageNumber = 1;
+            string storage = null;
+            string folder = null;
 
-            Signature body = new Signature();
-            body.Authority = "Naeem Akram";
-            body.Location = "Gojra";
+            Com.Aspose.PDF.Model.Signature body = new Com.Aspose.PDF.Model.Signature();
+            body.Authority = "Authority";
             body.Contact = "naeem.akram@aspose.com";
-            body.Date = "06/24/2017 2:00:00.000 AM";
+            body.Date = "18-4-2016";
             body.FormFieldName = "Signature1";
+            body.Location = "Gojra";
             body.Password = "aspose";
-            Rectangle rect = new Rectangle();
+            Com.Aspose.PDF.Model.Rectangle rect = new Com.Aspose.PDF.Model.Rectangle();
             rect.X = 100;
             rect.Y = 100;
             rect.Height = 100;
             rect.Width = 200;
             body.Rectangle = rect;
-            body.SignaturePath = signatureFileName;
+            body.SignaturePath = "pkc7-sample.pfx";
             body.SignatureType = "PKCS7";
             body.Visible = true;
 
@@ -40,14 +39,14 @@ namespace Document
             {
                 // Upload source file to aspose cloud storage
                 storageApi.PutCreate(fileName, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + fileName));
-                storageApi.PutCreate(signatureFileName, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + signatureFileName));
+                storageApi.PutCreate(body.SignaturePath, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + body.SignaturePath)); 
 
-                // Invoke Aspose.PDF Cloud SDK API to sign Pdf document
+                // Invoke Aspose.PDF Cloud SDK API to sign pdf page
                 SaaSposeResponse apiResponse = pdfApi.PostSignPage(fileName, pageNumber, storage, folder, body);
 
-                if (apiResponse != null && apiResponse.Status.Equals("OK"))
-                {
-                    Console.WriteLine("Sign PDF Documents, Done!");
+                if (apiResponse != null && apiResponse.Status.Equals("Ok"))
+                {                 
+                    Console.WriteLine("Sign PDF Document Page, Done!");
                     Console.ReadKey();
                 }
             }

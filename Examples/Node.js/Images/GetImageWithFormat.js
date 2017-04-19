@@ -17,9 +17,10 @@ var storageApi = new StorageApi(config);
 var pdfApi = new PdfApi(config);
 
 // Set input file name
-var fileName = "Sample";
-var name = fileName + ".pdf";
-var format = "html";
+var name = "Lenovo_Tablet_2_Datasheet.pdf";
+var pageNumber = 1;
+var imageNumber = 1;
+var format = "jpeg";
 
 try {
 // Upload source file to aspose cloud storage
@@ -27,14 +28,10 @@ storageApi.PutCreate(name, null, null, data_path + name , function(responseMessa
 
 	assert.equal(responseMessage.status, 'OK');
 
-	// Invoke Aspose.Pdf Cloud SDK API to convert PDF to TIFF
-	pdfApi.GetDocumentWithFormat(name, format, null, null, null, function(responseMessage) {
+	// Invoke Aspose.Pdf Cloud SDK API to get image with format
+	pdfApi.GetImageWithFormat(name, pageNumber, imageNumber, format, null, null, null, null, function(responseMessage) {
 			assert.equal(responseMessage.status, 'OK');
-
-			// Save converted format file from response
-			var outfilename = fileName + "_out." + format;
-			var writeStream = fs.createWriteStream(outFolder + outfilename);
-			writeStream.write(responseMessage.body);
+			console.log("Status: " + responseMessage.status);
 			});
 	});
 

@@ -16,29 +16,24 @@ var storageApi = new StorageApi(config);
 // Instantiate Aspose.Pdf API SDK
 var pdfApi = new PdfApi(config);
 
-// Set input file name
-var fileName = "Sample";
-var name = fileName + ".pdf";
-var format = "html";
+var name = "sample-input.pdf";
+var pageNumber =  1; 
 
 try {
-// Upload source file to aspose cloud storage
-storageApi.PutCreate(name, null, null, data_path + name , function(responseMessage) {
-
+	// Upload source file to aspose cloud storage
+	storageApi.PutCreate(name, null, null, data_path + name , function(responseMessage) {
 	assert.equal(responseMessage.status, 'OK');
+	
+	// Invoke Aspose.Pdf Cloud SDK API to get page informations
+	pdfApi.GetPage(name, pageNumber, null, null, function(responseMessage) {
+			console.log('status:', responseMessage.status);	
 
-	// Invoke Aspose.Pdf Cloud SDK API to convert PDF to TIFF
-	pdfApi.GetDocumentWithFormat(name, format, null, null, null, function(responseMessage) {
-			assert.equal(responseMessage.status, 'OK');
-
-			// Save converted format file from response
-			var outfilename = fileName + "_out." + format;
-			var writeStream = fs.createWriteStream(outFolder + outfilename);
-			writeStream.write(responseMessage.body);
-			});
+			});	
 	});
 
-}catch (e) {
+}
+catch (e) 
+{
   console.log("exception in example");
   console.log(e);
 }

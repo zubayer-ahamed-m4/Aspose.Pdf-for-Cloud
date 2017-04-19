@@ -17,28 +17,38 @@ var storageApi = new StorageApi(config);
 var pdfApi = new PdfApi(config);
 
 // Set input file name
-var fileName = "Sample";
-var name = fileName + ".pdf";
-var format = "html";
+var name = "sample-field.pdf";
+var page = 1;
+	
+var fieldbody = {
+		'Name' : 'checkBoxField2',
+		'Values' : ['1'],
+		'Type' : 'Boolean',
+		'Rect' : {
+			'X' : 100,
+			'Y' : 100,
+			'Height' : 100,
+			'Width' : 200
+		}
+		
+	};
 
 try {
-// Upload source file to aspose cloud storage
+// Upload file to aspose cloud storage
 storageApi.PutCreate(name, null, null, data_path + name , function(responseMessage) {
 
 	assert.equal(responseMessage.status, 'OK');
 
-	// Invoke Aspose.Pdf Cloud SDK API to convert PDF to TIFF
-	pdfApi.GetDocumentWithFormat(name, format, null, null, null, function(responseMessage) {
-			assert.equal(responseMessage.status, 'OK');
+	// Invoke Aspose.Pdf Cloud SDK API to create form field in a PDF document
+	pdfApi.PostCreateField(name, page, null, null, fieldbody, function(responseMessage) {			
+			console.log("Status: " + responseMessage.status);			
 
-			// Save converted format file from response
-			var outfilename = fileName + "_out." + format;
-			var writeStream = fs.createWriteStream(outFolder + outfilename);
-			writeStream.write(responseMessage.body);
 			});
 	});
 
-}catch (e) {
+}
+catch (e) 
+{
   console.log("exception in example");
   console.log(e);
 }

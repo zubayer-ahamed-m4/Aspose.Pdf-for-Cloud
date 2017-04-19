@@ -12,9 +12,9 @@ namespace Document
             // ExStart:1
             PdfApi pdfApi = new PdfApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
             StorageApi storageApi = new StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
-           
-            String fileName =  "input.pdf";
-            String format = "TIFF";
+
+            String fileName = "Sample.pdf";
+            String format = "html";
             String url = "";
             String outPath = "";
             byte[] file = System.IO.File.ReadAllBytes(Common.GetDataDir() + fileName);
@@ -24,6 +24,7 @@ namespace Document
                 // Upload source file to aspose cloud storage
                 storageApi.PutCreate(fileName, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + fileName));
 
+               
                 // Invoke Aspose.PDF Cloud SDK API to convert pdf to other formats
                 ResponseMessage apiResponse = pdfApi.PutConvertDocument(format, url, outPath, file);
 
@@ -32,7 +33,7 @@ namespace Document
                     Console.WriteLine("Convert PDF to TIFF, Done!");
                 }
 
-                format = "DOC";                
+                format = "doc";                
                 apiResponse = pdfApi.PutConvertDocument(format, url, outPath, file);
 
                 if (apiResponse != null)
@@ -40,14 +41,15 @@ namespace Document
                     Console.WriteLine("Convert PDF to DOC, Done!");
                 }
 
-                format = "html";                
-                apiResponse = pdfApi.PutConvertDocument(format, url, outPath, file);
+                format = "html";
+                 apiResponse = pdfApi.PutConvertDocument(format, url, outPath, file);
 
                 if (apiResponse != null)
                 {
                     Console.WriteLine("Convert PDF to HTML, Done!");
                     Console.ReadKey();
                 }
+
             }
             catch (Exception ex)
             {

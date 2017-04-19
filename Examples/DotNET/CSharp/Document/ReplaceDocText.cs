@@ -5,7 +5,7 @@ using Com.Aspose.Storage.Api;
 
 namespace Document
 {
-    class CreatePdfFromSVG
+    class ReplaceDocText
     {
         public static void Run()
         {
@@ -13,24 +13,25 @@ namespace Document
             PdfApi pdfApi = new PdfApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
             StorageApi storageApi = new StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
 
-            String fileName = "sample-svg.pdf";
-            String templateFile = "Sample.epub";
-            String dataFile = "";
-            String templateType = "epub";
-            String storage = "";
-            String folder = "";
+            string fileName = "test.pdf";
+            string storage = null;
+            string folder = null;
+
+            Com.Aspose.PDF.Model.TextReplace body = new Com.Aspose.PDF.Model.TextReplace();
+            body.OldValue = "Sample PDF";
+            body.NewValue = "This is the new test added by IA";
 
             try
             {
                 // Upload source file to aspose cloud storage
-                storageApi.PutCreate(templateFile, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + templateFile));
+                storageApi.PutCreate( fileName, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + fileName));
 
-                // Invoke Aspose.PDF Cloud SDK API to create pdf from SVG
-                DocumentResponse apiResponse = pdfApi.PutCreateDocument(fileName, templateFile, dataFile, templateType, storage, folder);
+                // Invoke Aspose.PDF Cloud SDK API to replace pdf text
+                DocumentTextReplaceResponse apiResponse = pdfApi.PostDocumentReplaceText(fileName, storage, folder, body);
 
                 if (apiResponse != null && apiResponse.Status.Equals("OK"))
                 {
-                    Console.WriteLine("Create PDF from SVG, Done!");
+                    Console.WriteLine("Replace PDF Document Text, Done!");
                     Console.ReadKey();
                 }
             }
