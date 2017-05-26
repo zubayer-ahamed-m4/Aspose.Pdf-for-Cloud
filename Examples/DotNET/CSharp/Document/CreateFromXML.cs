@@ -32,6 +32,12 @@ namespace Document
 
                 if (apiResponse != null && apiResponse.Status.Equals("OK"))
                 {
+                    // Download created pdf file
+                    Com.Aspose.Storage.Model.ResponseMessage storageRes = storageApi.GetDownload(fileName, null, null);
+
+                    // Save response stream to a file 
+                    System.IO.File.WriteAllBytes(Common.GetDataDir() + "input_out.pdf", storageRes.ResponseStream);
+
                     Console.WriteLine("Create PDF from XML, Done!");
                     Console.ReadKey();
                 }

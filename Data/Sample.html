@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
 <body>
 
-<h1 style="color:blue">Aspose Cloud APIs</h1>
-<p>Aspose for Cloud is a cloud-based document generation, conversion and automation platform for developers. Aspose for Cloud's REST APIs give developers on all platforms total control over documents and file formats. It interoperates seamlessly with other cloud services.</p>
-<p>Aspose for Cloud makes it easy for web and mobile app developers to work with Microsoft Word documents, Microsoft Excel spreadsheets, Microsoft PowerPoint presentations, Adobe PDFs, OpenDocument formats, barcodes, OCR and email formats and protocols in their apps. Our REST API can be called from any platform: .NET, Java, Ruby, Salesforce, and Amazon, to mention a few.</p>
-<p>Aspose for Cloud's REST API lets you support many common document processing and management tasks through your web app: document assembly, mail merge, reporting, file conversion, text and image extraction, metadata removal, barcode generation and recognition, email tracking and creation, targeting content to different devices.</p>
-<p>Integrating Aspose for Cloud into your app is simple and effective. It's a cloud solution, so you don't have to install anything, and it integrates with other cloud services too.</p>
+<div class="flex-container">
+<header>
+  <h1>Aspose</h1>
+</header>
+
+
+<article class="article">
+  <h1>Aspose.Pdf for Cloud</h1>
+  <p>Aspose.Pdf for Cloud is a REST based API which allows you to create, edit and convert PDF files in the cloud. You can convert PDF documents into various other formats like HTML, DOC, JPEG, TIFF, TXT etc. You can also extract PDF contents including text and images from the PDF files.</p>
+</article>
+
+<footer>© Aspose Pty Ltd 2001-2017. All Rights Reserved.</footer>
+</div>
+
 </body>
 </html>

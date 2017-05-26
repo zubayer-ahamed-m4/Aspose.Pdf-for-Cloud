@@ -67,6 +67,25 @@ namespace PDFTest
         #endregion        
 
         /// <summary>
+        ///A test for PutConvertDocument
+        ///</summary>
+        [TestMethod()]
+        public void TestPutConvertDocument()
+        {
+            PdfApi target = new PdfApi(APIKEY, APPSID, BASEPATH); StorageApi storageApi = new StorageApi(APIKEY, APPSID, BASEPATH);
+
+            string format = "TIFF";
+            string url = null;
+            string outPath = null;
+            byte[] file = System.IO.File.ReadAllBytes(Common.GetDataDir() + "input.pdf");
+
+            Com.Aspose.PDF.Model.ResponseMessage actual;
+            actual = target.PutConvertDocument(format, url, outPath, file);
+            Assert.AreNotEqual(null, actual);
+            Assert.IsInstanceOfType(new Com.Aspose.PDF.Model.ResponseMessage(), actual.GetType());
+        }
+
+        /// <summary>
         ///A test for DeletePage
         ///</summary>
         [TestMethod()]
@@ -1056,10 +1075,11 @@ namespace PDFTest
             PdfApi target = new PdfApi(APIKEY, APPSID, BASEPATH);
             StorageApi storageApi = new StorageApi(APIKEY, APPSID, BASEPATH); 
             
-            string name = "test.pdf";
-            int? pageNumber = 1; 
-            string storage = null; 
-            string folder = null; 
+           
+
+
+
+
             
             Com.Aspose.PDF.Model.TextReplaceListRequest body = new Com.Aspose.PDF.Model.TextReplaceListRequest();
             Com.Aspose.PDF.Model.TextReplace tr = new Com.Aspose.PDF.Model.TextReplace();
@@ -1256,24 +1276,7 @@ namespace PDFTest
             Assert.IsInstanceOfType(new Com.Aspose.PDF.Model.DocumentPagesResponse(), actual.GetType()); 
         }
 
-        /// <summary>
-        ///A test for PutConvertDocument
-        ///</summary>
-        [TestMethod()]
-        public void TestPutConvertDocument()
-        {
-            PdfApi target = new PdfApi(APIKEY, APPSID, BASEPATH);StorageApi storageApi = new StorageApi(APIKEY, APPSID, BASEPATH); 
-
-            string format = "tiff"; 
-            string url = null; 
-            string outPath = null;
-            byte[] file = System.IO.File.ReadAllBytes(Common.GetDataDir() + "test.pdf"); 
-
-            Com.Aspose.PDF.Model.ResponseMessage actual;
-            actual = target.PutConvertDocument(format, url, outPath, file);
-            Assert.AreNotEqual(null, actual);
-            Assert.IsInstanceOfType(new Com.Aspose.PDF.Model.ResponseMessage(), actual.GetType()); 
-        }
+        
 
         /// <summary>
         ///A test for PutCreateDocument

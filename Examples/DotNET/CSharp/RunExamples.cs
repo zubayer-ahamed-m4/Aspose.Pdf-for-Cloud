@@ -33,7 +33,7 @@ namespace CSharp
             //// =====================================================
 
             //CreateEmptyPdf.Run();
-            //CreateFromHTML.Run();
+            CreateFromHTML.Run();
             //CreateFromXML.Run();  
             //ConvertPdfFromImages.Run();
             //ConvertPdfToOtherFormat.Run();
@@ -99,7 +99,7 @@ namespace CSharp
             //GetImageCount.Run();
             //ReplaceImageUsingImageFile.Run();
             //ReplaceImageUsingLocalImageStream.Run();
-            GetImageWithFormat.Run();
+            //GetImageWithFormat.Run();
 
             //// =====================================================
             //// =====================================================
