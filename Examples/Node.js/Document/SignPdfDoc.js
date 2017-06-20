@@ -17,13 +17,13 @@ var storageApi = new StorageApi(config);
 var pdfApi = new PdfApi(config);
 
 var name = "sample-input-2.pdf";
-	var signatureFileName = "pkc7-sample.pfx";
+var signatureFileName = "pkc7-sample.pfx";
 	
-	var signatureBody = {
-			'Authority' : 'Naeem Akram',
-			'Location' : 'Gojra',
-			'Contact' : 'naeem.akram@aspose.com',
-			'Date' : '06/19/2017 2:00:00.000 AM',
+var signatureBody = {
+			'Authority' : 'Farooq Sheikh',
+			'Location' : 'Rawalpindi',
+			'Contact' : 'farooq.sheikh@aspose.com',
+			'Date' : '06/24/2015 2:00:00.000 AM',
 			'FormFieldName' :  'Signature1',
 			'Password' : 'aspose',
 			'SignaturePath' : signatureFileName,
@@ -52,7 +52,7 @@ storageApi.PutCreate(name, null, null, data_path + name , function(responseMessa
 				// Download signed pdf from storage server
 				storageApi.GetDownload(name, null, null, function(responseMessage) {
 					assert.equal(responseMessage.status, 'OK');
-					var writeStream = fs.createWriteStream(data_path + "sample-input_out.pdf");
+					var writeStream = fs.createWriteStream(data_path + "sample-input-2_out.pdf");
 					writeStream.write(responseMessage.body);
 					});
 			});

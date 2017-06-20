@@ -29,7 +29,7 @@ namespace Form_Fields
                 {
                     foreach (Field field in apiResponse.Fields.List)
                     {
-                        Console.WriteLine("Name:" + field.Name);                        
+                        Console.WriteLine("Name: " + field.Name + "Type: " + field.Type);                        
                     }
                     Console.WriteLine("Get all Form Fields from the PDF Document, Done!");
                     Console.ReadKey();

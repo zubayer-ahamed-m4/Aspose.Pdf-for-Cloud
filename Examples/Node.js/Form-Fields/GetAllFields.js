@@ -28,7 +28,7 @@ storageApi.PutCreate(name, null, null, data_path + name , function(responseMessa
 	pdfApi.GetFields(name, null, null, function(responseMessage) {
 			assert.equal(responseMessage.status, 'OK');
 			responseMessage.body.Fields.List.forEach(function(field) {
-				console.log("Name: " + field.Name);				
+				console.log("Name: " + field.Name + "  Type: " + field.Type);				
 				});
 			});
 	});
