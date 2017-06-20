@@ -13,7 +13,7 @@ namespace Document
             PdfApi pdfApi = new PdfApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
             StorageApi storageApi = new StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
 
-            String fileName = "sample-input.pdf";
+            String fileName = "sample-input-2.pdf";
             String signatureFileName = "pkc7-sample.pfx";
             int pageNumber = 1;
             String storage = "";

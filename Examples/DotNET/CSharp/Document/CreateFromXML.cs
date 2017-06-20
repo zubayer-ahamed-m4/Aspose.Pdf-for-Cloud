@@ -13,7 +13,7 @@ namespace Document
             PdfApi pdfApi = new PdfApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
             StorageApi storageApi = new StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
 
-            String fileName = "input.pdf";
+            String fileName = "input_out.pdf";
             String templateFile = "sample.xsl";
             String dataFile = "sample.xml";
             String templateType = "xml";
