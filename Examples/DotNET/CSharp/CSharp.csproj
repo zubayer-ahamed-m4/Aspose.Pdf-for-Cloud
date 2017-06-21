@@ -86,6 +86,7 @@
     <Compile Include="Document\CreateFromXML.cs" />
     <Compile Include="Document\CreateFromHTML.cs" />
     <Compile Include="Document\CreateEmptyPdf.cs" />
+    <Compile Include="Form-Fields\CreateSignatureField.cs" />
     <Compile Include="Form-Fields\GetFieldCount.cs" />
     <Compile Include="Form-Fields\CreateField.cs" />
     <Compile Include="Form-Fields\UpdateFormField.cs" />
