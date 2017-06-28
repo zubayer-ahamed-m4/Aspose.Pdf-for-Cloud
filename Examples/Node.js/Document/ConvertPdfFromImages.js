@@ -19,7 +19,7 @@ var pdfApi = new PdfApi(config);
 // Set input file name
 var fileName = "Sample";
 var name = fileName + ".pdf";
-var format = "tiff";
+var format = "html";
 
 try {
 // Upload source file to aspose cloud storage
@@ -33,7 +33,7 @@ storageApi.PutCreate(name, null, null, data_path + name , function(responseMessa
 
 			// Save converted format file from response
 			var outfilename = fileName + "_out." + format;
-			var writeStream = fs.createWriteStream(data_path + outfilename);
+			var writeStream = fs.createWriteStream(outFolder + outfilename);
 			writeStream.write(responseMessage.body);
 			});
 	});

@@ -1,5 +1,5 @@
-## Aspose.Pdf for Cloud
-[Aspose.Pdf for Cloud](https://www.aspose.com/products/pdf/cloud) helps you manipulate elements of a PDF file like text, annotations, watermarks, signatures, bookmarks, stamps and so on. Its REST API also allows you to add images to a PDF file or convert PDF to images as well as managing PDF pages by using features like PDF merging, splitting and inserting.
+## Aspose.Pdf for Cloud 
+[Aspose.Pdf for Cloud](https://www.aspose.com/products/pdf/cloud) helps you manipulate elements of a PDF file like text, annotations, watermark, signature, bookmarks, stamps and so on. Its REST API also allows you to add images to a PDF file or convert PDF to images as well as managing PDF pages by using features like PDF merging, splitting and inserting.
 
 This repository contains [Data](Data), [Examples](Examples) and [SDKs](SDKs) for [Aspose.Pdf for Cloud](https://www.aspose.com/products/pdf/cloud) to help you learn and write your own applications.
 

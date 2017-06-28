@@ -17,7 +17,7 @@ var storageApi = new StorageApi(config);
 var pdfApi = new PdfApi(config);
 
 // Set input file name
-var name = "sample-field.pdf";
+var name = "sample-input-2.pdf";
 try {
 // Upload file to aspose cloud storage
 storageApi.PutCreate(name, null, null, data_path + name , function(responseMessage) {
@@ -28,8 +28,7 @@ storageApi.PutCreate(name, null, null, data_path + name , function(responseMessa
 	pdfApi.GetFields(name, null, null, function(responseMessage) {
 			assert.equal(responseMessage.status, 'OK');
 			responseMessage.body.Fields.List.forEach(function(field) {
-				console.log("Name" + field.Name);
-				console.log("Value" + field.Values[0]);
+				console.log("Name: " + field.Name + "  Type: " + field.Type);				
 				});
 			});
 	});

@@ -16,34 +16,33 @@ var storageApi = new StorageApi(config);
 // Instantiate Aspose.Pdf API SDK
 var pdfApi = new PdfApi(config);
 
-// Set input file name
-var name = "sample-input.pdf";
+var name = "sample-input-2.pdf";
 var signatureFileName = "pkc7-sample.pfx";
-var pageNumber = 1;
+	
 var signatureBody = {
-		'Authority' : 'Naeem Akram',
-		'Location' : 'Gojra',
-		'Contact' : 'naeem.akram@aspose.com',
-		'Date' : '06/24/2015 2:00:00.000 AM',
-		'FormFieldName' :  'Signature1',
-		'Password' : 'aspose',
-		'SignaturePath' : signatureFileName,
-		'SignatureType' : 'PKCS7',
-		'Visible' : true,
-		'Rectangle' : {
-			'X' : 100,
-			'Y' : 100,
-			'Height' : 100,
-			'Width' : 200
-		}
-};
+			'Authority' : 'Farooq Sheikh',
+			'Location' : 'Gojra',
+			'Contact' : 'naeem.akram@aspose.com',
+			'Date' : '06/20/2017 2:00:00.000 AM',
+			'FormFieldName' :  'Signature1',
+			'Password' : 'aspose',
+			'SignaturePath' : signatureFileName,
+			'SignatureType' : 'PKCS7',
+			'Visible' : 'true',
+			'Rectangle' : {
+				'X' : 100,
+				'Y' : 100,
+				'Height' : 100,
+				'Width' : 200			
+				}
+	};
 
 try {
 // Upload file to aspose cloud storage
-storageApi.PutCreate(name, null, null, data_path + name , function(responseMessage) {
+storageApi.PutCreate(name, null, null, data_path + name , function(responseMessage) {	
 	assert.equal(responseMessage.status, 'OK');
 
-	storageApi.PutCreate(signatureFileName, null, null, data_path + signatureFileName , function(responseMessage) {
+	storageApi.PutCreate(signatureFileName, null, null, data_path + signatureFileName , function(responseMessage) {	
 		assert.equal(responseMessage.status, 'OK');
 
 		// Invoke Aspose.Pdf Cloud SDK API to sign PDF document
@@ -53,7 +52,7 @@ storageApi.PutCreate(name, null, null, data_path + name , function(responseMessa
 				// Download signed pdf from storage server
 				storageApi.GetDownload(name, null, null, function(responseMessage) {
 					assert.equal(responseMessage.status, 'OK');
-					var writeStream = fs.createWriteStream(data_path + "sample-input_out.pdf");
+					var writeStream = fs.createWriteStream(data_path + "SignPdfDoc_out.pdf");
 					writeStream.write(responseMessage.body);
 					});
 			});

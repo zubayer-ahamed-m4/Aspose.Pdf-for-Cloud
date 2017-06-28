@@ -13,8 +13,8 @@ namespace Document
             PdfApi pdfApi = new PdfApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
             StorageApi storageApi = new StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
           
-            String fileName =  "input.pdf";
-            String format = "TIFF";
+            String fileName =  "Sample.pdf";
+            String format = "html";
             String storage = "";
             String folder = "";
             String outPath = "";
@@ -25,7 +25,7 @@ namespace Document
                 storageApi.PutCreate(fileName, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + fileName));
 
                 // Invoke Aspose.PDF Cloud SDK API to convert pdf to images
-                ResponseMessage apiResponse = pdfApi.GetDocumentWithFormat(fileName, format, storage, folder, outPath);
+                ResponseMessage apiResponse = pdfApi.GetDocumentWithFormat(fileName, format, storage, folder, "outFile");
 
                 if (apiResponse != null)
                 {

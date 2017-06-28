@@ -13,7 +13,7 @@ namespace Form_Fields
             PdfApi pdfApi = new PdfApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
             StorageApi storageApi = new StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
 
-            String fileName = "sample-field.pdf";
+            String fileName = "sample-input-2.pdf";
             String storage = "";
             String folder = "";
 
@@ -29,8 +29,7 @@ namespace Form_Fields
                 {
                     foreach (Field field in apiResponse.Fields.List)
                     {
-                        Console.WriteLine("Name:" + field.Name);
-                        Console.WriteLine("Value:" + field.Values[0]);
+                        Console.WriteLine("Name: " + field.Name + "Type: " + field.Type);                        
                     }
                     Console.WriteLine("Get all Form Fields from the PDF Document, Done!");
                     Console.ReadKey();

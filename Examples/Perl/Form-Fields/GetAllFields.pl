@@ -32,7 +32,7 @@ my $storageApi = AsposeStorageCloud::StorageApi->new();
 my $pdfApi = AsposePdfCloud::PdfApi->new();
 
 # Set input file name
-my $name = 'sample-field.pdf';
+my $name = 'sample-input-2.pdf';
 
 # Upload file to aspose cloud storage 
 my $response = $storageApi->PutCreate(Path => $name, file => $data_path.$name);
@@ -42,7 +42,7 @@ $response = $pdfApi->GetFields(name=>$name);
 
 if($response->{'Status'} eq 'OK'){
 	foreach my $field (@{$response->{'Fields'}->{'List'}}){
-    print "\n $field->{'Name'} :: $field->{'Values'}[0]";
+    print "\n $field->{'Name'}";
 	}
 }
 #ExEnd:1
