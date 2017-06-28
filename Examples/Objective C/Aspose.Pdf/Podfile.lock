@@ -1,0 +1,77 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AsposePdfCloud (1.0.0):
+    - AFNetworking (~> 2.0)
+    - AsposePdfCloud/api (= 1.0.0)
+    - AsposePdfCloud/model (= 1.0.0)
+    - AsposeStorageCloud
+    - ISO8601 (~> 0.3)
+    - JSONModel (~> 1.1)
+  - AsposePdfCloud/api (1.0.0):
+    - AFNetworking (~> 2.0)
+    - AsposePdfCloud/model
+    - AsposeStorageCloud
+    - ISO8601 (~> 0.3)
+    - JSONModel (~> 1.1)
+  - AsposePdfCloud/model (1.0.0):
+    - AFNetworking (~> 2.0)
+    - AsposeStorageCloud
+    - ISO8601 (~> 0.3)
+    - JSONModel (~> 1.1)
+  - AsposeStorageCloud (1.0.0):
+    - AFNetworking (~> 2.0)
+    - AsposeStorageCloud/api (= 1.0.0)
+    - AsposeStorageCloud/client (= 1.0.0)
+    - AsposeStorageCloud/model (= 1.0.0)
+    - ISO8601 (~> 0.3)
+    - JSONModel (~> 1.1)
+  - AsposeStorageCloud/api (1.0.0):
+    - AFNetworking (~> 2.0)
+    - AsposeStorageCloud/client
+    - ISO8601 (~> 0.3)
+    - JSONModel (~> 1.1)
+  - AsposeStorageCloud/client (1.0.0):
+    - AFNetworking (~> 2.0)
+    - AsposeStorageCloud/model
+    - ISO8601 (~> 0.3)
+    - JSONModel (~> 1.1)
+  - AsposeStorageCloud/model (1.0.0):
+    - AFNetworking (~> 2.0)
+    - ISO8601 (~> 0.3)
+    - JSONModel (~> 1.1)
+  - ISO8601 (0.6.0)
+  - JSONModel (1.7.0)
+
+DEPENDENCIES:
+  - AsposePdfCloud
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AsposePdfCloud: ce8727cb0f20442bda1f2f2ca6bb489306039205
+  AsposeStorageCloud: 5c26e1cc3adc9a57cf188902e23413c3bf29bf64
+  ISO8601: d3ea3ba9b752820cf92c6b47a9ee327e9f0e13fc
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+
+PODFILE CHECKSUM: 15f40f247747dd9634c0c384b8445d6654430905
+
+COCOAPODS: 1.1.1

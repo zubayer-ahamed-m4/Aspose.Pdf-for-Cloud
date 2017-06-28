@@ -116,6 +116,8 @@
 		30D4171C1BDF98FF00861253 /* SampleBarCodeImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F11BDF987200861253 /* SampleBarCodeImage.pdf */; };
 		30D4171D1BDF98FF00861253 /* SampleContactForm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F21BDF987200861253 /* SampleContactForm.pdf */; };
 		30D4171E1BDF98FF00861253 /* SampleImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 30D416F31BDF987200861253 /* SampleImage.pdf */; };
+		DD108C3726BA63C4560BAFD6 /* libPods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D83680E50965539453001C02 /* libPods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.a */; };
+		E619EE0E46A35B3BC93FF1A8 /* libPods-Aspose.Pdf_Cloud_SDK_for_Objective_C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A362AAE74FE36ADB278DD48F /* libPods-Aspose.Pdf_Cloud_SDK_for_Objective_C.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0234912FCBD395773694994C /* Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C.debug.xcconfig"; sourceTree = "<group>"; };
 		30D415C61BDF977600861253 /* Aspose.Pdf_Cloud_SDK_for_Objective_C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aspose.Pdf_Cloud_SDK_for_Objective_C.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D415CA1BDF977600861253 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		30D415CC1BDF977600861253 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -283,6 +286,11 @@
 		30D416F11BDF987200861253 /* SampleBarCodeImage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SampleBarCodeImage.pdf; sourceTree = "<group>"; };
 		30D416F21BDF987200861253 /* SampleContactForm.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SampleContactForm.pdf; sourceTree = "<group>"; };
 		30D416F31BDF987200861253 /* SampleImage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SampleImage.pdf; sourceTree = "<group>"; };
+		926A66EAA2164D56B232DA8F /* Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.release.xcconfig"; sourceTree = "<group>"; };
+		A040A01E6EC6FCA814F2D539 /* Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A362AAE74FE36ADB278DD48F /* libPods-Aspose.Pdf_Cloud_SDK_for_Objective_C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aspose.Pdf_Cloud_SDK_for_Objective_C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9E4320ED1937ABC2E124E58 /* Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C.release.xcconfig"; sourceTree = "<group>"; };
+		D83680E50965539453001C02 /* libPods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +298,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E619EE0E46A35B3BC93FF1A8 /* libPods-Aspose.Pdf_Cloud_SDK_for_Objective_C.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,18 +306,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD108C3726BA63C4560BAFD6 /* libPods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		191F018B8C4E1382608351A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0234912FCBD395773694994C /* Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C.debug.xcconfig */,
+				B9E4320ED1937ABC2E124E58 /* Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C.release.xcconfig */,
+				A040A01E6EC6FCA814F2D539 /* Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.debug.xcconfig */,
+				926A66EAA2164D56B232DA8F /* Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		30D415BD1BDF977600861253 = {
 			isa = PBXGroup;
 			children = (
 				30D415C81BDF977600861253 /* Aspose.Pdf_Cloud_SDK_for_Objective_C */,
 				30D415E21BDF977600861253 /* Aspose.Pdf_Cloud_SDK_for_Objective_CTests */,
 				30D415C71BDF977600861253 /* Products */,
+				191F018B8C4E1382608351A6 /* Pods */,
+				D93628C0AED0FD782FA803B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -535,6 +558,15 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		D93628C0AED0FD782FA803B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A362AAE74FE36ADB278DD48F /* libPods-Aspose.Pdf_Cloud_SDK_for_Objective_C.a */,
+				D83680E50965539453001C02 /* libPods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -542,9 +574,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30D415E81BDF977600861253 /* Build configuration list for PBXNativeTarget "Aspose.Pdf_Cloud_SDK_for_Objective_C" */;
 			buildPhases = (
+				14A2CCD401F576E8C423966C /* [CP] Check Pods Manifest.lock */,
 				30D415C21BDF977600861253 /* Sources */,
 				30D415C31BDF977600861253 /* Frameworks */,
 				30D415C41BDF977600861253 /* Resources */,
+				523C6C63CECE2B5E59D1658A /* [CP] Embed Pods Frameworks */,
+				CD79A6C9E4DC0A739D006B0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -559,9 +594,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30D415EB1BDF977600861253 /* Build configuration list for PBXNativeTarget "Aspose.Pdf_Cloud_SDK_for_Objective_CTests" */;
 			buildPhases = (
+				4E21C0C59C830126055C8A44 /* [CP] Check Pods Manifest.lock */,
 				30D415DB1BDF977600861253 /* Sources */,
 				30D415DC1BDF977600861253 /* Frameworks */,
 				30D415DD1BDF977600861253 /* Resources */,
+				82EA37B538391AA879F3EBA3 /* [CP] Embed Pods Frameworks */,
+				04232BE60EF09CEA3A0ED9FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -671,6 +709,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04232BE60EF09CEA3A0ED9FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14A2CCD401F576E8C423966C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E21C0C59C830126055C8A44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		523C6C63CECE2B5E59D1658A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82EA37B538391AA879F3EBA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD79A6C9E4DC0A739D006B0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C/Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30D415C21BDF977600861253 /* Sources */ = {
@@ -865,6 +996,7 @@
 		};
 		30D415E91BDF977600861253 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0234912FCBD395773694994C /* Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Aspose.Pdf_Cloud_SDK_for_Objective_C/Info.plist;
@@ -877,6 +1009,7 @@
 		};
 		30D415EA1BDF977600861253 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9E4320ED1937ABC2E124E58 /* Pods-Aspose.Pdf_Cloud_SDK_for_Objective_C.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Aspose.Pdf_Cloud_SDK_for_Objective_C/Info.plist;
@@ -889,6 +1022,7 @@
 		};
 		30D415EC1BDF977600861253 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A040A01E6EC6FCA814F2D539 /* Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Aspose.Pdf_Cloud_SDK_for_Objective_CTests/Info.plist;
@@ -901,6 +1035,7 @@
 		};
 		30D415ED1BDF977600861253 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 926A66EAA2164D56B232DA8F /* Pods-Aspose.Pdf_Cloud_SDK_for_Objective_CTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Aspose.Pdf_Cloud_SDK_for_Objective_CTests/Info.plist;

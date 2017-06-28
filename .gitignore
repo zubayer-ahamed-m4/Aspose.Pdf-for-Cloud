@@ -29,3 +29,5 @@ Plugins/Aspose_Words_NET_for_PHP/vendor/*
 Plugins/Aspose_Words_NET_for_PHP/composer.lock
 *.gitattributes
 *.pyc
+.DS_Store
+*.xcuserstate

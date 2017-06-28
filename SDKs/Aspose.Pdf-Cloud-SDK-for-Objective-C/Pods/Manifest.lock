@@ -1,0 +1,61 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AsposeStorageCloud (1.0.0):
+    - AFNetworking (~> 2.0)
+    - AsposeStorageCloud/api (= 1.0.0)
+    - AsposeStorageCloud/client (= 1.0.0)
+    - AsposeStorageCloud/model (= 1.0.0)
+    - ISO8601 (~> 0.3)
+    - JSONModel (~> 1.1)
+  - AsposeStorageCloud/api (1.0.0):
+    - AFNetworking (~> 2.0)
+    - AsposeStorageCloud/client
+    - ISO8601 (~> 0.3)
+    - JSONModel (~> 1.1)
+  - AsposeStorageCloud/client (1.0.0):
+    - AFNetworking (~> 2.0)
+    - AsposeStorageCloud/model
+    - ISO8601 (~> 0.3)
+    - JSONModel (~> 1.1)
+  - AsposeStorageCloud/model (1.0.0):
+    - AFNetworking (~> 2.0)
+    - ISO8601 (~> 0.3)
+    - JSONModel (~> 1.1)
+  - ISO8601 (0.6.0)
+  - JSONModel (1.7.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.5.0)
+  - AsposeStorageCloud
+  - ISO8601 (~> 0.3)
+  - JSONModel (~> 1.1)
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AsposeStorageCloud: 5c26e1cc3adc9a57cf188902e23413c3bf29bf64
+  ISO8601: d3ea3ba9b752820cf92c6b47a9ee327e9f0e13fc
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+
+PODFILE CHECKSUM: 3fdce68b5ae40e33f378b6bc9ecaf3901cfd6478
+
+COCOAPODS: 1.1.1
