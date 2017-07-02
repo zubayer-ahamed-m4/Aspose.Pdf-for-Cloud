@@ -56,11 +56,11 @@
 - (void)getPages {
 //ExStart:GetPages
     NSString *fileName = @"Sample-Annotation.pdf";
-    [Utils uploadFile:fileName];
+    //[Utils uploadFile:fileName];
     
     [self.pdfApi getPagesWithCompletionBlock:fileName
-                                     storage:nil
-                                      folder:nil
+                                     storage:@"MyDropboxStorage"
+                                      folder:@"HBD ECODropbox"
                            completionHandler:^(ASPDocumentPagesResponse *output, NSError *error) {
                                NSLog(@"%@", output);
                            }];

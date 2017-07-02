@@ -34,7 +34,7 @@
     [Utils setAppKeyAndAppSID];
     
     // Annotations
-    Annotation *annotation = [[Annotation alloc] init];
+    /*Annotation *annotation = [[Annotation alloc] init];
     [annotation getPageAnnotation];
     [annotation getPageAnnotations];
     
@@ -47,12 +47,12 @@
     // Bookmarks
     Bookmark *bookmark = [[Bookmark alloc] init];
     [bookmark getDocumentBookmarks];
-    [bookmark getDocumentBookmarksChildren];
+    [bookmark getDocumentBookmarksChildren];*/
     
     // Document
-    Document *document = [[Document alloc] init];
-    [document createNewDocument];
-    [document createPDFFromHTML];
+    //Document *document = [[Document alloc] init];
+    //[document createNewDocument];
+    /*[document createPDFFromHTML];
     [document createPDFFromJPEG];
     [document createPDFFromSVG];
     [document createPDFFromTIFF];
@@ -60,12 +60,12 @@
     [document getDocumentWithFormat];
     [document postAppendDocument];
     [document postSignPage];
-    [document postSplitDocument];
-    [document putConvertDocument];
-    [document putMergeDocuments];
+    [document postSplitDocument];*/
+    //[document putConvertDocument];
+    //[document putMergeDocuments];
     
     // DocumentProperties
-    DocumentProperties *documentProperties = [[DocumentProperties alloc] init];
+    /*DocumentProperties *documentProperties = [[DocumentProperties alloc] init];
     [documentProperties deleteProperties];
     [documentProperties getDocumentProperties];
     [documentProperties getDocumentProperty];
@@ -86,18 +86,18 @@
     //Links
     Links *links = [[Links alloc] init];
     [links getPageLinkAnnotationByIndex];
-    [links getPageLinkAnnotations];
+    [links getPageLinkAnnotations];*/
     
     //Pages
     Pages *pages = [[Pages alloc] init];
-    [pages getPageWithFormat];
-    [pages deletePage];
+    //[pages getPageWithFormat];
+    //[pages deletePage];
     [pages getPages];
-    [pages postMovePage];
-    [pages putAddNewPage];
+    //[pages postMovePage];
+    //[pages putAddNewPage];
     
     // Text
-    Text *text = [[Text alloc] init];
+    /*Text *text = [[Text alloc] init];
     [text getFragment];
     [text getFragmentTextFormat];
     [text getFragments];
@@ -115,7 +115,7 @@
     [watermark addImageStampToAPDFPage];
     [watermark addPDFPageAsStampToPDFPage];
     [watermark addPageNumberStampToPDFPage];
-    [watermark addPageStamp];
+    [watermark addPageStamp];*/
     
     return YES;
 }
