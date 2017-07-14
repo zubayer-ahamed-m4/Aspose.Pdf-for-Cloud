@@ -11,4 +11,4 @@ This repository contains Aspose.Pdf Cloud SDK for PHP source code. This SDK allo
 The complete source code is available in this repository folder, you can either directly use it in your project or use Composer. For more details, please visit our [documentation website](https://docs.aspose.com/display/pdfcloud/Available+SDKs).
 
 ##Contact Us
-Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://forum.aspose.com/).
+Your feedback is very important to us. Please feel free to contact us using our [Free Technical Support](https://forum.aspose.com/).
