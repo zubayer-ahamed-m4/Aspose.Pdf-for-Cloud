@@ -9,6 +9,8 @@ use JSON;
 use AsposeStorageCloud::StorageApi;
 use AsposeStorageCloud::ApiClient;
 use AsposeStorageCloud::Configuration;
+use AsposePdfCloud::Object::Rectangle;
+use AsposePdfCloud::Object::Signature;
 
 use AsposePdfCloud::PdfApi;
 use AsposePdfCloud::ApiClient;
@@ -32,17 +34,34 @@ my $storageApi = AsposeStorageCloud::StorageApi->new();
 my $pdfApi = AsposePdfCloud::PdfApi->new();
 
 # Set input file name
-my $name = 'sample-input-2.pdf';
+my $name =  'sample-input.pdf';
+my $pageNumber =  1;
+my $signatureFileName = 'pkc7-sample.pfx';
+my @rect = AsposePdfCloud::Object::Rectangle->new('X' => 100, 'Y' => 100, 'Height' => 100, 'Width' => 200);
+my @signatureBody = AsposePdfCloud::Object::Signature->new(
+			'Authority' => 'Naeem Akram',
+			'Location' => 'Gojra',
+			'Contact' => 'naeem.arkam@aspose.com',
+			'Date' => '04/20/2017 2:00:00.000 AM',
+			'FormFieldName' =>  'Signature1',
+			'Password' => 'aspose',
+			'SignaturePath' => $signatureFileName,
+			'SignatureType' => 'PKCS7',
+			'Visible' => 'True',
+			'Rectangle' => @rect
+	);
 
 # Upload file to aspose cloud storage 
 my $response = $storageApi->PutCreate(Path => $name, file => $data_path.$name);
 
-# Invoke Aspose.Pdf Cloud SDK API to get all of the form fields from the PDF document                                  
-$response = $pdfApi->GetFields(name=>$name);
+$response = $storageApi->PutCreate(Path => $signatureFileName, file => $data_path.$signatureFileName);
 
-if($response->{'Status'} eq 'OK'){
-	foreach my $field (@{$response->{'Fields'}->{'List'}}){
-    print "\n $field->{'Name'}";
-	}
+# Invoke Aspose.Pdf Cloud SDK API to sign pdf page                             
+$response = $pdfApi->PostSignPage(name=>$name, pageNumber=>$pageNumber, body=>@signatureBody);
+
+if($response->{'Status'} eq 'OK'){	
+	my $output_file = $out_path. $name;
+	$response = $storageApi->GetDownload(Path => $name);
+	write_file($output_file, { binmode => ":raw" }, $response->{'Content'});
 }
 #ExEnd:1

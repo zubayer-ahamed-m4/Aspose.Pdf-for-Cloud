@@ -16,21 +16,31 @@ var storageApi = new StorageApi(config);
 // Instantiate Aspose.Pdf API SDK
 var pdfApi = new PdfApi(config);
 
-// Set input file name
-var name = "sample-input-2.pdf";
+var name = "sample-input.pdf";
+var pageNumber = 1;
+var tr1 = {
+			'OldValue' : 'Sample PDF',
+			'NewValue' : 'Sample Aspose PDF'			
+	};
+var tr2 = {
+			'OldValue' : 'Sample PDF',
+			'NewValue' : 'Sample Aspose PDF'			
+	};
+	
+var textReplaceListRequestBody = {
+			'TextReplaces' : [tr1, tr2]
+	};  
+
 try {
-// Upload file to aspose cloud storage
-storageApi.PutCreate(name, null, null, data_path + name , function(responseMessage) {
-
+	// Upload source file to aspose cloud storage
+	storageApi.PutCreate(name, null, null, data_path + name , function(responseMessage) {
 	assert.equal(responseMessage.status, 'OK');
+	
+	// Invoke Aspose.Pdf Cloud SDK API to replace pdf document page text list
+	pdfApi.PostPageReplaceTextList(name, pageNumber, null, null, textReplaceListRequestBody, function(responseMessage) {
+			console.log('status:' + responseMessage.status);	
 
-	// Invoke Aspose.Pdf Cloud SDK API to get all of the form fields from the PDF document
-	pdfApi.GetFields(name, null, null, function(responseMessage) {
-			assert.equal(responseMessage.status, 'OK');
-			responseMessage.body.Fields.List.forEach(function(field) {
-				console.log("Name: " + field.Name + "  Type: " + field.Type);				
-				});
-			});
+			});	
 	});
 
 }

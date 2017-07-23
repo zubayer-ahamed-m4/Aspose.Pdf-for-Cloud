@@ -17,28 +17,26 @@ var storageApi = new StorageApi(config);
 var pdfApi = new PdfApi(config);
 
 // Set input file name
-var fileName = "Sample";
-var name = fileName + ".pdf";
-var format = "html";
+var name = "sample-input.pdf";	
+var textReplaceBody = {
+			'OldValue' : 'Sample PDF',
+			'NewValue' : 'Sample Aspose PDF'			
+	};
 
 try {
-// Upload source file to aspose cloud storage
+// Invoke Aspose.Storage Cloud SDK API to upload file
 storageApi.PutCreate(name, null, null, data_path + name , function(responseMessage) {
+		assert.equal(responseMessage.status, 'OK');
 
-	assert.equal(responseMessage.status, 'OK');
-
-	// Invoke Aspose.Pdf Cloud SDK API to convert PDF to TIFF
-	pdfApi.GetDocumentWithFormat(name, format, null, null, null, function(responseMessage) {
-			assert.equal(responseMessage.status, 'OK');
-
-			// Save converted format file from response
-			var outfilename = fileName + "_out." + format;
-			var writeStream = fs.createWriteStream(outFolder + outfilename);
-			writeStream.write(responseMessage.body);
+		// Invoke Aspose.Pdf Cloud SDK API to replace document text
+		pdfApi.PostDocumentReplaceText(name, null, null, textReplaceBody,  function(responseMessage) {
+			console.log("Status:" + responseMessage.status);
+			
 			});
 	});
 
-}catch (e) {
+}catch (e) 
+{
   console.log("exception in example");
   console.log(e);
 }

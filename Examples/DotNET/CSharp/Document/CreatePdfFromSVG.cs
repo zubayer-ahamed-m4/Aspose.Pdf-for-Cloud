@@ -14,9 +14,9 @@ namespace Document
             StorageApi storageApi = new StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
 
             String fileName = "sample-svg.pdf";
-            String templateFile = "Example.svg";
+            String templateFile = "Sample.epub";
             String dataFile = "";
-            String templateType = "svg";
+            String templateType = "epub";
             String storage = "";
             String folder = "";
 

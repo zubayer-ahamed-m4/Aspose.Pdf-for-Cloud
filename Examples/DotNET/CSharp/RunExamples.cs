@@ -44,6 +44,8 @@ namespace CSharp
             //CreatePdfFromJPEG.Run();
             //CreatePdfFromSVG.Run();
             //CreatePdfFromTIFF.Run();
+            //ReplaceDocText.Run();
+            //ReplaceDocTextList.Run();
 
             //// =====================================================
             //// =====================================================
@@ -57,7 +59,11 @@ namespace CSharp
             //GetPageCount.Run();
             //ConvertToImageWithDefaultSize.Run();
             //ConvertToImageWithSpecifiedSize.Run();
-            GetWordsCount.Run();
+            //GetWordsCount.Run();
+            //GetPageInformation.Run();
+            //ReplacePageText.Run();
+            //ReplacePageTextList.Run();
+            
 
             //// =====================================================
             //// =====================================================
@@ -80,6 +86,8 @@ namespace CSharp
             //GetParticularField.Run();
             //GetFieldCount.Run();
             //UpdateFormField.Run();
+            //CreateField.Run();
+            //CreateSignatureField.Run();
 
             //// =====================================================
             //// =====================================================
@@ -92,6 +100,7 @@ namespace CSharp
             //GetImageCount.Run();
             //ReplaceImageUsingImageFile.Run();
             //ReplaceImageUsingLocalImageStream.Run();
+            //GetImageWithFormat.Run();
 
             //// =====================================================
             //// =====================================================

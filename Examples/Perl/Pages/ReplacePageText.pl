@@ -13,6 +13,7 @@ use AsposeStorageCloud::Configuration;
 use AsposePdfCloud::PdfApi;
 use AsposePdfCloud::ApiClient;
 use AsposePdfCloud::Configuration;
+use AsposePdfCloud::Object::TextReplace;
 
 my $configFile = '../config/config.json';
 my $configPropsText = read_file($configFile);
@@ -32,17 +33,19 @@ my $storageApi = AsposeStorageCloud::StorageApi->new();
 my $pdfApi = AsposePdfCloud::PdfApi->new();
 
 # Set input file name
-my $name = 'sample-input-2.pdf';
+my $name =  'sample-input.pdf';
+my $pageNumber =  1;
+my @mergeDocumentsBody = AsposePdfCloud::Object::TextReplace->new('OldValue' => 'Sample PDF', 'NewValue' => 'Sample Aspose PDF');
 
 # Upload file to aspose cloud storage 
 my $response = $storageApi->PutCreate(Path => $name, file => $data_path.$name);
 
-# Invoke Aspose.Pdf Cloud SDK API to get all of the form fields from the PDF document                                  
-$response = $pdfApi->GetFields(name=>$name);
+# Invoke Aspose.PDF Cloud SDK API to replace pdf document page text                            
+$response = $pdfApi->PostPageReplaceText(name=>$name, pageNumber=>$pageNumber, body=>@mergeDocumentsBody);
 
-if($response->{'Status'} eq 'OK'){
-	foreach my $field (@{$response->{'Fields'}->{'List'}}){
-    print "\n $field->{'Name'}";
-	}
+if($response->{'Status'} eq 'OK'){	
+	my $output_file = $out_path. $name;
+	$response = $storageApi->GetDownload(Path => $name);
+	write_file($output_file, { binmode => ":raw" }, $response->{'Content'});
 }
 #ExEnd:1

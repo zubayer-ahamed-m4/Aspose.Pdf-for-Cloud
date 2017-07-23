@@ -16,8 +16,9 @@ var storageApi = new StorageApi(config);
 // Instantiate Aspose.Pdf API SDK
 var pdfApi = new PdfApi(config);
 
-var name = "sample-input-2.pdf";
+var name = "SignatureField.pdf";
 var signatureFileName = "pkc7-sample.pfx";
+var pageNumber = 1;
 	
 var signatureBody = {
 			'Authority' : 'Farooq Sheikh',
@@ -46,13 +47,13 @@ storageApi.PutCreate(name, null, null, data_path + name , function(responseMessa
 		assert.equal(responseMessage.status, 'OK');
 
 		// Invoke Aspose.Pdf Cloud SDK API to sign PDF document
-		pdfApi.PostSignDocument(name, null, null, signatureBody, function(responseMessage) {
+		pdfApi.PostSignPage(name, pageNumber, null, null, signatureBody, function(responseMessage) {
 				assert.equal(responseMessage.status, 'OK');
 
 				// Download signed pdf from storage server
 				storageApi.GetDownload(name, null, null, function(responseMessage) {
 					assert.equal(responseMessage.status, 'OK');
-					var writeStream = fs.createWriteStream(data_path + "SignPdfDoc_out.pdf");
+					var writeStream = fs.createWriteStream(data_path + "SignPdfPage_out.pdf");
 					writeStream.write(responseMessage.body);
 					});
 			});

@@ -3,9 +3,9 @@ using Com.Aspose.PDF.Api;
 using Com.Aspose.PDF.Model;
 using Com.Aspose.Storage.Api;
 
-namespace Form_Fields
+namespace Pages
 {
-    class GetAllFields
+    class ReplacePageTextList
     {
         public static void Run()
         {
@@ -13,25 +13,27 @@ namespace Form_Fields
             PdfApi pdfApi = new PdfApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
             StorageApi storageApi = new StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
 
-            String fileName = "sample-input-2.pdf";
-            String storage = "";
-            String folder = "";
+            string fileName = "test.pdf";
+            int? pageNumber = 1;
+            string storage = null;
+            string folder = null;
+
+            Com.Aspose.PDF.Model.TextReplaceListRequest body = new Com.Aspose.PDF.Model.TextReplaceListRequest();
+            Com.Aspose.PDF.Model.TextReplace tr = new Com.Aspose.PDF.Model.TextReplace();
+            tr.NewValue = "This will be the new text";
+            body.TextReplaces = new System.Collections.Generic.List<Com.Aspose.PDF.Model.TextReplace> { tr };
 
             try
             {
                 // Upload source file to aspose cloud storage
                 storageApi.PutCreate(fileName, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + fileName));
 
-                // Invoke Aspose.PDF Cloud SDK API to get all fields from pdf document
-                FieldsResponse apiResponse = pdfApi.GetFields(fileName, storage, folder);
+                // Invoke Aspose.PDF Cloud SDK API to replace pdf document page text list
+                PageTextReplaceResponse apiResponse = pdfApi.PostPageReplaceTextList(fileName, pageNumber, storage, folder, body);
 
                 if (apiResponse != null && apiResponse.Status.Equals("OK"))
-                {
-                    foreach (Field field in apiResponse.Fields.List)
-                    {
-                        Console.WriteLine("Name: " + field.Name + "Type: " + field.Type);                        
-                    }
-                    Console.WriteLine("Get all Form Fields from the PDF Document, Done!");
+                {                    
+                    Console.WriteLine("PDF Document Page Replace Text List, Done!");
                     Console.ReadKey();
                 }
             }
