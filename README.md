@@ -37,6 +37,6 @@ Directory | Description
 + **Product Home:** [Aspose.Pdf for Cloud](http://www.aspose.com/cloud/pdf-api.aspx)
 + **Download:** [Download Aspose.Pdf for Cloud](https://downloads.aspose.com/pdf/cloud)
 + **Documentation:** [Aspose.Pdf for Cloud Documentation](https://docs.aspose.com/display/pdfcloud/Home)
-+ **Free Support:** [Aspose.Pdf for Cloud Forum](https://forum.aspose.com/c/pdf)
-+ **Paid Support:** [Aspose.Pdf for Cloud Forum](https://helpdesk.aspose.com/)
++ **Free Support:** [Aspose.Pdf for Cloud Free Support Forum](https://forum.aspose.com/c/pdf)
++ **Paid Support:** [Aspose.Pdf for Cloud Paid Support Forum](https://helpdesk.aspose.com/)
 + **Blog:** [Aspose.Pdf for Cloud Blog](https://blog.aspose.com/category/aspose-products/aspose-pdf-product-family/)
