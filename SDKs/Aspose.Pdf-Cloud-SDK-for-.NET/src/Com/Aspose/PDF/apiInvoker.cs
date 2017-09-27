@@ -105,7 +105,7 @@ namespace Com.Aspose.PDF
 
             // Remove invalid symbols.
             signature = signature.TrimEnd('=');
-            signature = HttpUtility.UrlEncode(signature);
+            //signature = HttpUtility.UrlEncode(signature);
 
             // Convert codes to upper case as they can be updated automatically.
             signature = Regex.Replace(signature, "%[0-9a-f]{2}", e => e.Value.ToUpper());
