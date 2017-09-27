@@ -41,7 +41,7 @@ namespace CSharp
             //SplitPdfFiles.Run();
             //SignPdfDoc.Run();
             //AppendPdfFiles.Run();
-            //CreatePdfFromJPEG.Run();
+            CreatePdfFromJPEG.Run();
             //CreatePdfFromSVG.Run();
             //CreatePdfFromTIFF.Run();
             //ReplaceDocText.Run();
@@ -86,7 +86,7 @@ namespace CSharp
             //GetParticularField.Run();
             //GetFieldCount.Run();
             //UpdateFormField.Run();
-            //CreateField.Run();
+            CreateField.Run();
             //CreateSignatureField.Run();
 
             //// =====================================================

@@ -23,8 +23,9 @@ var page = 1;
 var fieldbody = {
 		'Name' : 'Signature1',
 		'Values' : [''],
-		'Type' : 'text',
+		'Type' : 'Text',
                 'Links' : ['http://api.aspose.cloud/v1.1/pdf/ABFillablewfields.pdf/fields/NewField'],
+                'SelectedItems' : [1],
 		'Rect' : {
 			'X' : 100,
 			'Y' : 100,

@@ -34,6 +34,7 @@ namespace Form_Fields
             body.Values = new System.Collections.Generic.List<string> { ""};                     
             body.Type = 0;
             body.Links = new System.Collections.Generic.List<Com.Aspose.PDF.Model.Link> { link };
+            //body.SelectedItems = new System.Collections.Generic.List<int?> { 1 };
             
             try
             {
@@ -45,6 +46,7 @@ namespace Form_Fields
 
                 if (apiResponse != null && apiResponse.Status.Equals("OK"))
                 {
+                    //pdfApi.PutUpdateField(fileName, storage, folder, body.Name, body);
                    
                     // Download created pdf file
                     Com.Aspose.Storage.Model.ResponseMessage storageRes = storageApi.GetDownload(fileName, null, null);

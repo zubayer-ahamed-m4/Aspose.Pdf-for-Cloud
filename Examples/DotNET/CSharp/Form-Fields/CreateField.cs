@@ -33,7 +33,7 @@ namespace Form_Fields
             rect.X = 0;
             rect.Y = 0;
 
-            body.Name = "dvDate_1";
+            body.Name = "FieldType0";
             body.Values = new System.Collections.Generic.List<string> { "NewFieldValue" };
             body.Rect = rect;
             body.SelectedItems = new System.Collections.Generic.List<int?> { 1 };

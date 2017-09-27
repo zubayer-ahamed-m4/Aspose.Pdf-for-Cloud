@@ -14,8 +14,8 @@ namespace PDFTest
     [TestClass()]
     public class TestPdfApi
     {
-        protected string APIKEY = "xxxx";
-        protected string APPSID = "xxxx";
+        protected string APIKEY = "11bdd73f315a42e56b67bb223725ce70";
+        protected string APPSID = "e27400d4-c78a-4679-b78d-57480cad12e5";
         protected string BASEPATH = "http://api.aspose.cloud/v1.1";
 
         private TestContext testContextInstance;
@@ -755,13 +755,13 @@ namespace PDFTest
         public void TestGetPages()
         {
             PdfApi target = new PdfApi(APIKEY, APPSID, BASEPATH);
-            StorageApi storageApi = new StorageApi(APIKEY, APPSID, BASEPATH); 
+            StorageApi storageApi = new StorageApi(APIKEY, APPSID, BASEPATH);
 
-            string name = "test.pdf";
-            string storage = null; 
-            string folder = null; 
+            string name = "ECO-SH001658.pdf";
+            string storage = "DocControl"; 
+            string folder = "ECODropbox"; 
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
+            //storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
             Com.Aspose.PDF.Model.DocumentPagesResponse actual;
             actual = target.GetPages(name, storage, folder);
@@ -1073,8 +1073,8 @@ namespace PDFTest
         [TestMethod()]
         public void TestPostPageReplaceTextList()
         {
-            PdfApi target = new PdfApi(APIKEY, APPSID, BASEPATH);
-            StorageApi storageApi = new StorageApi(APIKEY, APPSID, BASEPATH); 
+            //PdfApi target = new PdfApi(APIKEY, APPSID, BASEPATH);
+            //StorageApi storageApi = new StorageApi(APIKEY, APPSID, BASEPATH); 
             
            
 
@@ -1082,18 +1082,18 @@ namespace PDFTest
 
 
             
-            Com.Aspose.PDF.Model.TextReplaceListRequest body = new Com.Aspose.PDF.Model.TextReplaceListRequest();
-            Com.Aspose.PDF.Model.TextReplace tr = new Com.Aspose.PDF.Model.TextReplace();
-            tr.NewValue = "This will be the new text";
-            body.TextReplaces = new System.Collections.Generic.List<Com.Aspose.PDF.Model.TextReplace> { tr };
+            //Com.Aspose.PDF.Model.TextReplaceListRequest body = new Com.Aspose.PDF.Model.TextReplaceListRequest();
+            //Com.Aspose.PDF.Model.TextReplace tr = new Com.Aspose.PDF.Model.TextReplace();
+            //tr.NewValue = "This will be the new text";
+            //body.TextReplaces = new System.Collections.Generic.List<Com.Aspose.PDF.Model.TextReplace> { tr };
 
-            storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
+            //storageApi.PutCreate(name, null, null, System.IO.File.ReadAllBytes(Common.GetDataDir() + name)); 
             
-            Com.Aspose.PDF.Model.PageTextReplaceResponse actual;            
-            actual = target.PostPageReplaceTextList(name, pageNumber, storage, folder, body);
+            //Com.Aspose.PDF.Model.PageTextReplaceResponse actual;            
+            //actual = target.PostPageReplaceTextList(name, pageNumber, storage, folder, body);
             
-            Assert.AreEqual("200", actual.Code);
-            Assert.IsInstanceOfType(new Com.Aspose.PDF.Model.PageTextReplaceResponse(), actual.GetType()); 
+            //Assert.AreEqual("200", actual.Code);
+            //Assert.IsInstanceOfType(new Com.Aspose.PDF.Model.PageTextReplaceResponse(), actual.GetType()); 
         }
 
         /// <summary>

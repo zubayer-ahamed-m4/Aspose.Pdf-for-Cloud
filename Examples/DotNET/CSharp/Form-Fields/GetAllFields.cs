@@ -13,14 +13,14 @@ namespace Form_Fields
             PdfApi pdfApi = new PdfApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
             StorageApi storageApi = new StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
 
-            String fileName = "sample-input-2.pdf";
+            String fileName = "test.pdf";
             String storage = "";
             String folder = "";
 
             try
             {
                 // Upload source file to aspose cloud storage
-                storageApi.PutCreate(fileName, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + fileName));
+                //storageApi.PutCreate(fileName, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + fileName));
 
                 // Invoke Aspose.PDF Cloud SDK API to get all fields from pdf document
                 FieldsResponse apiResponse = pdfApi.GetFields(fileName, storage, folder);
