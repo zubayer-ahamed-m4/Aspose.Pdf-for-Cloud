@@ -5,7 +5,7 @@ using Com.Aspose.Storage.Api;
 
 namespace Document
 {
-    class ConvertPdfFromImages
+    class ConvertPdfToSpecifiedFormat
     {
         public static void Run()
         {
@@ -14,22 +14,22 @@ namespace Document
             StorageApi storageApi = new StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
           
             String fileName =  "Sample.pdf";
-            String format = "html";
+            String format = "doc";
             String storage = "";
             String folder = "";
-            String outPath = "";
+            String outPath = "Sample.doc";
 
             try
             {
                 // Upload source file to aspose cloud storage
                 storageApi.PutCreate(fileName, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + fileName));
 
-                // Invoke Aspose.PDF Cloud SDK API to convert pdf to images
-                ResponseMessage apiResponse = pdfApi.GetDocumentWithFormat(fileName, format, storage, folder, "outFile");
+                // Invoke Aspose.PDF Cloud SDK API to convert pdf to other format
+                ResponseMessage apiResponse = pdfApi.GetDocumentWithFormat(fileName, format, storage, folder, outPath);
 
                 if (apiResponse != null)
                 {
-                    Console.WriteLine("Convert PDF to TIFF, Done!");
+                    Console.WriteLine("Converted PDF to desired format!");
                 }
                 
             }
