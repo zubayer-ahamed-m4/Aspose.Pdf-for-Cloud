@@ -14,19 +14,24 @@ namespace Document
             StorageApi storageApi = new StorageApi(Common.APP_KEY, Common.APP_SID, Common.BASEPATH);
 
             String fileName = "Sample.pdf";
-            String format = "html";
+            String format = "doc";
             String url = "";
-            String outPath = "";
+            String outPath = "Sample_out.doc";
             byte[] file = System.IO.File.ReadAllBytes(Common.GetDataDir() + fileName);
 
             try
             {
-                // Upload source file to aspose cloud storage
-                storageApi.PutCreate(fileName, "", "", System.IO.File.ReadAllBytes(Common.GetDataDir() + fileName));
-               
                 // Invoke Aspose.PDF Cloud SDK API to convert pdf to other formats
-                ResponseMessage apiResponse = pdfApi.PutConvertDocument(format, url, outPath, file);               
+                ResponseMessage apiResponse = pdfApi.PutConvertDocument(format, url, "", file);
 
+                if (apiResponse != null && apiResponse.Status.Equals("OK", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    // Save response stream to a file 
+                    System.IO.File.WriteAllBytes(Common.GetDataDir() + outPath, apiResponse.ResponseStream);
+
+                    Console.WriteLine("Convert PDF to other Format Without Storage, Done!");
+                    Console.ReadKey();
+                }
             }
             catch (Exception ex)
             {

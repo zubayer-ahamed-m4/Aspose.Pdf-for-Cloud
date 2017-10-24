@@ -33,12 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Pdf-Cloud, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\Aspose.Pdf-Cloud.1.0.5\lib\Aspose.Pdf-Cloud.dll</HintPath>
+    <Reference Include="Aspose.Pdf-Cloud, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Pdf-Cloud.1.0.9\lib\Aspose.Pdf-Cloud.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Aspose.Storage-Cloud, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\Aspose.Storage-Cloud.1.0.6\lib\Aspose.Storage-Cloud.dll</HintPath>
+    <Reference Include="Aspose.Storage-Cloud, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Storage-Cloud.1.0.10\lib\Aspose.Storage-Cloud.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -71,10 +71,10 @@
     <Compile Include="Document-Properties\RemoveAllProperties.cs" />
     <Compile Include="Document-Properties\GetAllProperties.cs" />
     <Compile Include="Document-Properties\SetSingleDocumentProperty.cs" />
-    <Compile Include="Document\ConvertPdfToOtherFormat.cs" />
-    <Compile Include="Document\ConvertPdfFromImages.cs" />
     <Compile Include="Document\AppendPdfFiles.cs" />
+    <Compile Include="Document\ConvertPdfToOtherFormat.cs" />
     <Compile Include="Document\ConvertPdfFromRemoteServer.cs" />
+    <Compile Include="Document\ConvertPdfToOtherFormatWithoutStorage.cs" />
     <Compile Include="Document\ReplaceDocTextList.cs" />
     <Compile Include="Document\ReplaceDocText.cs" />
     <Compile Include="Document\CreatePdfFromTIFF.cs" />
