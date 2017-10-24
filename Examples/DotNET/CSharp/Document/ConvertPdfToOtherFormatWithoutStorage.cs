@@ -5,7 +5,7 @@ using Com.Aspose.Storage.Api;
 
 namespace Document
 {
-    class ConvertPdfToOtherFormat
+    class ConvertPdfToOtherFormatWithoutStorage
     {
         public static void Run()
         {
