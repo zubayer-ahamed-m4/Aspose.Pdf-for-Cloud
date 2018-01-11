@@ -1,5 +1,5 @@
 ## Aspose.Pdf for Cloud SDKs
-This folder contains SDKs for [Aspose.Pdf for Cloud](http://www.aspose.com/cloud/pdf-api.aspx) for various platforms.
+This folder contains SDKs for [Aspose.Pdf for Cloud](https://products.aspose.cloud/pdf/cloud) for various platforms.
 
 <p align="center">
   <a title="Download ZIP" href="https://github.com/aspose-pdf/Aspose.Pdf-for-Cloud/archive/master.zip">
